@@ -37,16 +37,23 @@ en programación. Se publicará gratis con GitHub Pages.
 
 ## GitHub
 
-- Nombre de usuario elegido: **AntonyMathClass**. Cuenta aún por crear (la maestra la crea
-  ella misma; Claude no crea cuentas ni introduce contraseñas).
-- Repositorio: esta misma carpeta (`AntonyMath`), sincronizada con GitHub.
-- Método de sincronización elegido: **Xcode completo** (Mac App Store), no GitHub Desktop.
-  La maestra lo instala ella misma (requiere su Apple ID). Una vez instalado, Claude usa
-  `git` desde la terminal para hacer `add` / `commit` / `push` por ella — la maestra no
-  necesita escribir comandos. Claude sigue pidiendo confirmación antes de cada `git push`
-  (acción visible/compartida), pero no antes de `git add`/`commit` locales.
-- Se descartó un instalador independiente de Git (git-scm.com ya no lo ofrece desde 2021) y
-  `xcode-select --install` falló por un error del catálogo de Apple — ver BITACORA.md.
+- Cuenta: **AntonyMathClass**. Repositorio:
+  https://github.com/AntonyMathClass/AntonyMathClass.github.io (público). Publicado con GitHub
+  Pages en **https://antonymathclass.github.io** (se despliega solo con cada push a `main`,
+  por el nombre especial del repo).
+- **Carpeta del proyecto: `/Users/antonia/AntonyMath`** (ya NO está en el Escritorio). Hay un
+  acceso directo (symlink) en `~/Desktop/AntonyMath` para que la maestra siga abriendo los
+  archivos igual que antes, pero la carpeta real vive fuera del Escritorio — necesario porque
+  macOS bloqueaba la escritura ahí (protección de privacidad de Archivos y Carpetas) y eso
+  impedía crear el repositorio Git.
+- Método de sincronización: **GitHub Desktop** (instalado en `/Applications/GitHub Desktop.app`
+  tras moverlo ahí desde Descargas). Xcode Command Line Tools nunca se pudo instalar (falla
+  persistente del servidor de Apple) y se descartó instalar Xcode completo.
+  - Claude **no puede controlar GitHub Desktop** (es una app gráfica): la maestra da los clics
+    de "Commit to main" y "Push origin"/"Fetch origin" ella misma. Claude solo puede guiarla
+    paso a paso y, cuando aplica, editar los archivos directamente en disco antes de que ella
+    los suba.
+  - Antes de indicarle que haga push, resumir en una frase qué cambió.
 
 ## Flujo de trabajo con Claude
 

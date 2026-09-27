@@ -344,4 +344,37 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   ejemplo, los 3 Productos y las Respuestas (25 fracciones en total). Antes se escribían en
   línea con "/".
 
+## 2026-09-26 (4)
+
+- **¡Sitio conectado a GitHub y publicado!** Después de varios intentos fallidos con Xcode
+  Command Line Tools (error del servidor de Apple, persistente desde el 18 de septiembre), se
+  optó por GitHub Desktop. Problemas resueltos en el camino:
+  - GitHub Desktop no podía crear el repositorio local por falta de permiso de macOS para
+    escribir en la carpeta Escritorio (protección de privacidad de archivos/carpetas). Se movió
+    todo el proyecto de `~/Desktop/AntonyMath` a `~/AntonyMath` (fuera de esa protección) y se
+    dejó un acceso directo (symlink) en el Escritorio con el mismo nombre para que la maestra
+    siga entrando igual.
+  - Esta versión de GitHub Desktop no tiene campo para pegar la URL del remoto manualmente, solo
+    un botón "Publish". Como ya existía un repositorio vacío creado a mano en GitHub.com con el
+    nombre correcto, se borró ese repositorio vacío (Settings → Danger Zone) y se usó el botón
+    "Publish Repository" de GitHub Desktop poniendo el nombre exacto `AntonyMathClass.github.io`
+    para crear el repositorio ya conectado y con el primer commit subido.
+  - Confirmado: los archivos ya están en
+    https://github.com/AntonyMathClass/AntonyMathClass.github.io y GitHub Pages ya generó un
+    despliegue automático (el repo tiene el nombre especial `usuario.github.io`, así que se
+    publica solo). El sitio debería estar visible en **https://antonymathclass.github.io**.
+  - Nota: en la vista de GitHub.com con el traductor de Chrome activado, las carpetas `.claude`
+    e `interprepas` se veían mal traducidas como "Claude" e "intérpretes" — es solo un efecto
+    del traductor, no carpetas reales de más.
+
+## 2026-09-27
+
+- Se creó `Guia-publicar-en-GitHub.pdf` en la raíz del proyecto: guía paso a paso (3 páginas,
+  paleta del sitio) de la configuración de GitHub / GitHub Desktop / GitHub Pages del 26 de
+  septiembre, cómo subir cambios en adelante (Commit to main → Push origin) y tabla de problemas
+  resueltos. Generada con Chrome headless (`--print-to-pdf`).
+- A petición de la maestra, ambos PDF (`Guia-trabajar-con-el-asistente.pdf` y
+  `Guia-publicar-en-GitHub.pdf`) se movieron a la carpeta `~/Desktop/IEMS`, fuera del proyecto,
+  para que no queden públicos en GitHub.
+
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
