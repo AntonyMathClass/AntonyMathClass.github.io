@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema 3. Divisibilidad y números primos - Matemáticas 1 - AntonyMathClass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Matemáticas 1</h1>
+    <p>AntonyMathClass</p>
+  </header>
+
+  <nav class="migas">
+    <a href="../index.html">Inicio</a> &rsaquo;
+    <a href="index.html">Matemáticas 1</a> &rsaquo;
+    Tema 3. Divisibilidad y números primos
+  </nav>
+
+  <main>
+    <h1 class="titulo-tema">Tema 3. Divisibilidad y números primos</h1>
+    <p>Aprende los criterios de divisibilidad y úsalos para encontrar los números primos con la
+      Criba de Eratóstenes y para descomponer números en factores primos.</p>
+
+    <section class="bloque">
+      <h2>Criterios de divisibilidad</h2>
+
+      <div class="caja-ejemplo problema-lectura">
+        <p class="enunciado-lectura"><span class="num-problema">1</span>
+          <strong>Divisible entre 2:</strong> si el número termina en
+          <mark class="dato">0</mark>, <mark class="dato">2</mark>, <mark class="dato">4</mark>,
+          <mark class="dato">6</mark> u <mark class="dato">8</mark>.</p>
+        <p class="ejemplos-criterio">Ejemplos:
+          2<mark class="dato">0</mark>, 1<mark class="dato">2</mark>, 11<mark class="dato">4</mark>,
+          33<mark class="dato">6</mark>, 56<mark class="dato">8</mark>…</p>
+      </div>
+
+      <div class="caja-ejemplo problema-lectura">
+        <p class="enunciado-lectura"><span class="num-problema">2</span>
+          <strong>Divisible entre 3:</strong> si la suma de sus dígitos es un múltiplo de 3.</p>
+        <p class="ejemplos-criterio">Ejemplos:<br>
+          <mark class="dato-2">75</mark> &rarr; 7 + 5 = 12, es múltiplo de 3; &nbsp;75 es divisible entre 3.<br>
+          <mark class="dato-2">105</mark> &rarr; 1 + 0 + 5 = 6, es múltiplo de 3; &nbsp;105 es divisible entre 3.</p>
+      </div>
+
+      <div class="caja-ejemplo problema-lectura">
+        <p class="enunciado-lectura"><span class="num-problema">3</span>
+          <strong>Divisible entre 5:</strong> si el número termina en
+          <mark class="dato">0</mark> o <mark class="dato">5</mark>.</p>
+        <p class="ejemplos-criterio">Ejemplos:
+          521<mark class="dato">5</mark>, 34<mark class="dato">0</mark>, 67<mark class="dato">5</mark>,
+          80<mark class="dato">0</mark>, 1<mark class="dato">5</mark>…</p>
+      </div>
+
+      <div class="caja-ejemplo problema-lectura">
+        <p class="enunciado-lectura"><span class="num-problema">4</span>
+          <strong>Divisible entre 7:</strong> separa la última cifra, multiplícala por 2 y réstala al
+          número que queda. Si el resultado es 0 o un múltiplo de 7, el número es divisible entre 7.</p>
+        <p class="ejemplos-criterio">Ejemplos:<br>
+          <mark class="dato-2">91</mark> &rarr; 9 − (1 × 2) = 9 − 2 = 7, es múltiplo de 7; &nbsp;91 es divisible entre 7.<br>
+          <mark class="dato-2">364</mark> &rarr; 36 − (4 × 2) = 36 − 8 = 28, es múltiplo de 7; &nbsp;364 es divisible entre 7.</p>
+      </div>
+
+      <div class="teoria">
+        <strong>Número primo:</strong> es el que solo se puede dividir exactamente entre 1 y entre
+        sí mismo (por ejemplo 2, 3, 5, 7, 11). El 1 no es primo.
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>Ejercicio 1: Criba de Eratóstenes</h2>
+      <p>Usa los criterios para tachar los números que <strong>no</strong> son primos. Da clic en
+        un número para tacharlo; da otro clic para encerrarlo en un círculo (primo); un tercer clic
+        lo regresa a como estaba. También puedes imprimir la página y hacerlo a mano.</p>
+
+      <ol class="pasos">
+        <li>Tacha el <strong>1</strong>, porque no es primo.</li>
+        <li>Encierra el <strong>2</strong> y tacha los demás números que terminan en 0, 2, 4, 6 u 8
+          (criterio del 2).</li>
+        <li>Encierra el <strong>3</strong> y tacha los números cuya suma de dígitos sea múltiplo de 3
+          (criterio del 3).</li>
+        <li>Encierra el <strong>5</strong> y tacha los números que terminan en 0 o 5
+          (criterio del 5).</li>
+        <li>Encierra el <strong>7</strong> y tacha sus múltiplos (criterio del 7, o contando de 7 en 7: 14, 21, 28…).</li>
+        <li>Encierra todos los números que quedaron sin tachar: <strong>esos son los números primos</strong>.</li>
+      </ol>
+
+      <div class="caja-ejemplo" style="text-align:center;">
+        <!-- La cuadrícula del 1 al 100 se llena con el código de abajo -->
+        <div class="criba" id="criba-alumno"></div>
+        <button type="button" class="boton" id="borrar-criba">Borrar todo</button>
+      </div>
+
+      <details class="respuestas">
+        <summary>Respuestas</summary>
+        <p>Los números primos del 1 al 100 son <strong>25</strong>:</p>
+        <p>2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79,
+          83, 89, 97.</p>
+        <div class="criba" id="criba-solucion"></div>
+      </details>
+    </section>
+
+    <section class="bloque">
+      <h2>Ejercicio 2: Descomposición en factores primos</h2>
+      <p>Descomponer un número en factores primos es escribirlo como una multiplicación de
+        números primos.</p>
+
+      <ol class="pasos">
+        <li>Divide el número entre el primo más pequeño que lo divida exactamente (usa los
+          criterios del 2, 3, 5 y 7).</li>
+        <li>Escribe el resultado abajo y repite con el nuevo número.</li>
+        <li>Termina cuando llegues a 1. Los primos de la columna derecha, multiplicados, dan el
+          número original.</li>
+      </ol>
+
+      <div class="caja-ejemplo">
+        <p class="subtitulo-ejemplo">Ejemplo</p>
+        <div class="fila-graficas">
+          <div style="flex:1 1 240px; text-align:center;">
+            <p class="enunciado">360</p>
+            <table class="tabla-factores">
+              <tr><td>360</td><td>2</td><td class="porque">termina en 0</td></tr>
+              <tr><td>180</td><td>2</td><td class="porque">termina en 0</td></tr>
+              <tr><td>90</td><td>2</td><td class="porque">termina en 0</td></tr>
+              <tr><td>45</td><td>3</td><td class="porque">4 + 5 = 9</td></tr>
+              <tr><td>15</td><td>3</td><td class="porque">1 + 5 = 6</td></tr>
+              <tr><td>5</td><td>5</td><td class="porque">termina en 5</td></tr>
+              <tr><td>1</td><td></td><td></td></tr>
+            </table>
+            <p class="respuesta-lectura">360 = 2 × 2 × 2 × 3 × 3 × 5 = <mark class="clave">2<sup>3</sup> × 3<sup>2</sup> × 5</mark></p>
+          </div>
+
+          <div style="flex:1 1 240px; text-align:center;">
+            <p class="enunciado">1470</p>
+            <table class="tabla-factores">
+              <tr><td>1470</td><td>2</td><td class="porque">termina en 0</td></tr>
+              <tr><td>735</td><td>3</td><td class="porque">7 + 3 + 5 = 15</td></tr>
+              <tr><td>245</td><td>5</td><td class="porque">termina en 5</td></tr>
+              <tr><td>49</td><td>7</td><td class="porque">7 × 7 = 49</td></tr>
+              <tr><td>7</td><td>7</td><td class="porque">es primo</td></tr>
+              <tr><td>1</td><td></td><td></td></tr>
+            </table>
+            <p class="respuesta-lectura">1470 = 2 × 3 × 5 × 7 × 7 = <mark class="clave">2 × 3 × 5 × 7<sup>2</sup></mark></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cajas-productos">
+        <div class="caja-ejercicio compacta">
+          <h3>Producto 1</h3>
+          <div class="contenido-producto">
+          <ol class="lista-extra">
+            <li>48 =</li>
+            <li>90 =</li>
+            <li>126 =</li>
+            <li>200 =</li>
+            <li>441 =</li>
+          </ol>
+        </div>
+        </div>
+
+        <div class="caja-ejercicio compacta">
+          <h3>Producto 2</h3>
+          <div class="contenido-producto">
+          <ol class="lista-extra">
+            <li>72 =</li>
+            <li>150 =</li>
+            <li>196 =</li>
+            <li>315 =</li>
+            <li>540 =</li>
+          </ol>
+        </div>
+        </div>
+
+        <div class="caja-ejercicio compacta">
+          <h3>Producto 3</h3>
+          <div class="contenido-producto">
+          <ol class="lista-extra">
+            <li>60 =</li>
+            <li>84 =</li>
+            <li>225 =</li>
+            <li>392 =</li>
+            <li>630 =</li>
+          </ol>
+        </div>
+        </div>
+
+        <div class="caja-ejercicio compacta">
+          <h3>Producto 4</h3>
+          <div class="contenido-producto">
+          <ol class="lista-extra">
+            <li>96 =</li>
+            <li>175 =</li>
+            <li>252 =</li>
+            <li>420 =</li>
+            <li>1000 =</li>
+          </ol>
+        </div>
+        </div>
+      </div>
+
+      <details class="respuestas">
+        <summary>Respuestas</summary>
+        <div class="respuestas-grid">
+          <div>
+            <h4>Producto 1</h4>
+            <ol>
+              <li>48 = 2<sup>4</sup> × 3</li>
+              <li>90 = 2 × 3<sup>2</sup> × 5</li>
+              <li>126 = 2 × 3<sup>2</sup> × 7</li>
+              <li>200 = 2<sup>3</sup> × 5<sup>2</sup></li>
+              <li>441 = 3<sup>2</sup> × 7<sup>2</sup></li>
+            </ol>
+          </div>
+          <div>
+            <h4>Producto 2</h4>
+            <ol>
+              <li>72 = 2<sup>3</sup> × 3<sup>2</sup></li>
+              <li>150 = 2 × 3 × 5<sup>2</sup></li>
+              <li>196 = 2<sup>2</sup> × 7<sup>2</sup></li>
+              <li>315 = 3<sup>2</sup> × 5 × 7</li>
+              <li>540 = 2<sup>2</sup> × 3<sup>3</sup> × 5</li>
+            </ol>
+          </div>
+          <div>
+            <h4>Producto 3</h4>
+            <ol>
+              <li>60 = 2<sup>2</sup> × 3 × 5</li>
+              <li>84 = 2<sup>2</sup> × 3 × 7</li>
+              <li>225 = 3<sup>2</sup> × 5<sup>2</sup></li>
+              <li>392 = 2<sup>3</sup> × 7<sup>2</sup></li>
+              <li>630 = 2 × 3<sup>2</sup> × 5 × 7</li>
+            </ol>
+          </div>
+          <div>
+            <h4>Producto 4</h4>
+            <ol>
+              <li>96 = 2<sup>5</sup> × 3</li>
+              <li>175 = 5<sup>2</sup> × 7</li>
+              <li>252 = 2<sup>2</sup> × 3<sup>2</sup> × 7</li>
+              <li>420 = 2<sup>2</sup> × 3 × 5 × 7</li>
+              <li>1000 = 2<sup>3</sup> × 5<sup>3</sup></li>
+            </ol>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <p class="link-repaso">Tema anterior:
+      <a href="tema-2-lectura-y-matematicas.html">&larr; Tema 2. Lectura y matemáticas</a></p>
+  </main>
+
+  <footer>
+    Página en construcción &middot; AntonyMathClass
+  </footer>
+
+  <script>
+    // Números primos del 1 al 100 (para la solución)
+    var primos = [2,3,5,7,11,13,17,19,23,29,31,37,41,43,47,53,59,61,67,71,73,79,83,89,97];
+
+    // Cuadrícula del alumno: cada clic cambia normal -> tachado -> primo -> normal
+    var alumno = document.getElementById('criba-alumno');
+    for (var n = 1; n <= 100; n++) {
+      var celda = document.createElement('button');
+      celda.type = 'button';
+      celda.textContent = n;
+      celda.onclick = function () {
+        if (this.classList.contains('tachado')) {
+          this.classList.remove('tachado');
+          this.classList.add('primo');
+        } else if (this.classList.contains('primo')) {
+          this.classList.remove('primo');
+        } else {
+          this.classList.add('tachado');
+        }
+      };
+      alumno.appendChild(celda);
+    }
+
+    document.getElementById('borrar-criba').onclick = function () {
+      var celdas = alumno.children;
+      for (var i = 0; i < celdas.length; i++) celdas[i].className = '';
+    };
+
+    // Cuadrícula de la solución (ya resuelta)
+    var solucion = document.getElementById('criba-solucion');
+    for (var m = 1; m <= 100; m++) {
+      var s = document.createElement('span');
+      s.textContent = m;
+      s.className = primos.indexOf(m) >= 0 ? 'primo' : 'tachado';
+      solucion.appendChild(s);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema 1. Funciones y relaciones - Matemáticas 3 - AntonyMathClass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Matemáticas 3</h1>
+    <p>AntonyMathClass</p>
+  </header>
+
+  <nav class="migas">
+    <a href="../index.html">Inicio</a> &rsaquo;
+    <a href="index.html">Matemáticas 3</a> &rsaquo;
+    Tema 1. Funciones y relaciones
+  </nav>
+
+  <main>
+    <h1 class="titulo-tema">Tema 1. Funciones y relaciones: la prueba de la recta vertical</h1>
+
+    <section class="bloque">
+      <h2>Teoría</h2>
+      <div class="teoria">
+        <p>
+          Una <strong>relación</strong> es cualquier conjunto de parejas de valores (x, y),
+          y se puede representar como una gráfica en el plano cartesiano.
+        </p>
+        <p>
+          Una relación es una <strong>función</strong> quando cada valor de <em>x</em> tiene
+          <strong>una única</strong> pareja de valor de <em>y</em>. Si un mismo valor de <em>x</em>
+          tuviera dos o más valores de <em>y</em>, ya no sería función, solo relación.
+        </p>
+        <p>
+          <strong>Prueba de la recta vertical:</strong> si trazamos cualquier recta vertical sobre
+          la gráfica y esta toca la curva en <u>más de un punto</u>, entonces la gráfica
+          <strong>no es función</strong> (solo es una relación). Si toda recta vertical la toca
+          como máximo una vez, entonces <strong>sí es función</strong>.
+        </p>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>Ejemplo</h2>
+      <div class="fila-graficas">
+        <div class="grafica-card">
+          <svg viewBox="-140 -140 280 280" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="ge1" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="-140" y="-140" width="280" height="280" fill="url(#ge1)"/>
+            <line x1="-140" y1="0" x2="140" y2="0" stroke="#888" stroke-width="1.5"/>
+            <line x1="0" y1="-140" x2="0" y2="140" stroke="#888" stroke-width="1.5"/>
+            <path d="M -100,-100 Q 0,130 100,-100" fill="none" stroke="#2d5f8a" stroke-width="3"/>
+            <line x1="40" y1="-140" x2="40" y2="140" stroke="#c0392b" stroke-width="2" stroke-dasharray="5,4"/>
+            <circle cx="40" cy="-3" r="4.5" fill="#c0392b"/>
+          </svg>
+          <p class="etiqueta">La recta vertical toca la curva en un solo punto → SÍ es función</p>
+        </div>
+        <div class="grafica-card">
+          <svg viewBox="-140 -140 280 280" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="ge2" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="-140" y="-140" width="280" height="280" fill="url(#ge2)"/>
+            <line x1="-140" y1="0" x2="140" y2="0" stroke="#888" stroke-width="1.5"/>
+            <line x1="0" y1="-140" x2="0" y2="140" stroke="#888" stroke-width="1.5"/>
+            <circle cx="0" cy="0" r="90" fill="none" stroke="#2d5f8a" stroke-width="3"/>
+            <line x1="30" y1="-140" x2="30" y2="140" stroke="#c0392b" stroke-width="2" stroke-dasharray="5,4"/>
+            <circle cx="30" cy="85" r="4.5" fill="#c0392b"/>
+            <circle cx="30" cy="-85" r="4.5" fill="#c0392b"/>
+          </svg>
+          <p class="etiqueta">La recta vertical toca la curva en DOS puntos → NO es función</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>Ejercicios resueltos</h2>
+      <p>Para cada gráfica, imagina rectas verticales recorriéndola de izquierda a derecha antes de abrir la solución.</p>
+
+      <div class="fila-graficas">
+        <div class="grafica-card">
+          <svg viewBox="-140 -140 280 280" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="gr1" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="-140" y="-140" width="280" height="280" fill="url(#gr1)"/>
+            <line x1="-140" y1="0" x2="140" y2="0" stroke="#888" stroke-width="1.5"/>
+            <line x1="0" y1="-140" x2="0" y2="140" stroke="#888" stroke-width="1.5"/>
+            <line x1="-100" y1="100" x2="100" y2="-100" stroke="#2d5f8a" stroke-width="3"/>
+          </svg>
+          <p class="etiqueta">1) ¿Es función?</p>
+          <details class="solucion">
+            <summary>Ver solución</summary>
+            <p>Sí es función. Cualquier recta vertical que tracemos corta esta línea recta en un solo punto.</p>
+          </details>
+        </div>
+
+        <div class="grafica-card">
+          <svg viewBox="-140 -140 280 280" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="gr2" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="-140" y="-140" width="280" height="280" fill="url(#gr2)"/>
+            <line x1="-140" y1="0" x2="140" y2="0" stroke="#888" stroke-width="1.5"/>
+            <line x1="0" y1="-140" x2="0" y2="140" stroke="#888" stroke-width="1.5"/>
+            <path d="M 80,-100 Q -110,0 80,100" fill="none" stroke="#2d5f8a" stroke-width="3"/>
+          </svg>
+          <p class="etiqueta">2) ¿Es función?</p>
+          <details class="solucion">
+            <summary>Ver solución</summary>
+            <p>No es función. Es una parábola "acostada": una recta vertical dentro de la curva
+              la corta en dos puntos (arriba y abajo).</p>
+          </details>
+        </div>
+
+        <div class="grafica-card">
+          <svg viewBox="-140 -140 280 280" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="gr3" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="-140" y="-140" width="280" height="280" fill="url(#gr3)"/>
+            <line x1="-140" y1="0" x2="140" y2="0" stroke="#888" stroke-width="1.5"/>
+            <line x1="0" y1="-140" x2="0" y2="140" stroke="#888" stroke-width="1.5"/>
+            <polyline points="-100,-100 0,100 100,-100" fill="none" stroke="#2d5f8a" stroke-width="3"/>
+          </svg>
+          <p class="etiqueta">3) ¿Es función?</p>
+          <details class="solucion">
+            <summary>Ver solución</summary>
+            <p>Sí es función (es una gráfica de valor absoluto, en forma de "V"). Cada recta
+              vertical toca la gráfica una sola vez.</p>
+          </details>
+        </div>
+
+        <div class="grafica-card">
+          <svg viewBox="-140 -140 280 280" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="gr4" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="-140" y="-140" width="280" height="280" fill="url(#gr4)"/>
+            <line x1="-140" y1="0" x2="140" y2="0" stroke="#888" stroke-width="1.5"/>
+            <line x1="0" y1="-140" x2="0" y2="140" stroke="#888" stroke-width="1.5"/>
+            <ellipse cx="0" cy="0" rx="100" ry="45" transform="rotate(35)" fill="none" stroke="#2d5f8a" stroke-width="3"/>
+          </svg>
+          <p class="etiqueta">4) ¿Es función?</p>
+          <details class="solucion">
+            <summary>Ver solución</summary>
+            <p>No es función. Es una elipse inclinada: hay rectas verticales que la cruzan en
+              dos puntos.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>Ejercicios extra (sin respuesta)</h2>
+      <p>Para cada gráfica, decide si es función o no, y justifica tu respuesta usando la prueba de la recta vertical.</p>
+
+      <div class="fila-graficas">
+        <div class="grafica-card">
+          <svg viewBox="-140 -140 280 280" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="gx1" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="-140" y="-140" width="280" height="280" fill="url(#gx1)"/>
+            <line x1="-140" y1="0" x2="140" y2="0" stroke="#888" stroke-width="1.5"/>
+            <line x1="0" y1="-140" x2="0" y2="140" stroke="#888" stroke-width="1.5"/>
+            <line x1="-140" y1="-60" x2="140" y2="-60" stroke="#2d5f8a" stroke-width="3"/>
+          </svg>
+          <p class="etiqueta">5) ¿Es función?</p>
+        </div>
+
+        <div class="grafica-card">
+          <svg viewBox="-140 -140 280 280" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <pattern id="gx2" width="20" height="20" patternUnits="userSpaceOnUse">
+                <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e3e3e3" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="-140" y="-140" width="280" height="280" fill="url(#gx2)"/>
+            <line x1="-140" y1="0" x2="140" y2="0" stroke="#888" stroke-width="1.5"/>
+            <line x1="0" y1="-140" x2="0" y2="140" stroke="#888" stroke-width="1.5"/>
+            <line x1="40" y1="-140" x2="40" y2="140" stroke="#2d5f8a" stroke-width="3"/>
+          </svg>
+          <p class="etiqueta">6) ¿Es función? (caso especial, piénsalo bien)</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Página en construcción &middot; AntonyMathClass
+  </footer>
+</body>
+</html>

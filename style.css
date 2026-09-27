@@ -1,0 +1,995 @@
+:root {
+  --color-fondo: #faf5ff;
+  --color-texto: #2d1b4e;
+  --color-acento: #7b2ff7;
+  --color-acento-2: #f72585;
+  --color-acento-suave: #f0e5fe;
+  --color-borde: #e5cffb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Quicksand", "Segoe UI", Helvetica, Arial, sans-serif;
+  background: var(--color-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+}
+
+h1, h2, h3 {
+  font-family: "Poppins", "Segoe UI", Helvetica, Arial, sans-serif;
+}
+
+header {
+  background: linear-gradient(135deg, var(--color-acento) 0%, var(--color-acento-2) 100%);
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+header p {
+  margin: 0.3rem 0 0;
+  opacity: 0.9;
+}
+
+nav.migas {
+  max-width: 900px;
+  margin: 1rem auto 0;
+  padding: 0 1rem;
+  font-size: 0.9rem;
+}
+
+nav.migas a {
+  color: var(--color-acento);
+  text-decoration: none;
+}
+
+nav.migas a:hover {
+  text-decoration: underline;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}
+
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.tarjeta {
+  display: block;
+  background: white;
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  padding: 1.2rem;
+  text-decoration: none;
+  color: var(--color-texto);
+  transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+
+.tarjeta:hover {
+  box-shadow: 0 4px 12px rgba(123, 47, 247, 0.18);
+  transform: translateY(-2px);
+}
+
+.tarjeta h2 {
+  margin: 0 0 0.4rem;
+  font-size: 1.1rem;
+  color: var(--color-acento);
+}
+
+.tarjeta p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Materia con contenido ya cargado: se resalta */
+.tarjeta.activa {
+  background: linear-gradient(135deg, var(--color-acento) 0%, var(--color-acento-2) 100%);
+  border-color: transparent;
+  box-shadow: 0 6px 16px rgba(123, 47, 247, 0.3);
+}
+
+.tarjeta.activa h2 {
+  color: #ffffff;
+}
+
+.tarjeta.activa p {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.tarjeta.activa:hover {
+  box-shadow: 0 8px 22px rgba(123, 47, 247, 0.4);
+}
+
+/* Materia sin contenido todavía: se ve más discreta */
+.tarjeta.proximamente {
+  background: #fbf9fd;
+  border-style: dashed;
+  opacity: 0.75;
+}
+
+.tarjeta.proximamente h2 {
+  color: #9b8aa8;
+}
+
+.tarjeta.proximamente:hover {
+  box-shadow: none;
+  transform: none;
+}
+
+.badge-proximamente {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.15rem 0.6rem;
+  background: var(--color-acento-suave);
+  color: var(--color-acento);
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.aviso {
+  background: var(--color-acento-suave);
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+}
+
+ul.lista-temas {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+
+ul.lista-temas li {
+  margin-bottom: 0.6rem;
+}
+
+ul.lista-temas a {
+  display: block;
+  background: white;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  text-decoration: none;
+  color: var(--color-texto);
+}
+
+ul.lista-temas a:hover {
+  background: var(--color-acento-suave);
+}
+
+footer {
+  text-align: center;
+  padding: 1.2rem 1rem;
+  margin-top: 2rem;
+  background: var(--color-acento-2);
+  color: #ffffff;
+  font-size: 0.85rem;
+}
+
+/* --- Páginas de tema (teoría, ejemplos, ejercicios) --- */
+
+h1.titulo-tema {
+  font-size: 1.4rem;
+  color: var(--color-acento);
+  margin: 1rem 0 0.5rem;
+}
+
+section.bloque {
+  margin-top: 1.8rem;
+}
+
+section.bloque h2 {
+  font-size: 1.15rem;
+  border-bottom: 2px solid var(--color-acento-suave);
+  padding-bottom: 0.3rem;
+}
+
+.teoria {
+  background: white;
+  border: 1px solid var(--color-borde);
+  border-left: 4px solid var(--color-acento);
+  border-radius: 6px;
+  padding: 1rem 1.2rem;
+}
+
+.caja-ejemplo, .caja-ejercicio {
+  background: white;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.caja-ejemplo h3, .caja-ejercicio p.enunciado {
+  margin-top: 0;
+}
+
+.enunciado {
+  font-weight: 600;
+}
+
+.pasos {
+  margin: 0.6rem 0 0;
+  padding-left: 1.2rem;
+}
+
+.pasos li {
+  margin-bottom: 0.4rem;
+}
+
+.resultado {
+  margin-top: 0.6rem;
+  background: var(--color-acento-suave);
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  display: inline-block;
+  font-weight: 600;
+}
+
+details.solucion {
+  margin-top: 0.7rem;
+}
+
+details.solucion summary {
+  cursor: pointer;
+  color: var(--color-acento);
+  font-weight: 600;
+}
+
+details.solucion .pasos {
+  margin-top: 0.6rem;
+}
+
+ol.lista-extra {
+  padding-left: 0;
+  counter-reset: ejercicio;
+}
+
+ol.lista-extra li {
+  background: white;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  padding: 0.7rem 1rem 0.7rem 3rem;
+  margin-bottom: 0.6rem;
+  list-style: none;
+  position: relative;
+  counter-increment: ejercicio;
+  min-height: 1.6rem;
+  display: flex;
+  align-items: center;
+}
+
+ol.lista-extra li::before {
+  content: counter(ejercicio);
+  position: absolute;
+  left: 0.7rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.7rem;
+  height: 1.7rem;
+  border-radius: 50%;
+  background: var(--color-acento-2);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.caja-ejercicio h3 {
+  display: inline-block;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  padding: 0.3rem 1.1rem;
+  margin: 0 0 1.1rem;
+  background: var(--color-acento-suave);
+  border-radius: 22px 6px 22px 6px;
+  color: var(--color-acento);
+}
+
+.subtitulo-ejemplo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: var(--color-acento);
+  margin: 0.2rem 0 0.4rem;
+}
+
+.cajas-productos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 620px) {
+  .cajas-productos {
+    grid-template-columns: 1fr;
+  }
+}
+
+.caja-ejercicio.compacta {
+  margin-bottom: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.caja-ejercicio.compacta h3 {
+  display: block;
+  font-size: 1rem;
+  text-transform: none;
+  letter-spacing: normal;
+  padding: 0.55rem 0.9rem;
+  margin: 0;
+  background: var(--color-acento);
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.caja-ejercicio.compacta .contenido-producto {
+  padding: 0.8rem 0.9rem;
+}
+
+.caja-ejercicio.compacta ol.lista-extra li {
+  background: none;
+  border: none;
+  padding: 0.12rem 0.3rem 0.12rem 1.7rem;
+  margin-bottom: 0.15rem;
+  font-size: 0.8rem;
+  min-height: 0;
+  break-inside: avoid;
+}
+
+.caja-ejercicio.compacta ol.lista-extra li::before {
+  width: 1.15rem;
+  height: 1.15rem;
+  font-size: 0.65rem;
+  left: 0.4rem;
+}
+
+@media print {
+  .caja-ejercicio {
+    break-inside: avoid;
+  }
+}
+
+/* --- Gráficas (prueba de la recta vertical, etc.) --- */
+
+.fila-graficas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0.8rem 0;
+}
+
+.grafica-card {
+  background: white;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 0.9rem;
+  text-align: center;
+  flex: 1 1 220px;
+  max-width: 260px;
+}
+
+.grafica-card svg {
+  max-width: 100%;
+  height: auto;
+}
+
+.grafica-card .etiqueta {
+  margin-top: 0.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* --- Operaciones verticales con decimales (suma, resta, multiplicación) --- */
+
+table.calc-vertical {
+  border-collapse: collapse;
+  margin: 0.8rem auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.3rem;
+}
+
+table.calc-vertical td {
+  width: 1.3em;
+  text-align: center;
+  vertical-align: bottom;
+  padding: 0.05rem 0;
+}
+
+table.calc-vertical tr.fila-marca td {
+  font-size: 0.65em;
+  font-weight: bold;
+  color: var(--color-acento-2);
+  vertical-align: top;
+  height: 1em;
+  padding: 0;
+}
+
+table.calc-vertical tr.fila-marca td.prestamo {
+  color: #c0392b;
+}
+
+table.calc-vertical tr.fila-operador td:first-child {
+  font-weight: bold;
+  color: var(--color-acento);
+}
+
+table.calc-vertical tr.linea td {
+  border-top: 2px solid var(--color-texto);
+  padding-top: 0.2rem;
+}
+
+/* --- División larga --- */
+
+.division-larga {
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre;
+  background: #faf7fd;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 1rem 1.2rem;
+  display: inline-block;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  color: var(--color-texto);
+}
+
+.fila-calculos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-top: 0.6rem;
+}
+
+.verificacion {
+  font-family: "Courier New", Courier, monospace;
+  white-space: pre;
+  font-size: 0.95rem;
+  color: #666;
+  background: white;
+  border: 1px dashed var(--color-borde);
+  border-radius: 8px;
+  padding: 0.7rem 1rem;
+  display: inline-block;
+}
+
+/* --- Operaciones con números enteros (positivos/negativos) --- */
+
+.operacion-entera {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0.6rem 0;
+}
+
+.operacion-entera .negativo {
+  color: #c0392b;
+  font-weight: bold;
+}
+
+.operacion-entera .positivo {
+  color: var(--color-acento);
+  font-weight: bold;
+}
+
+.regla {
+  font-size: 0.85rem;
+  color: #6b6072;
+  text-align: center;
+  margin-top: 0.3rem;
+}
+
+.caja-ejemplo p.enunciado, .caja-ejercicio p.enunciado {
+  font-size: 1.05rem;
+}
+
+/* --- Sección de respuestas desplegable --- */
+
+details.respuestas {
+  background: white;
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 0.9rem 1.1rem;
+  margin-top: 1.2rem;
+}
+
+details.respuestas summary {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--color-acento);
+  font-size: 1.1rem;
+}
+
+.respuestas-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-top: 0.8rem;
+}
+
+.respuestas-grid > div {
+  flex: 1 1 180px;
+}
+
+.respuestas-grid h4 {
+  margin: 0 0 0.4rem;
+  color: var(--color-acento-2);
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+}
+
+.respuestas-grid ol {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-size: 0.9rem;
+}
+
+.respuestas-grid li {
+  margin-bottom: 0.25rem;
+}
+
+/* --- Conversión de división con decimales (mover el punto) --- */
+
+.conversion-decimal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  margin: 0.6rem 0;
+  flex-wrap: wrap;
+}
+
+.paso-conversion {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.25rem;
+}
+
+.paso-conversion p {
+  margin: 0.1rem 0;
+}
+
+.flecha-conversion {
+  font-size: 1.6rem;
+  color: var(--color-acento);
+}
+
+.punto-mover {
+  color: var(--color-acento-2);
+  font-weight: bold;
+}
+
+.marca-mueve {
+  color: var(--color-acento-2);
+  font-size: 0.6em;
+}
+
+/* --- Tabla de reglas (signos, criterios, etc.) --- */
+
+table.tabla-reglas {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.6rem 0;
+  font-size: 0.9rem;
+}
+
+table.tabla-reglas th, table.tabla-reglas td {
+  border: 1px solid var(--color-borde);
+  padding: 0.5rem 0.6rem;
+  text-align: left;
+}
+
+table.tabla-reglas th {
+  background: var(--color-acento);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+table.tabla-reglas td.resultado-signo {
+  text-align: center;
+  font-weight: 700;
+}
+
+/* --- Regla de signos, formato de dos columnas (estilo apunte) --- */
+
+.titulo-regla-signos {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--color-acento);
+  margin: 0 0 0.6rem;
+}
+
+.regla-signos-columnas {
+  display: flex;
+  border: 1px solid var(--color-borde);
+  border-radius: 10px;
+  background: white;
+  overflow: hidden;
+  margin-bottom: 0.9rem;
+  font-size: 0.82rem;
+}
+
+.regla-signos-columnas > div {
+  flex: 1;
+  padding: 0.6rem 0.8rem;
+}
+
+.regla-signos-columnas > div:first-child {
+  border-right: 2px solid var(--color-texto);
+}
+
+.titulo-columna {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 0.1rem 0.7rem;
+  background: var(--color-acento-suave);
+  color: var(--color-acento);
+  border-radius: 12px 3px 12px 3px;
+  margin-bottom: 0.4rem;
+}
+
+.regla-signos-columnas p.regla-texto {
+  margin: 0.5rem 0 0.15rem;
+  font-size: 0.8rem;
+  color: #4a3e57;
+}
+
+.etiqueta-ejemplo {
+  color: var(--color-acento-2);
+  font-weight: 700;
+  font-style: italic;
+  font-size: 0.78rem;
+  margin: 0.15rem 0;
+}
+
+.tabla-signos-md {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin: 0.3rem 0 0.4rem;
+  font-family: "Courier New", monospace;
+  font-size: 0.8rem;
+}
+
+.ejemplo-compacto {
+  font-family: "Courier New", monospace;
+  font-size: 0.78rem;
+  line-height: 1.6;
+}
+
+/* --- Lista de ejemplo vertical (estilo apunte, uno debajo de otro) --- */
+
+.lista-ejemplo-vertical {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item-ejemplo {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+}
+
+.item-ejemplo .num-circulo {
+  width: 1.7rem;
+  height: 1.7rem;
+  min-width: 1.7rem;
+  border-radius: 50%;
+  background: var(--color-acento-2);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
+  margin-top: 0.1rem;
+}
+
+.item-ejemplo .contenido-item {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.05rem;
+}
+
+.item-ejemplo .paso-secundario {
+  color: #6b6072;
+  font-size: 0.95rem;
+  margin-top: 0.15rem;
+}
+
+/* --- Tema 2: Lectura y matemáticas (problemas con texto) --- */
+
+.enunciado-lectura {
+  font-size: 1.05rem;
+  margin-top: 0;
+  line-height: 1.8;
+}
+
+.num-problema {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  margin-right: 0.4rem;
+  border-radius: 50%;
+  background: var(--color-acento-2);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* Marcatexto: datos del problema y respuesta */
+mark.dato, mark.dato-2, mark.clave {
+  color: var(--color-texto);
+  padding: 0.05rem 0.35rem;
+  border-radius: 10px 4px 10px 4px;
+  font-weight: 600;
+}
+
+mark.dato {
+  background: var(--color-borde);
+}
+
+mark.dato-2 {
+  background: rgba(247, 37, 133, 0.18);
+}
+
+mark.clave {
+  background: rgba(247, 37, 133, 0.28);
+}
+
+.respuesta-lectura {
+  background: var(--color-acento-suave);
+  border-left: 4px solid var(--color-acento);
+  border-radius: 6px;
+  padding: 0.6rem 0.9rem;
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+
+/* Problemas con texto dentro de las cajas de Producto */
+.caja-ejercicio.compacta ol.lista-extra.lista-problemas li {
+  display: block;
+  font-size: 0.85rem;
+  margin-bottom: 0.55rem;
+}
+
+.caja-ejercicio.compacta ol.lista-extra.lista-problemas li::before {
+  top: 0.2rem;
+  transform: none;
+}
+
+/* --- Tema 3: Criterios de divisibilidad y Criba de Eratóstenes --- */
+
+.ejemplos-criterio {
+  margin: 0.4rem 0 0 2.1rem;
+  line-height: 1.9;
+}
+
+.criba {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 4px;
+  max-width: 480px;
+  margin: 0.5rem auto 1rem;
+}
+
+.criba button, .criba span {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--color-texto);
+  background: white;
+  border: 1px solid var(--color-borde);
+  border-radius: 6px;
+  padding: 0;
+}
+
+.criba button {
+  cursor: pointer;
+}
+
+.criba button:hover {
+  background: var(--color-acento-suave);
+}
+
+.criba .tachado {
+  color: #b9a9c9;
+  text-decoration: line-through;
+  text-decoration-color: var(--color-acento);
+  text-decoration-thickness: 2px;
+  background: #faf7fd;
+}
+
+.criba .primo {
+  background: var(--color-acento-2);
+  color: #ffffff;
+  border-color: var(--color-acento-2);
+  border-radius: 50%;
+}
+
+.boton {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background: var(--color-acento);
+  color: #ffffff;
+  border: none;
+  border-radius: 999px;
+  padding: 0.45rem 1.2rem;
+  cursor: pointer;
+}
+
+@media print {
+  .boton { display: none; }
+}
+
+/* Marcas pegadas a la última cifra (ej. 2[0], 1[2]) */
+.ejemplos-criterio mark {
+  padding: 0 0.12rem;
+  border-radius: 6px;
+}
+
+/* Tabla de descomposición en factores primos */
+table.tabla-factores {
+  border-collapse: collapse;
+  margin: 0.6rem auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+table.tabla-factores td {
+  padding: 0.1rem 0.7rem;
+  text-align: right;
+}
+
+table.tabla-factores td:nth-child(2) {
+  border-left: 2px solid var(--color-texto);
+  text-align: left;
+  color: var(--color-acento-2);
+  font-weight: bold;
+}
+
+table.tabla-factores td.porque {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.75rem;
+  color: #6b6072;
+  text-align: left;
+}
+
+/* --- Tema 4: tabla de MCD y mcm (varios números a la vez) --- */
+table.tabla-mcd {
+  border-collapse: collapse;
+  margin: 0.6rem auto;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.2rem;
+}
+
+table.tabla-mcd td {
+  padding: 0.1rem 0.55rem;
+  text-align: right;
+}
+
+table.tabla-mcd td.divisor {
+  border-left: 2px solid var(--color-texto);
+  text-align: center;
+  font-weight: bold;
+  color: var(--color-acento);
+}
+
+/* Primo que divide a todos: va encerrado en círculo (cuenta para el MCD) */
+table.tabla-mcd td.divisor.comun span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--color-acento-2);
+  color: #ffffff;
+}
+
+table.tabla-mcd td.porque {
+  font-family: "Quicksand", sans-serif;
+  font-size: 0.75rem;
+  color: #6b6072;
+  text-align: left;
+}
+
+/* Resultado del MCD / mcm debajo de la columna de primos */
+table.tabla-mcd td.divisor.total {
+  border-top: 2px solid var(--color-texto);
+  color: var(--color-acento-2);
+}
+
+.lista-primos {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.3rem;
+  color: var(--color-acento-2);
+  margin-top: 0.3rem;
+}
+
+/* Link al tema anterior (al final de la página) */
+.link-repaso {
+  margin-top: 2rem;
+  background: var(--color-acento-suave);
+  border: 1px solid var(--color-borde);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  text-align: center;
+}
+
+.link-repaso a {
+  color: var(--color-acento);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link-repaso a:hover {
+  text-decoration: underline;
+}
+
+/* --- Resaltado de "lo que se acaba de resolver" en un paso --- */
+
+.paso-resaltado {
+  background: var(--color-acento-suave);
+  color: var(--color-acento-2);
+  font-weight: 700;
+  padding: 0 0.25em;
+  border-radius: 4px;
+}
+
+/* --- Fracciones en dos renglones (numerador / línea / denominador) --- */
+
+.fraccion {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  margin: 0 0.15em;
+  line-height: 1.2;
+  font-size: 0.9em;
+}
+
+.fraccion .num,
+.fraccion .den {
+  padding: 0 0.2em;
+}
+
+.fraccion .num {
+  border-bottom: 1.5px solid currentColor;
+}

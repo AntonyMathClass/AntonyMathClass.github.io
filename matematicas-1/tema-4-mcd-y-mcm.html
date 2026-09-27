@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema 4. MCD y mcm - Matemáticas 1 - AntonyMathClass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <h1>Matemáticas 1</h1>
+    <p>AntonyMathClass</p>
+  </header>
+
+  <nav class="migas">
+    <a href="../index.html">Inicio</a> &rsaquo;
+    <a href="index.html">Matemáticas 1</a> &rsaquo;
+    Tema 4. Máximo común divisor y mínimo común múltiplo
+  </nav>
+
+  <main>
+    <h1 class="titulo-tema">Tema 4. Máximo común divisor y mínimo común múltiplo</h1>
+
+    <section class="bloque">
+      <h2>Máximo Común Divisor <mark class="clave">MCD</mark> y Mínimo común múltiplo <mark class="clave">mcm</mark></h2>
+      <div class="caja-ejemplo">
+        <div class="fila-graficas">
+          <div style="flex:1 1 240px; text-align:center;">
+            <p class="enunciado"><mark class="dato">MCD</mark> 72, 40, 36 = 4</p>
+            <table class="tabla-mcd">
+              <tr><td>72</td><td>40</td><td>36</td><td class="divisor">2</td></tr>
+              <tr><td>36</td><td>20</td><td>18</td><td class="divisor">2</td></tr>
+              <tr><td>18</td><td>10</td><td>9</td><td class="divisor total">4</td></tr>
+            </table>
+          </div>
+          <div style="flex:1 1 240px; text-align:center;">
+            <p class="enunciado"><mark class="dato">mcm</mark> 25, 30, 100 = 300</p>
+            <table class="tabla-mcd">
+              <tr><td>25</td><td>30</td><td>100</td><td class="divisor">5</td></tr>
+              <tr><td>5</td><td>6</td><td>20</td><td class="divisor">5</td></tr>
+              <tr><td>1</td><td>6</td><td>4</td><td class="divisor">2</td></tr>
+              <tr><td>1</td><td>3</td><td>2</td><td class="divisor">2</td></tr>
+              <tr><td>1</td><td>3</td><td>1</td><td class="divisor">3</td></tr>
+              <tr><td>1</td><td>1</td><td>1</td><td class="divisor total">300</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>Problemas</h2>
+
+      <div class="caja-ejemplo problema-lectura">
+        <p class="enunciado-lectura"><span class="num-problema">1</span>
+          Una maestra tiene <mark class="dato">48</mark> lápices y <mark class="dato">36</mark> borradores.
+          Quiere hacer paquetes iguales, la mayor cantidad posible, sin que le sobre nada.
+          ¿Cuántos paquetes puede hacer y qué lleva cada uno?</p>
+        <div class="fila-graficas">
+          <div style="flex:1 1 240px; text-align:center;">
+            <p class="enunciado"><mark class="dato">MCD</mark> 48, 36 = 12</p>
+            <table class="tabla-mcd">
+              <tr><td>48</td><td>36</td><td class="divisor">2</td></tr>
+              <tr><td>24</td><td>18</td><td class="divisor">2</td></tr>
+              <tr><td>12</td><td>9</td><td class="divisor">3</td></tr>
+              <tr><td>4</td><td>3</td><td class="divisor total">12</td></tr>
+            </table>
+          </div>
+        </div>
+        <p class="respuesta-lectura"><mark class="clave">12 paquetes</mark>, cada uno con 4 lápices y 3 borradores.</p>
+      </div>
+
+      <div class="caja-ejemplo problema-lectura">
+        <p class="enunciado-lectura"><span class="num-problema">2</span>
+          En una terminal, un autobús sale cada <mark class="dato">12</mark> minutos y otro cada
+          <mark class="dato">18</mark> minutos. Si salen juntos a las 7:00, ¿a qué hora vuelven a salir juntos?</p>
+        <div class="fila-graficas">
+          <div style="flex:1 1 240px; text-align:center;">
+            <p class="enunciado"><mark class="dato">mcm</mark> 12, 18 = 36</p>
+            <table class="tabla-mcd">
+              <tr><td>12</td><td>18</td><td class="divisor">2</td></tr>
+              <tr><td>6</td><td>9</td><td class="divisor">2</td></tr>
+              <tr><td>3</td><td>9</td><td class="divisor">3</td></tr>
+              <tr><td>1</td><td>3</td><td class="divisor">3</td></tr>
+              <tr><td>1</td><td>1</td><td class="divisor total">36</td></tr>
+            </table>
+          </div>
+        </div>
+        <p class="respuesta-lectura">36 minutos después: vuelven a salir juntos a las <mark class="clave">7:36</mark>.</p>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>Ejercicios</h2>
+
+      <div class="cajas-productos">
+        <div class="caja-ejercicio compacta">
+          <h3>Producto 1</h3>
+          <div class="contenido-producto">
+          <ol class="lista-extra lista-problemas">
+            <li>MCD 18, 24 =</li>
+            <li>MCD 60, 90, 150 =</li>
+            <li>mcm 8, 12 =</li>
+            <li>mcm 6, 10, 15 =</li>
+            <li>Se tienen dos listones de 30 cm y 45 cm. Se quieren cortar en trozos iguales, lo más largos posible, sin que sobre nada. ¿Cuánto mide cada trozo?</li>
+            <li>Una alarma suena cada 15 minutos y otra cada 20 minutos. Si sonaron juntas a las 8:00, ¿a qué hora vuelven a sonar juntas?</li>
+          </ol>
+        </div>
+        </div>
+
+        <div class="caja-ejercicio compacta">
+          <h3>Producto 2</h3>
+          <div class="contenido-producto">
+          <ol class="lista-extra lista-problemas">
+            <li>MCD 36, 54 =</li>
+            <li>MCD 40, 60, 100 =</li>
+            <li>mcm 9, 12 =</li>
+            <li>mcm 4, 6, 10 =</li>
+            <li>Se tienen 60 manzanas y 84 naranjas para hacer canastas iguales, la mayor cantidad posible, sin que sobre fruta. ¿Cuántas canastas se hacen y qué lleva cada una?</li>
+            <li>Ana va a la biblioteca cada 4 días y Luis cada 6 días. Si hoy coincidieron, ¿dentro de cuántos días vuelven a coincidir?</li>
+          </ol>
+        </div>
+        </div>
+
+        <div class="caja-ejercicio compacta">
+          <h3>Producto 3</h3>
+          <div class="contenido-producto">
+          <ol class="lista-extra lista-problemas">
+            <li>MCD 42, 56 =</li>
+            <li>MCD 30, 45, 75 =</li>
+            <li>mcm 10, 15 =</li>
+            <li>mcm 8, 12, 18 =</li>
+            <li>Un terreno rectangular mide 72 m por 48 m. Se quiere dividir en cuadros iguales, lo más grandes posible. ¿Cuánto mide el lado de cada cuadro?</li>
+            <li>Dos luces se encienden juntas. Una parpadea cada 8 segundos y la otra cada 10 segundos. ¿Dentro de cuántos segundos vuelven a encenderse juntas?</li>
+          </ol>
+        </div>
+        </div>
+
+        <div class="caja-ejercicio compacta">
+          <h3>Producto 4</h3>
+          <div class="contenido-producto">
+          <ol class="lista-extra lista-problemas">
+            <li>MCD 48, 80 =</li>
+            <li>MCD 24, 36, 60 =</li>
+            <li>mcm 12, 16 =</li>
+            <li>mcm 5, 6, 8 =</li>
+            <li>Hay 90 alumnos de primer semestre y 120 de segundo. Se quieren formar equipos del mismo tamaño, lo más grandes posible, sin mezclar semestres. ¿Cuántos alumnos tendrá cada equipo?</li>
+            <li>Un paciente toma una medicina cada 6 horas y otra cada 8 horas. Si las tomó juntas a las 6:00 a. m., ¿a qué hora vuelve a tomarlas juntas?</li>
+          </ol>
+        </div>
+        </div>
+      </div>
+
+      <details class="respuestas">
+        <summary>Respuestas</summary>
+        <div class="respuestas-grid">
+          <div>
+            <h4>Producto 1</h4>
+            <ol>
+              <li>6</li>
+              <li>30</li>
+              <li>24</li>
+              <li>30</li>
+              <li>MCD = 15: cada trozo mide 15 cm.</li>
+              <li>mcm = 60 minutos: a las 9:00.</li>
+            </ol>
+          </div>
+          <div>
+            <h4>Producto 2</h4>
+            <ol>
+              <li>18</li>
+              <li>20</li>
+              <li>36</li>
+              <li>60</li>
+              <li>MCD = 12: 12 canastas, cada una con 5 manzanas y 7 naranjas.</li>
+              <li>mcm = 12: dentro de 12 días.</li>
+            </ol>
+          </div>
+          <div>
+            <h4>Producto 3</h4>
+            <ol>
+              <li>14</li>
+              <li>15</li>
+              <li>30</li>
+              <li>72</li>
+              <li>MCD = 24: cada cuadro mide 24 m por lado.</li>
+              <li>mcm = 40: dentro de 40 segundos.</li>
+            </ol>
+          </div>
+          <div>
+            <h4>Producto 4</h4>
+            <ol>
+              <li>16</li>
+              <li>12</li>
+              <li>48</li>
+              <li>120</li>
+              <li>MCD = 30: equipos de 30 alumnos (3 de primero y 4 de segundo).</li>
+              <li>mcm = 24 horas: a las 6:00 a. m. del día siguiente.</li>
+            </ol>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <p class="link-repaso">Tema anterior:
+      <a href="tema-3-divisibilidad-y-primos.html">&larr; Tema 3. Divisibilidad y números primos</a></p>
+  </main>
+
+  <footer>
+    Página en construcción &middot; AntonyMathClass
+  </footer>
+</body>
+</html>
