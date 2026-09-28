@@ -376,5 +376,28 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
 - A petición de la maestra, ambos PDF (`Guia-trabajar-con-el-asistente.pdf` y
   `Guia-publicar-en-GitHub.pdf`) se movieron a la carpeta `~/Desktop/IEMS`, fuera del proyecto,
   para que no queden públicos en GitHub.
+- Se creó **Tema 8. Radicales** (`matematicas-1/tema-8-radicales.html`), enlazado desde el
+  índice, con link "Tema anterior" hacia el Tema 7. Con la foto de la maestra: caja "Regla de
+  radicales" (ⁿ√aᵐ = a^(m/n), notas de índice par/impar) y caja "Ejemplo" con sus 7 ejercicios,
+  pasos resaltados y tablas de factores a un lado (como en sus apuntes). Ejercicio 3 redactado
+  como "No existen raíces pares de números negativos"; ejercicio 5 con resultado 2² · 3¹ · 5¹.
+- 3 Productos de 7 ejercicios (uno de cada tipo del ejemplo), números nuevos de Claude,
+  verificados; respuestas en forma de potencia.
+- Nuevo componente en `style.css`: clase `.radical` (índice, signo √ y línea sobre el radicando;
+  variante `.radical.alto` para fracciones) y `.factores-lado`.
+- A petición de la maestra, el índice del radical se hizo más pequeño (etiqueta `<sup>`, 0.55em),
+  así se ve chiquito aunque el navegador no cargue los estilos.
+- Ejemplo 7, a petición de la maestra: el proceso ahora es ³√5 · ³√5² → ³√(5 · 5²) → ³√5³ → 5
+  (antes pasaba por ³√125); la tabla de factores ahora es la de 25 = 5².
+- Se agregó un **Producto 4** (7 ejercicios, mismos tipos, números nuevos verificados).
+- Ejercicio 6 (suma de radicales semejantes), en el ejemplo y en los 4 Productos: ahora son 3
+  términos combinando positivos y negativos (ejemplo: 4√2 − 9√2 + 3√2 = −2√2).
+- Producto 3, ejercicio 6, a petición de la maestra: 4√7 − 9√7 − 4√10 = −5√7 − 4√10 (incluye un
+  radical distinto que no se puede sumar con los otros).
+- Producto 4, ejercicio 6, a petición de la maestra: −6√6 + 4√11 + 10√6 + 5√11 = 4√6 + 9√11
+  (dos grupos de radicales semejantes; se usó √6 en vez de √8 para que no se pueda simplificar).
+- Ejercicio 7 de los Productos (multiplicación de radicales), a petición de la maestra: ahora cada
+  Producto usa un índice distinto: P1 √3 · √27 = 3² (índice 2), P2 ³√3 · ³√9 = 3 (índice 3),
+  P3 ⁴√8 · ⁴√32 = 2² (índice 4), P4 ⁵√9 · ⁵√27 = 3 (índice 5).
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->

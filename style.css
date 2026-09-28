@@ -993,3 +993,59 @@ table.tabla-mcd td.divisor.total {
 .fraccion .num {
   border-bottom: 1.5px solid currentColor;
 }
+
+/* --- Radicales: índice pequeño, signo √ y línea sobre el radicando --- */
+
+.radical {
+  display: inline-flex;
+  align-items: stretch;
+  vertical-align: middle;
+  margin: 0 0.1em;
+}
+
+.radical .indice {
+  font-size: 0.55em;
+  vertical-align: baseline;
+  line-height: 1;
+  align-self: flex-start;
+  margin-right: -0.35em;
+  position: relative;
+  top: -0.15em;
+}
+
+.radical .signo {
+  display: flex;
+  align-items: flex-end;
+  font-size: 1.15em;
+  line-height: 1;
+}
+
+.radical .radicando {
+  border-top: 1.5px solid currentColor;
+  padding: 0.05em 0.15em 0;
+  margin-top: 0.12em;
+}
+
+/* Radical con fracción adentro: el signo √ se estira hacia arriba */
+.radical.alto .signo {
+  transform: scaleY(2);
+  transform-origin: bottom;
+}
+
+.radical.alto .indice {
+  top: -0.2em;
+  margin-right: -0.25em;
+}
+
+/* Tablas de factores chiquitas junto a un ejemplo */
+.factores-lado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.factores-lado table.tabla-factores {
+  font-size: 0.95rem;
+  margin: 0.3rem 0;
+}
