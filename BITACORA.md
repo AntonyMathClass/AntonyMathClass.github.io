@@ -399,5 +399,35 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
 - Ejercicio 7 de los Productos (multiplicación de radicales), a petición de la maestra: ahora cada
   Producto usa un índice distinto: P1 √3 · √27 = 3² (índice 2), P2 ³√3 · ³√9 = 3 (índice 3),
   P3 ⁴√8 · ⁴√32 = 2² (índice 4), P4 ⁵√9 · ⁵√27 = 3 (índice 5).
+- Tema 8 subido por la maestra y verificado en línea.
+- Se creó **Tema 9. Operaciones con polinomios** (`matematicas-1/tema-9-operaciones-con-polinomios.html`;
+  título elegido por la maestra en vez de "Polinomios"), enlazado desde el índice. Caja "Ejemplo" con
+  sus 6 ejercicios (suma de términos semejantes, resta con paréntesis, multiplicación, división,
+  potencia y raíz de monomios) y pasos resaltados. Ejercicio 2 corregido con su permiso: el − antes
+  del paréntesis cambia también el +7 a −7, resultado −1a² + 2a − 2 (en la foto decía +12).
+- 4 Productos de 6 ejercicios (uno por tipo), diversificados: distintas letras, signos mezclados,
+  términos que se cancelan, potencias de coeficiente negativo, índices 3, 4 y 5. Verificados.
+- Nuevo en `style.css`: clases `.sub-1`, `.sub-2`, `.sub-3` (subrayado de colores para términos
+  semejantes, como en los apuntes; se usaron morado, fucsia y doble línea oscura para no salir de
+  la paleta).
+- Al final del Tema 9 se agregó un enlace "¿Dudas con los signos? Repasa la Regla de signos (Tema 5)"
+  que lleva directo a esa caja (se le puso `id="regla-de-signos"` en el Tema 5).
+- A petición de la maestra, se quitaron las explicaciones escritas del ejemplo del Tema 9 (solo quedan
+  los pasos matemáticos resaltados y las reglas (+)(−) = − y (−)(−) = + de sus apuntes), para que el
+  estudiante deduzca qué se hizo en cada paso.
+- Ejemplo 1 del Tema 9: el subrayado de términos semejantes se pasó al enunciado mismo (como en el
+  apunte) y se quitó el renglón repetido. Los subrayados ahora usan la etiqueta `<u>`, así se ven
+  subrayados aunque el navegador no cargue los estilos (con estilos, salen en colores).
+- Ejemplo 3 del Tema 9 cambiado por la maestra: (2x³y²z⁴)(−3xy³) = −6x⁴y⁵z⁴ (sin el + del 2 y con x sin
+  exponente en el segundo factor, para que el alumno deduzca que x = x¹).
+- Todo el Tema 9 se pasó al estilo de los libros (a petición de la maestra): sin + al inicio de un
+  término y sin exponente ni coeficiente 1 (x en vez de x¹, z en vez de 1z, −a² en vez de −1a²),
+  en ejemplo, Productos y Respuestas. En los pasos se dejan las operaciones como b^(1·2) o x^(3+1).
+  Los Temas 7 y 8 se dejan con exponente 1 (5¹, 3¹, etc.), como en los apuntes (decisión de la maestra).
+- Ejemplo 6 del Tema 9: la respuesta vuelve a ser x¹y³z⁶ (a petición de la maestra).
+- Respuestas de los Productos del Tema 9 (ejercicios 3 a 6, monomios): se agrega el exponente 1
+  (c¹, b¹, y¹, z¹). Los enunciados siguen al estilo de libro, sin ¹.
+- Ejercicio 3 de los Productos 3 y 4 del Tema 9: ahora es producto de tres monomios con coeficientes
+  pequeños: (−2m²n⁴p³)(−3m⁵n)(−4mp) = −24m⁸n⁵p⁴ y (−5a⁴b²c³)(3ab⁶c²)(2a²bc) = −30a⁷b⁹c⁶.
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->

@@ -1049,3 +1049,17 @@ table.tabla-mcd td.divisor.total {
   font-size: 0.95rem;
   margin: 0.3rem 0;
 }
+
+/* --- Subrayado de colores para marcar términos semejantes (Tema 9) --- */
+
+.sub-1,
+.sub-2,
+.sub-3 {
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 3px solid;
+}
+
+.sub-1 { border-color: var(--color-acento); }
+.sub-2 { border-color: var(--color-acento-2); }
+.sub-3 { border-color: var(--color-texto); border-bottom-style: double; }
