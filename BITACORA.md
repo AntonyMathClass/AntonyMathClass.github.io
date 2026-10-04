@@ -429,5 +429,48 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   (c¹, b¹, y¹, z¹). Los enunciados siguen al estilo de libro, sin ¹.
 - Ejercicio 3 de los Productos 3 y 4 del Tema 9: ahora es producto de tres monomios con coeficientes
   pequeños: (−2m²n⁴p³)(−3m⁵n)(−4mp) = −24m⁸n⁵p⁴ y (−5a⁴b²c³)(3ab⁶c²)(2a²bc) = −30a⁷b⁹c⁶.
+- Tema 9 subido por la maestra y verificado en línea (incluido el enlace a la Regla de signos).
+- Siguiente: **Tema 10. Ecuaciones**. La maestra aún no está conforme con su apunte; lo trabajamos
+  en la próxima sesión.
+
+## 2026-10-03
+
+- Nuevo **Tema 10. Plano cartesiano, área y perímetro** (Matemáticas 1), creado a partir de la foto
+  del apunte de la maestra: `matematicas-1/tema-10-plano-cartesiano-area-y-perimetro.html`, enlazado
+  en el índice. Por ahora tiene solo un ejemplo: rectángulo A(2,−1), B(7,−1), C(2,−8), D(7,−8), con
+  la gráfica dibujada en la página.
+- El apunte decía lado 8, área 40 y perímetro 26. Se corrigió (decisión de la maestra) porque de −1 a
+  −8 hay 7: área 5 × 7 = 35 y perímetro 7 + 7 + 5 + 5 = 24.
+- "Área = B × A" del apunte se escribió como "Área = base × altura", para no confundirlo con los
+  vértices A y B.
+- **El número 10 es provisional:** la maestra aún no decide qué número de tema le toca (antes se
+  había apuntado "Tema 10. Ecuaciones"). **Todavía no se sube a GitHub.**
+- Ejemplo 2 agregado: triángulo A(4,−2), B(−2,−2), C(1,5), con altura punteada. Área = (6 × 7)/2 = 21.
+  Correcciones aceptadas por la maestra: el perímetro del apunte sumaba la altura 7 (6 + 7 + n + m =
+  28.23); se dejó solo la suma de los lados, 6 + n + m ≈ 21.23. Además, √58 ≈ 7.616 (redondeado; el
+  apunte decía 7.615).
+- Ejemplo 3 agregado: circunferencia con centro C(6,4) y punto P(10,4), r = 4. Área = 3.1416 × 16
+  ≈ 50.27 (redondeado; el apunte decía 50.26) y perímetro = 3.1416(8) ≈ 25.13. Se añadió el renglón
+  "r = 10 − 6 = 4", que no venía en el apunte.
+- **Decisión de la maestra (opción 2):** el Tema 10 queda reservado para **Ecuaciones**, y este pasa a
+  ser el **Tema 11** (`tema-11-plano-cartesiano-area-y-perimetro.html`). No se sube hasta tener listo
+  Ecuaciones, para que no quede un hueco en la lista.
+- Cuando exista el Tema 10: agregarlo al índice antes del 11 y cambiar el enlace "Tema anterior" del
+  Tema 11 (por ahora apunta al Tema 9).
+- Nuevo **Tema 10. Ecuaciones** (`tema-10-ecuaciones.html`), a partir de la foto del apunte: 3 ejemplos
+  (términos semejantes en ambos lados; con paréntesis y distributiva; con signo menos antes del
+  paréntesis). Se corrigió el ejemplo 1 (decisión de la maestra): el apunte daba x = 10/3, pero
+  4 + 14 = 18, así que 3x = 18 y x = 6. Los ejemplos 2 (x = −11/7) y 3 (x = −4) estaban bien.
+- 4 Productos de 3 ejercicios (uno de cada tipo de ejemplo), con sus respuestas: algunas enteras,
+  otras negativas y otras en fracción. Todas se comprobaron sustituyendo x en ambos lados.
+- A petición de la maestra, en el Producto 3 se cambiaron de lugar los lados de las ecuaciones:
+  ej. 2 → 4x + 5(2x + 3) = 2(3x − 5) + 1 y ej. 3 → 8 − 2(x − 5) = 10x − (4x − 3). Las respuestas
+  no cambian (−3 y 15/8).
+- Ya enlazado en el índice (antes del 11), y el "Tema anterior" del Tema 11 ahora lleva al Tema 10.
+- Tema 11: se agregaron 4 Productos de 3 ejercicios (rectángulo, triángulo con la punta arriba del
+  centro de la base, circunferencia con centro y un punto), más sus respuestas (área y perímetro, con
+  π = 3.1416 y redondeo a 2 decimales). Algunos triángulos dan lados exactos (5 y 13) y otros con raíz
+  (√73, √52).
+- Pendiente: que la maestra revise los Temas 10 y 11 y los suba juntos.
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
