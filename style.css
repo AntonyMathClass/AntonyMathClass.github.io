@@ -1063,3 +1063,47 @@ table.tabla-mcd td.divisor.total {
 .sub-1 { border-color: var(--color-acento); }
 .sub-2 { border-color: var(--color-acento-2); }
 .sub-3 { border-color: var(--color-texto); border-bottom-style: double; }
+
+/* --- Tabla de valores x | y (Tema 12, gráfica de una ecuación) --- */
+
+table.tabla-xy {
+  border-collapse: collapse;
+  margin: 0.6rem 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.05rem;
+}
+
+table.tabla-xy th, table.tabla-xy td {
+  padding: 0.15rem 0.9rem;
+  text-align: center;
+}
+
+table.tabla-xy th {
+  border-bottom: 2px solid var(--color-texto);
+}
+
+table.tabla-xy th:first-child, table.tabla-xy td:first-child {
+  border-right: 2px solid var(--color-texto);
+  color: var(--color-acento-2);
+  font-weight: 700;
+}
+
+/* --- Ejemplo con los pasos a la izquierda y la gráfica grande a la derecha (Tema 12) --- */
+
+.ejemplo-dos-columnas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  flex: 1;
+}
+
+.ejemplo-dos-columnas > div:first-child {
+  flex: 1 1 260px;
+}
+
+.grafica-card.grafica-grande {
+  flex: 1 1 340px;
+  max-width: 480px;
+  margin: 0;
+}

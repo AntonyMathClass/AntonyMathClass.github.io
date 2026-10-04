@@ -471,6 +471,23 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   centro de la base, circunferencia con centro y un punto), más sus respuestas (área y perímetro, con
   π = 3.1416 y redondeo a 2 decimales). Algunos triángulos dan lados exactos (5 y 13) y otros con raíz
   (√73, √52).
-- Pendiente: que la maestra revise los Temas 10 y 11 y los suba juntos.
+- Temas 10 y 11 revisados, subidos por la maestra con GitHub Desktop y verificados en línea.
+- Nuevo **Tema 12. Gráfica de una ecuación lineal** (`tema-12-grafica-de-una-ecuacion-lineal.html`),
+  a partir de la foto del apunte (estaba correcto). Ejemplo 1: 9x − 3y + 12 = 0 → y = 3x + 4, la tabla
+  con x = 1, 2, 3 y la gráfica de la recta. Se escribió "y = 3x + 4" sin el + inicial (estilo de libro).
+  Nueva clase `table.tabla-xy` en `style.css` para la tabla de valores. Enlace de repaso al Tema 10.
+- Tema 12 (actualizado): a petición de la maestra se dejaron solo **2 Productos** de 3 ejercicios. Cada
+  Producto tiene pendientes positivas y negativas (3 y 3 en total). La maestra no tiene más ejemplos.
+- Tema 12 (versión anterior): 4 Productos de 3 ecuaciones (forma ax + by + c = 0), con respuestas (y despejada + puntos
+  para x = 1, 2, 3). Diversificados a petición de la maestra: pendientes positivas y negativas, y
+  coeficientes de x y de y con signos variados. Todas verificadas sustituyendo en la ecuación original.
+- Tema 12: a petición de la maestra, la gráfica del ejemplo se pasó al lado derecho (pasos y tabla a
+  la izquierda) y se hizo más grande (hasta 480 px). En celular se acomoda debajo. Nuevas clases en
+  `style.css`: `.ejemplo-dos-columnas` y `.grafica-card.grafica-grande`.
+- Tema 12: la gráfica se rehízo con **cuadritos iguales en x y en y** (antes 1 unidad en x medía más
+  que 1 unidad en y). Ahora cada número de los dos ejes está a la misma distancia, y se numeran todos
+  (x de −3 a 5, y de −2 a 14). Por eso la gráfica es más alta que ancha.
+  **Regla para gráficas futuras:** usar siempre la misma escala en los dos ejes.
+- Pendiente: que la maestra revise el Tema 12 y lo suba.
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
