@@ -557,4 +557,7 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   `.columna-operaciones`), así mide ≈ 816 px en lugar de ≈ 1015. Naturales ≈ 666 px. Contenido sin cambios.
   Con esto, **todos los temas de Matemáticas 1 caben en hoja carta** (cada caja en una hoja).
 
+- Página de inicio: la tarjeta de Matemáticas 2 pasó de "Próximamente" (gris) a activa (degradado morado-
+  fucsia), porque ya tiene su primer tema.
+
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
