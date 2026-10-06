@@ -488,6 +488,73 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   que 1 unidad en y). Ahora cada número de los dos ejes está a la misma distancia, y se numeran todos
   (x de −3 a 5, y de −2 a 14). Por eso la gráfica es más alta que ancha.
   **Regla para gráficas futuras:** usar siempre la misma escala en los dos ejes.
-- Pendiente: que la maestra revise el Tema 12 y lo suba.
+- Tema 12 revisado y subido por la maestra con GitHub Desktop.
+- La maestra no quiso un recordatorio a una hora fija (se borró la tarea programada). Prefiere que
+  Claude se lo recuerde al abrir la próxima sesión, porque la ventana de git sigue apareciendo.
+- Siguiente: Tema 13 (la maestra traerá el apunte).
+- Pendiente (pedido por la maestra para el 2026-10-04): quitar la ventana de macOS que pide instalar
+  las herramientas del comando git. La provocan los comandos `git` y `python3` que corre Claude
+  (Xcode Command Line Tools no está instalado). Claude ya no los usará.
+
+## 2026-10-05
+
+- **Resuelto:** la ventana de macOS que pedía instalar las herramientas de git ya no aparece. La
+  causa era que la app de Claude usaba el `git` de Apple (que no está instalado); se creó
+  `~/.zprofile` para que use primero el git que trae GitHub Desktop. Confirmado por la maestra.
+- Se empieza **Matemáticas 2**: falta que la maestra comparta el temario y el apunte del Tema 1.
+
+- Nuevo tema de Matemáticas 2: **Rectas paralelas, perpendiculares y oblicuas**
+  (`matematicas-2/rectas-paralelas-perpendiculares-y-oblicuas.html`). Va sin número porque aún no
+  hay temario. Se quitó el aviso de "temario no cargado" del índice de Matemáticas 2.
+- Contenido a partir de 2 fotos del apunte: Nota (las 3 reglas), Ejemplo 1 (paralelas, m = 2/3) y
+  Ejemplo 2 (perpendiculares, 3/2 y −2/3), cada uno con su gráfica de comprobación (misma escala en
+  x y en y, escalones de Δx y Δy). En el apunte del ejemplo 2 los nombres L1/L2 estaban invertidos
+  en el encabezado; se usó L₁: 6x − 4y + 8 = 0 y L₂: 2x + 3y + 9 = 0, como en el resto del apunte.
+- 4 Productos de 3 pares de rectas (en cada uno: una paralela, una perpendicular y una oblicua, en
+  distinto orden), con respuestas (m₁, m₂ y el tipo). Incluyen "trampas" de oblicuas: pendientes
+  3 y −3, y −5 y −1/5. Nuevas clases en `style.css`: `.dos-rectas` y `.conclusion-ejemplo`.
+
+- Rectas paralelas…: a petición de la maestra, en los Productos los alumnos también hacen la **gráfica
+  de comprobación** de las dos rectas. Las respuestas ahora incluyen b₁ y b₂ además de m₁ y m₂.
+
+- Rectas paralelas…: a petición de la maestra quedan solo **2 Productos** visibles. Los otros 2 pasaron
+  a una pestaña desplegable **"Productos extra"** (oculta hasta que se abre), con sus propias
+  respuestas, también ocultas. Nueva regla en `style.css`: `details.productos-extra`.
+
+- Rectas paralelas…: a petición de la maestra, cada ejemplo y su gráfica quedan en **una sola caja**.
+  El título "Ejemplo 1"/"Ejemplo 2" va afuera de la caja, arriba a la izquierda, y dentro la parte de
+  la gráfica solo dice "Comprobación". Instrucción de ejercicios acortada. Nuevas clases:
+  `.titulo-fuera` y `.titulo-comprobacion`.
+
+- **⚠️ INSTRUCCIÓN IMPORTANTE DE LA MAESTRA (para todos los temas):** cada ejemplo, con su desarrollo
+  y su gráfica de comprobación, va en **una sola caja** para que los alumnos puedan **imprimir cada
+  ejemplo en una hoja tamaño carta**. Al hacer ejemplos nuevos hay que cuidar que cada caja quepa
+  en una hoja carta (no hacerla demasiado alta). El título "Ejemplo N" va afuera de la caja, arriba
+  a la izquierda, con el mismo estilo morado de los títulos (`titulo-regla-signos titulo-fuera`).
+
+- Ajuste de impresión en `style.css` (`@media print`), para todo el sitio: hoja carta, sin encabezado,
+  migas, pie ni enlaces de repaso; las cajas de ejemplo y de Productos no se parten entre hojas; las
+  gráficas grandes se imprimen con máximo 380 px de alto. Medido: Ejemplo 1 ≈ 845 px y Ejemplo 2 ≈ 896 px
+  de alto, menos que los ≈ 943 px que caben en una hoja carta con márgenes de 1.5 cm.
+
+- Revisión de impresión en Matemáticas 1: los temas 2, 3, 4, 5, 6, 7, 9, 10 y 12 ya caben (cada caja en
+  una hoja carta). No cabían el 1, el 8 y el 11 (varios ejemplos en una sola caja muy alta).
+- **Tema 11** separado en 3 cajas (Ejemplo 1, 2 y 3, con el título afuera). Ahora miden ≈ 630–695 px,
+  y cada una cabe en una hoja carta. El contenido no cambió. Faltan los temas 8 y 1.
+
+- **Tema 8** separado para imprimir: la caja de la Regla queda igual; los 7 ejemplos (cortos) se
+  repartieron en 2 cajas, "Ejemplos 1 a 3" (≈ 650 px) y "Ejemplos 4 a 7" (≈ 550 px), con el título
+  afuera. No se hizo una caja por ejemplo porque son muy cortos y se gastaría mucho papel. Falta el Tema 1.
+
+- Tema 8 (ajuste pedido por la maestra): al imprimir, la Regla quedaba sola en una hoja. Ahora la Regla
+  y los ejemplos 1 a 3 van en la misma caja ("Regla y ejemplos 1 a 3", ≈ 755 px), y los ejemplos 1 y 2 van
+  uno al lado del otro. Nuevas clases: `.ejemplos-lado-a-lado` (en celular se acomodan uno debajo del
+  otro) y `.titulo-separado` (mismo estilo que `.titulo-comprobacion`).
+
+- **Tema 1** separado para imprimir: "Ejemplo 1. Con decimales" y "Ejemplo 2. Con números naturales",
+  cada uno en su caja con el título afuera (antes había un solo h2 "Ejemplo"). En el ejemplo con decimales,
+  suma, resta y multiplicación quedan en una columna a la izquierda y la división a la derecha (nueva clase
+  `.columna-operaciones`), así mide ≈ 816 px en lugar de ≈ 1015. Naturales ≈ 666 px. Contenido sin cambios.
+  Con esto, **todos los temas de Matemáticas 1 caben en hoja carta** (cada caja en una hoja).
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->

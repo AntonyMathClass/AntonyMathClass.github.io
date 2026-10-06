@@ -1107,3 +1107,99 @@ table.tabla-xy th:first-child, table.tabla-xy td:first-child {
   max-width: 480px;
   margin: 0;
 }
+
+/* --- Dos rectas lado a lado (L1 y L2) en un ejemplo --- */
+
+.dos-rectas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.dos-rectas > div {
+  flex: 1 1 240px;
+}
+
+.conclusion-ejemplo {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+/* --- Productos extra (ocultos en una pestaña desplegable) --- */
+
+details.productos-extra .cajas-productos {
+  margin-top: 1rem;
+}
+
+/* --- Título de ejemplo afuera de la caja (esquina izquierda) y separador de Comprobación --- */
+
+.titulo-fuera {
+  text-align: left;
+  margin: 0 0 0.4rem;
+}
+
+.titulo-comprobacion, .titulo-separado {
+  border-top: 1px dashed var(--color-borde);
+  padding-top: 1rem;
+  margin-top: 1.2rem;
+}
+
+/* --- Al imprimir: cada caja completa en su hoja, sin encabezado ni pie (ahorra tinta) --- */
+
+@media print {
+  @page {
+    size: letter;
+    margin: 1.5cm;
+  }
+
+  header, nav.migas, footer, .link-repaso {
+    display: none;
+  }
+
+  body {
+    background: white;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .caja-ejemplo, .caja-ejercicio, .bloque:has(.titulo-fuera) {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  .titulo-fuera {
+    break-after: avoid;
+    page-break-after: avoid;
+  }
+
+  /* Gráfica un poco más chica para que cada ejemplo quepa en una hoja carta */
+  .grafica-card.grafica-grande svg {
+    max-height: 380px;
+    width: auto;
+  }
+}
+
+/* --- Dos ejemplos uno al lado del otro (en celular se acomodan uno debajo del otro) --- */
+
+.ejemplos-lado-a-lado {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem 2rem;
+}
+
+.ejemplos-lado-a-lado > .item-ejemplo {
+  flex: 1 1 260px;
+}
+
+/* --- Varias operaciones apiladas en una columna (Tema 1: suma, resta y multiplicación a la izquierda, división a la derecha) --- */
+
+.columna-operaciones {
+  flex: 1 1 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.columna-operaciones > div {
+  flex: none !important;
+}
