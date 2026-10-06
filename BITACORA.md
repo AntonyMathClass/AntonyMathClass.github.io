@@ -560,4 +560,7 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
 - Página de inicio: la tarjeta de Matemáticas 2 pasó de "Próximamente" (gris) a activa (degradado morado-
   fucsia), porque ya tiene su primer tema.
 
+- Todo lo de hoy fue subido por la maestra con GitHub Desktop (2 commits) y verificado en línea: el tema
+  de Rectas paralelas, los títulos morados afuera de las cajas y la tarjeta activa de Matemáticas 2.
+
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
