@@ -563,4 +563,8 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
 - Todo lo de hoy fue subido por la maestra con GitHub Desktop (2 commits) y verificado en línea: el tema
   de Rectas paralelas, los títulos morados afuera de las cajas y la tarjeta activa de Matemáticas 2.
 
+- **Iconito de la pestaña** (antes salía gris): cuadro con degradado morado-fucsia y π en blanco.
+  Archivos `favicon.svg` y `favicon.png` (180 px, también para iPhone) en la raíz; se agregaron los
+  `<link rel="icon">` a las 22 páginas. Las páginas nuevas deben llevar esas mismas 3 líneas.
+
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->

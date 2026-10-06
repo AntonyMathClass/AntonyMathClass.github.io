@@ -76,6 +76,9 @@ en programación. Se publicará gratis con GitHub Pages.
 - **Tipografía:** Poppins (encabezados h1/h2/h3) y Quicksand (texto general), cargadas por
   Google Fonts. Cualquier página nueva debe incluir el mismo `<link>` de fuentes que las
   páginas existentes.
+- **Iconito de la pestaña:** `favicon.png` y `favicon.svg` (π blanco sobre degradado morado-fucsia).
+  Toda página nueva debe incluir, después del `<link>` de `style.css`, las mismas 3 líneas
+  (`rel="icon"` png, `rel="icon"` svg y `rel="apple-touch-icon"`) que las páginas existentes.
 - Estilo general: pastel/vibrante en morado y rosa, tarjetas blancas con bordes suaves,
   esquinas redondeadas, sin gradientes ni colores fuera de esta paleta salvo que la maestra
   lo pida.
