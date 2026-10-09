@@ -1210,3 +1210,19 @@ details.productos-extra .cajas-productos {
   column-gap: 0.8rem;
   margin: 0;
 }
+
+/* Exponentes en los Productos y Respuestas: más arriba y separados de la base (que 10⁰ no parezca 100) */
+ol.lista-extra sup:not(.indice),
+.respuestas sup:not(.indice) {
+  font-size: 0.75em;
+  vertical-align: baseline;
+  position: relative;
+  top: -0.6em;
+  line-height: 0;
+  margin-left: 0.05em;
+}
+
+/* En dos columnas cada ejercicio es texto normal (no flex), para que los exponentes <sup> sí suban */
+.caja-ejercicio.compacta ol.lista-extra.dos-columnas li {
+  display: block;
+}

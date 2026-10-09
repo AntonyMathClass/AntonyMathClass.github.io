@@ -590,6 +590,10 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   lado del número. Además, en el celular de la maestra no se veía el 4 de "⁻⁴". Solución: en el Tema 7
   TODOS los exponentes pasaron de caracteres especiales (², ⁻⁴…) a `<sup>` con números normales
   (p. ej. `7<sup>−4</sup>`), que se ven bien en cualquier celular. Preferir `<sup>` en temas nuevos.
+  Ojo: dentro de `ol.lista-extra li` (que es flex) el `<sup>` no sube y 10⁰ parecía "100"; en
+  `.dos-columnas` los `li` ahora son `display: block` y hay regla de tamaño/altura para `sup`.
+- **Mat 1, Tema 8 (Radicales):** mismo problema en el celular (2¹⁰, 3¹² desalineados): todos los exponentes
+  pasaron a `<sup>`. La regla de `sup` en Productos/Respuestas excluye `.indice` (índice del radical).
 
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
