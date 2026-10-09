@@ -1203,3 +1203,10 @@ details.productos-extra .cajas-productos {
 .columna-operaciones > div {
   flex: none !important;
 }
+
+/* Ejercicios de un Producto en dos columnas (1ª mitad a la izquierda, 2ª a la derecha) */
+.caja-ejercicio.compacta ol.lista-extra.dos-columnas {
+  columns: 2;
+  column-gap: 0.8rem;
+  margin: 0;
+}

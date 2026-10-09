@@ -577,6 +577,15 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
 - Tema 5, ejercicio 4 de los Productos (para diversificar): P2 −4(5 − 9) = +16 y P3 −7(−4 − 6) = +70
   (respuestas actualizadas). P1 y P4 se quedan como estaban, por decisión de la maestra.
 - Tema 5, ejercicio 7: P3 ahora −2(−6)² = −72 y P4 ahora −4(10)³ = −4000 (respuestas actualizadas).
+- **Mat 1, Tema 7 (Potencias):** en la primera caja se quitaron las reglas generales (aⁿ…) y quedan solo
+  los ejemplos numéricos, para que el estudiante deduzca la regla; título de la caja: "Potencias". Se
+  quitó la numeración de esa caja y de la de Ejemplo (alineado a la izquierda).
+  Además: todas las divisiones (÷) del tema pasaron a fracción (caja Potencias, Ejemplo y Productos 1–3);
+  signo + en los exponentes que cambian de lugar en la fracción (7⁺², 5⁺⁴, 3⁺⁴, 7⁺³, 7⁺⁴); nuevo ejemplo
+  de fracción con exponente negativo: (2/3)⁻² = (3/2)⁺² = 9/4.
+  Ejercicio nuevo en cada Producto (ahora es el 7; los demás se recorren): P1 (3/4)⁻² = 16/9,
+  P2 (2/5)⁻³ = 125/8, P3 (1/6)⁻² = 36 (respuestas agregadas).
+  Productos del Tema 7 en dos columnas (nueva clase `.dos-columnas` en `ol.lista-extra`, en style.css).
 
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
