@@ -586,6 +586,10 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   Ejercicio nuevo en cada Producto (ahora es el 7; los demás se recorren): P1 (3/4)⁻² = 16/9,
   P2 (2/5)⁻³ = 125/8, P3 (1/6)⁻² = 36 (respuestas agregadas).
   Productos del Tema 7 en dos columnas (nueva clase `.dos-columnas` en `ol.lista-extra`, en style.css).
+  El exponente cero estaba escrito con "º" (símbolo de ordinal, como en 1º) y en el celular salía al
+  lado del número. Además, en el celular de la maestra no se veía el 4 de "⁻⁴". Solución: en el Tema 7
+  TODOS los exponentes pasaron de caracteres especiales (², ⁻⁴…) a `<sup>` con números normales
+  (p. ej. `7<sup>−4</sup>`), que se ven bien en cualquier celular. Preferir `<sup>` en temas nuevos.
 
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
