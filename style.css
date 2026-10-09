@@ -1226,3 +1226,8 @@ ol.lista-extra sup:not(.indice),
 .caja-ejercicio.compacta ol.lista-extra.dos-columnas li {
   display: block;
 }
+
+/* Ejercicio de Producto con exponentes <sup>: texto normal (no flex) para que el exponente suba y no se pierdan espacios */
+.caja-ejercicio.compacta ol.lista-extra li:has(sup:not(.indice)) {
+  display: block;
+}

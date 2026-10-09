@@ -594,6 +594,16 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   `.dos-columnas` los `li` ahora son `display: block` y hay regla de tamaño/altura para `sup`.
 - **Mat 1, Tema 8 (Radicales):** mismo problema en el celular (2¹⁰, 3¹² desalineados): todos los exponentes
   pasaron a `<sup>`. La regla de `sup` en Productos/Respuestas excluye `.indice` (índice del radical).
+- **Mat 1, Tema 9 (Operaciones con polinomios):** el ejemplo ya no lleva numeración y se quitaron las
+  líneas de regla de signos "(+)(−) = −" y "(−)(−) = +" debajo de los ejemplos 3 y 4. Todos los
+  exponentes pasaron a `<sup>`. Nueva regla en style.css: los `li` de Productos que tienen `<sup>` son
+  `display: block` (`li:has(sup:not(.indice))`), para que el exponente suba y no se pierdan espacios.
+  Ejercicio 4 (división) de P2 y P4: se invirtieron los coeficientes para que el número solo se simplifique:
+  P2 6a⁵b⁹c⁴ / −48a²b³c⁴ = −a³b⁶/8; P4 8m⁹n⁵p⁷ / 72m⁴n⁵p³ = m⁵p⁴/9 (respuestas actualizadas).
+  Nuevo ejemplo (después del de división exacta): 5x⁶y⁴z³ / −20x²y³z³ = −x⁴y¹/4, con el paso 5/−20 = −1/4.
+  Radicales con número entero en el radicando: ejemplo ∛(8x³y⁹z¹⁸) = 2x¹y³z⁶ (paso ∛(2³x³…), sin la nota "8=2³" por decisión de la maestra);
+  ejercicio 6 de Productos: P1 ∛125… = 5a²b¹c⁴, P2 ⁴√16… = 2x²y¹z³, P3 ⁵√243… = 3a²b¹c³,
+  P4 ∛−64… = −4x³y⁵z¹ (respuestas actualizadas).
 
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
