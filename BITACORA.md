@@ -604,6 +604,10 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   Radicales con número entero en el radicando: ejemplo ∛(8x³y⁹z¹⁸) = 2x¹y³z⁶ (paso ∛(2³x³…), sin la nota "8=2³" por decisión de la maestra);
   ejercicio 6 de Productos: P1 ∛125… = 5a²b¹c⁴, P2 ⁴√16… = 2x²y¹z³, P3 ⁵√243… = 3a²b¹c³,
   P4 ∛−64… = −4x³y⁵z¹ (respuestas actualizadas).
+- **Mat 1, Tema 10 (Ecuaciones):** ejemplo centrado (clase `.centrado` en `.lista-ejemplo-vertical`, regla en
+  style.css) y sin numeración; así el primer renglón de los ejemplos 2 y 3 cabe completo en el celular.
+  Signo = alineado en la misma columna en todos los pasos (idea de balanza): cada renglón es
+  `.fila` con `.lado-izq` / `.igual` / `.lado-der` dentro de `.ecuacion-alineada` (grid de 3 columnas).
 
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->

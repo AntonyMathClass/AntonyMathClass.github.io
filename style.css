@@ -1231,3 +1231,34 @@ ol.lista-extra sup:not(.indice),
 .caja-ejercicio.compacta ol.lista-extra li:has(sup:not(.indice)) {
   display: block;
 }
+
+/* Ejemplo con los ejercicios centrados (cada renglón centrado) */
+.lista-ejemplo-vertical.centrado .item-ejemplo {
+  justify-content: center;
+  text-align: center;
+}
+
+/* Ecuaciones con el signo = siempre en la misma columna (como el centro de una balanza) */
+.ecuacion-alineada {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 0.4em;
+  row-gap: 0.2rem;
+  align-items: center;
+}
+
+.ecuacion-alineada .fila {
+  display: contents;
+}
+
+.ecuacion-alineada .lado-izq {
+  text-align: right;
+}
+
+.ecuacion-alineada .lado-der {
+  text-align: left;
+}
+
+.ecuacion-alineada .igual {
+  text-align: center;
+}
