@@ -574,6 +574,9 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   (se quitaron los `num-circulo`) y queda alineado a la izquierda (la maestra probó centrado y prefirió
   izquierda); así el primer ejercicio ya no se corta en el celular. Último ejercicio del ejemplo: el
   paso de abajo ahora es 3(−2)(−2) en vez de 3(+4).
+- Tema 5, ejercicio 4 de los Productos (para diversificar): P2 −4(5 − 9) = +16 y P3 −7(−4 − 6) = +70
+  (respuestas actualizadas). P1 y P4 se quedan como estaban, por decisión de la maestra.
+- Tema 5, ejercicio 7: P3 ahora −2(−6)² = −72 y P4 ahora −4(10)³ = −4000 (respuestas actualizadas).
 
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
