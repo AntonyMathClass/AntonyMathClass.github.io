@@ -567,4 +567,13 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   Archivos `favicon.svg` y `favicon.png` (180 px, también para iPhone) en la raíz; se agregaron los
   `<link rel="icon">` a las 22 páginas. Las páginas nuevas deben llevar esas mismas 3 líneas.
 
+## 2026-10-09
+
+- **Mat 1, Tema 5 (Operaciones con enteros):** todas las divisiones (ley de signos, ejemplo 6 y
+  Productos 1–4) pasaron de "a ÷ b" a fracción (`.fraccion`). El ejemplo ya no lleva numeración
+  (se quitaron los `num-circulo`) y queda alineado a la izquierda (la maestra probó centrado y prefirió
+  izquierda); así el primer ejercicio ya no se corta en el celular. Último ejercicio del ejemplo: el
+  paso de abajo ahora es 3(−2)(−2) en vez de 3(+4).
+
+
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
