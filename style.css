@@ -1262,3 +1262,89 @@ ol.lista-extra sup:not(.indice),
 .ecuacion-alineada .igual {
   text-align: center;
 }
+
+/* --- Tabla de representaciones de un racional (Mat 2, Representación de racionales) --- */
+
+/* En el celular la tabla no cabe: se desliza de lado sin mover la página */
+.tabla-deslizable {
+  overflow-x: auto;
+}
+
+table.tabla-representaciones {
+  min-width: 760px;
+  table-layout: fixed;
+}
+
+table.tabla-representaciones th:first-child,
+table.tabla-representaciones td:first-child {
+  width: 120px;
+}
+
+table.tabla-representaciones td:first-child {
+  font-weight: 700;
+  color: var(--color-acento);
+}
+
+table.tabla-representaciones th {
+  text-align: center;
+}
+
+table.tabla-representaciones td {
+  vertical-align: middle;
+  font-size: 1rem;
+  height: 4.5rem;
+}
+
+table.tabla-representaciones td:not(:first-child) {
+  white-space: nowrap;
+}
+
+svg.figura-barras, svg.recta-numerica {
+  width: 100%;
+  display: block;
+}
+
+/* Espacio para que el alumno escriba el número que falta */
+.espacio-blanco {
+  display: inline-block;
+  min-width: 1.6em;
+  height: 1.1em;
+}
+
+.fila-decimal {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.division-larga.division-chica {
+  padding: 0.3rem 0.6rem;
+  font-size: 0.85rem;
+  line-height: 1.25;
+}
+
+.nota-tabla {
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
+
+/* Productos con tabla: uno debajo del otro, a todo lo ancho */
+.caja-ejercicio.compacta.producto-tabla {
+  margin-top: 1rem;
+}
+
+/* Fracción sobre fracción (división, Mat 2 Tema 2): la raya principal más gruesa y larga */
+.fraccion.fraccion-doble > .num {
+  border-bottom-width: 2.5px;
+  padding: 0 0.3em 0.15em;
+}
+
+.fraccion.fraccion-doble > .den {
+  padding-top: 0.15em;
+}
+
+@media print {
+  table.tabla-representaciones {
+    min-width: 0;
+  }
+}

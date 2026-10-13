@@ -607,6 +607,8 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   Después: en el ejemplo se quitaron los pasos (renglones de proceso) de multiplicación, divisiones,
   potencia y raíz — ya están en el Tema 7 y la maestra quiere que lo apliquen de memoria. Los ejemplos 1
   y 2 (suma y resta) conservan sus pasos; también se dejaron "5/−20 = −1/4" y "∛(2³x³y⁹z¹⁸)".
+- Pendiente: la maestra revisará en su celular el exponente ⁴ del Tema 5 (Producto 1: (−2)⁴ y 3(−2)⁴);
+  si no se ve, pasar a `<sup>`. Próxima sesión: temas de Matemáticas 2.
 - **Mat 1, Tema 10 (Ecuaciones):** ejemplo centrado (clase `.centrado` en `.lista-ejemplo-vertical`, regla en
   style.css) y sin numeración; así el primer renglón de los ejemplos 2 y 3 cabe completo en el celular.
   Signo = alineado en la misma columna en todos los pasos (idea de balanza): cada renglón es
@@ -614,3 +616,55 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
 
 
 <!-- Nueva entrada: agrega fecha (AAAA-MM-DD) y una lista breve de qué se hizo, qué se decidió y qué falta. -->
+
+## 2026-10-12
+
+- Nuevo tema de Matemáticas 2: **Representación de racionales p/q, q ≠ 0**
+  (`matematicas-2/representacion-de-racionales.html`), a partir de una foto del apunte. Va sin número
+  (aún no hay temario) y quedó enlazado en el índice de Matemáticas 2.
+- Ejemplo con 14/10 en una tabla: figura (2 barras de 10 partes), fracción y fracción mixta (1 4/10),
+  fracción equivalente, decimal (1.4 con la división), porcentaje (140 %) y recta (0 a 2, en décimos).
+  Correcciones confirmadas por la maestra: el porcentaje es 140 % (en la foto decía 100 %), y la fracción
+  equivalente queda 7/5, 28/20, 56/40. En los ejercicios, la idea es que los alumnos escriban el número
+  que falta; en el ejemplo los números que faltaban van resaltados.
+- En el celular, la tabla se acomoda en bloques (nombre arriba y resultado abajo). Nueva clase
+  `table.tabla-representaciones` en style.css.
+- Pendiente: la maestra sugirió "agregar una columna más" (falta aclarar si es otro ejemplo, más números
+  en los Productos o una explicación) y decidir los Productos (en la foto, columnas con 10/3 y con la
+  recta en 3/5 para completar).
+- Rep. de racionales (pedido de la maestra): la tabla del ejemplo ahora tiene **3 columnas más** para
+  completar, como en el apunte: a) dato 10/3 y 3 1/3; b) dato la recta (0 a 2 en quintos, punto en 3/5);
+  c) dato solo la fracción equivalente 6/8, 3/__, __/16 (propuesta de Claude; respuestas 4 y 12).
+  Las demás celdas quedan en blanco para que escriban. En el celular la tabla se desliza de lado
+  (`.tabla-deslizable`); ya no se acomoda en bloques. La caja mide ≈ 680 px (cabe en hoja carta).
+- Rep. de racionales: **Producto 1 y 2** (propuestos por Claude, a petición de la maestra), con la misma
+  tabla de 4 columnas a)–d), cada una con un solo dato de inicio distinto, y sus respuestas (desplegables).
+  P1: a) figura 7/4, b) decimal 0.8, c) porcentaje 250 %, d) recta en cuartos con punto en 5/4.
+  P2: a) fracción mixta 2 1/4, b) equivalentes 9/6, 3/__, __/8, c) porcentaje 45 %, d) figura 2/5.
+  En las rectas de los Productos el punto no lleva etiqueta (el alumno lee la fracción). Cada caja de
+  Producto mide ≈ 580 px (cabe en hoja carta). Nueva clase: `.producto-tabla`.
+- **Inicia la numeración de Matemáticas 2:** Representación de racionales es el **Tema 1** (archivo
+  renombrado a `matematicas-2/tema-1-representacion-de-racionales.html`; título, migas y pestaña con
+  "Tema 1."). En el índice va primero. Rectas paralelas… sigue sin número hasta que la maestra diga cuál le toca.
+- Tema 1, Producto 2 a): ahora se da la fracción y la fracción mixta (9/4 , 2 1/4), como en el ejemplo;
+  antes la fracción estaba en blanco.
+- **Mat 2, Tema 2. Operaciones básicas con racionales** (`matematicas-2/tema-2-operaciones-basicas-con-racionales.html`),
+  título elegido por la maestra (el apunte decía "Operaciones con fracciones"). Ejemplo de la foto en una caja:
+  1) suma y resta −3/4 + 1/2 − 6/3 + 3/12 = −2, con tabla de mcm (4, 2, 3, 12 → 12) y amplificación resaltada;
+  2) (3/2)(4/5) = 12/10 = 6/5; 3) división como fracción sobre fracción (−5/3 entre 4/6) = −30/12 = −15/6 = −5/2
+  (nueva clase `.fraccion-doble`); 4) (2/5)<sup>2</sup> = 4/25; 5) ∛(−8/27) = ∛(−2³/3³) = −2¹/3¹ con tablas de
+  factores — la maestra pidió dejarlo así, sin "= −2/3". Caja ≈ 560 px en computadora, ≈ 770 en celular.
+  Enlazado en el índice como Tema 2. Pendiente: Productos 1 y 2.
+- Tema 2, ejemplo 1 (pedido de la maestra): primero se escribe la operación tal cual
+  (−3/4 + 1/2 − 6/3 + 3/12 =) y abajo el desarrollo (amplificación, etc.).
+- Tema 2, ejemplo 2: se quitó el "÷ 2"; queda (3/2)(4/5) = 12/10 = 6/5.
+- Tema 2: **4 Productos** visibles (pedido de la maestra; tema corto, sin gráfica), 5 ejercicios cada uno:
+  suma/resta de 4 fracciones, multiplicación, división (fracción sobre fracción), potencia y raíz
+  (cúbica, cuadrada, cúbica negativa y cuarta). Respuestas variadas (enteras 1, 4, −6; negativas; fracciones)
+  y verificadas. Instrucción: "Resuelve y simplifica el resultado." Cada caja de Producto ≈ 305 px
+  (cabe de sobra en hoja carta; las cajas no se parten al imprimir).
+- Tema 1, **Producto 1** reacomodado para parecerse al ejemplo (pedido de la maestra): a) figura 7/4;
+  b) fracción y fracción mixta 8/5 , 1 3/5; c) recta en cuartos con el punto en 5/4 (con etiqueta, como en
+  el ejemplo); d) fracción equivalente 10/4 , 5/__ , __/8 (faltan 2 y 20; mismo patrón del ejemplo). Respuestas actualizadas.
+  Producto 2 se queda con datos variados. La maestra vio "un error" en la fracción equivalente del
+  Producto 2 (9/6 , 3/__ , __/8): quería que siga el patrón del ejemplo (simplificar y luego ampliar al doble del denominador): ahora es 9/6 , 3/__ , __/12 (faltan 2 y 18).
