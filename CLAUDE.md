@@ -20,8 +20,12 @@ en programación. Se publicará gratis con GitHub Pages.
 
 ## Estructura del sitio
 
-- Una subcarpeta por materia: `matematicas-1` … `matematicas-5`, `optativa`, `interprepas`
-  (Matemáticas 1-5, Optativa, Problemas Interprepas).
+- Página principal con solo dos tarjetas: **Matemáticas** (abre `matematicas.html`, con `matematicas-1` … `matematicas-5`, `optativa`, `interprepas`)
+  y **Guía de Admisión a Licenciatura** (abre `admision-licenciatura/index.html`; una subcarpeta por materia: `matematicas`,
+  `fisica`, `biologia`, `historia-de-mexico`, `literatura`, `quimica`, `geografia`, `historia-universal`).
+- Una subcarpeta por materia: `matematicas-1` … `matematicas-5`, `optativa`, `interprepas`,
+  `admision-licenciatura`
+  (Matemáticas 1-5, Optativa, Problemas Interprepas, Admisión a Licenciatura).
 - Dentro de cada subcarpeta, un archivo `.html` por tema (uno por tema del temario), enlazado
   desde el `index.html` de esa materia (lista `ul.lista-temas`).
 - Los temarios de cada curso los sube la maestra; no inventar temas ni contenido matemático

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía práctica - Física - Guía de Admisión a Licenciatura - AntonyMathClass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../favicon.png">
+</head>
+<body>
+  <header>
+    <h1>Guía de Admisión a Licenciatura</h1>
+    <p>AntonyMathClass</p>
+  </header>
+
+  <nav class="migas">
+    <a href="../../index.html">Inicio</a> &rsaquo;
+    <a href="../index.html">Guía de Admisión</a> &rsaquo;
+    <a href="index.html">Física</a> &rsaquo;
+    Guía práctica
+  </nav>
+
+  <main>
+    <h1 class="titulo-tema">Física · Guía práctica</h1>
+    <p>Elige una opción en cada pregunta. Al elegir verás si acertaste y una explicación corta.</p>
+
+    <!-- Para agregar una pregunta: copia un bloque <section> completo, cambia el texto
+         y pon en data-correcta la letra de la respuesta correcta. -->
+
+    <section class="bloque pregunta-guia" data-correcta="D">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 1</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Se define como la rapidez media de un cuerpo.</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>Al vector que resulta de dividir la distancia en el tiempo transcurrido por la dirección del movimiento.</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>El vector que resulta de dividir la velocidad entre el tiempo transcurrido.</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>Es la velocidad entre el tiempo transcurrido.</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>Es la razón de dividir la distancia entre el tiempo transcurrido.</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p><strong>Rapidez media = distancia ÷ tiempo.</strong> La rapidez solo dice qué tan rápido se mueve el cuerpo, no hacia dónde, así que no es un vector (A y B). Velocidad ÷ tiempo da la aceleración, no la rapidez (B y C).</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="C">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 2</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">El desplazamiento de un ferrocarril se describe en la siguiente gráfica (posición x – tiempo t). A partir de los datos mostrados se puede deducir que el movimiento es rectilíneo con</p>
+
+        <div class="grafica-card">
+          <!-- Cuadritos cuadrados: cada uno = 0.1 s a lo ancho y 5 m a lo alto (40 unidades del dibujo) -->
+          <svg viewBox="-45 -238 270 275" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif" style="max-width: 320px;">
+            <defs>
+              <pattern id="cuadFerrocarril" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e5cffb" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="0" y="-200" width="160" height="200" fill="url(#cuadFerrocarril)"/>
+            <line x1="160" y1="0" x2="160" y2="-200" stroke="#e5cffb" stroke-width="1"/>
+            <line x1="0" y1="-200" x2="160" y2="-200" stroke="#e5cffb" stroke-width="1"/>
+            <!-- Ejes -->
+            <line x1="0" y1="0" x2="185" y2="0" stroke="#2d1b4e" stroke-width="1.5"/>
+            <line x1="0" y1="0" x2="0" y2="-215" stroke="#2d1b4e" stroke-width="1.5"/>
+            <polygon points="185,-4 193,0 185,4" fill="#2d1b4e"/>
+            <polygon points="-4,-215 0,-223 4,-215" fill="#2d1b4e"/>
+            <text x="190" y="22" font-size="14" font-weight="700" fill="#f72585">t (s)</text>
+            <text x="8" y="-220" font-size="14" font-weight="700" fill="#7b2ff7">x (m)</text>
+            <text x="-8" y="16" font-size="13" text-anchor="end" fill="#2d1b4e">0</text>
+            <!-- Números en el eje t -->
+            <text x="40" y="16" font-size="13" text-anchor="middle" fill="#2d1b4e">0.1</text>
+            <text x="80" y="16" font-size="13" text-anchor="middle" fill="#2d1b4e">0.2</text>
+            <text x="120" y="16" font-size="13" text-anchor="middle" fill="#2d1b4e">0.3</text>
+            <text x="160" y="16" font-size="13" text-anchor="middle" fill="#2d1b4e">0.4</text>
+            <!-- Números en el eje x -->
+            <text x="-6" y="-36" font-size="13" text-anchor="end" fill="#2d1b4e">5</text>
+            <text x="-6" y="-76" font-size="13" text-anchor="end" fill="#2d1b4e">10</text>
+            <text x="-6" y="-116" font-size="13" text-anchor="end" fill="#2d1b4e">15</text>
+            <text x="-6" y="-156" font-size="13" text-anchor="end" fill="#2d1b4e">20</text>
+            <text x="-6" y="-196" font-size="13" text-anchor="end" fill="#2d1b4e">25</text>
+            <!-- Gráfica: recta de (0 s, 0 m) a (0.4 s, 25 m) -->
+            <line x1="0" y1="0" x2="160" y2="-200" stroke="#7b2ff7" stroke-width="3"/>
+          </svg>
+        </div>
+
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>aceleración constante.</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>aceleración variable.</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>velocidad constante.</span></button>
+          <!-- Falta la opción D: venía cortada en la captura -->
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>La gráfica es una <strong>línea recta</strong>: cada 0.1 s el ferrocarril avanza lo mismo, así que su velocidad no cambia (25 m ÷ 0.4 s = 62.5 m/s todo el tiempo). Si la velocidad no cambia, no hay aceleración.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="B">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 3</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">En el movimiento circular uniforme, la aceleración centrípeta es igual a la velocidad tangencial al cuadrado entre el radio de la trayectoria. Si un auto de prueba viaja a razón de 25 m/s en una curva de 20 metros de radio, ¿cuál es el valor de su aceleración centrípeta?</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>62.5 m/s<sup>2</sup></span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>31.25 m/s<sup>2</sup></span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>5 m/s<sup>2</sup></span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>1.25 m/s<sup>2</sup></span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p><strong>a = v<sup>2</sup> ÷ r = 25<sup>2</sup> ÷ 20 = 625 ÷ 20 = 31.25 m/s<sup>2</sup>.</strong> Primero se eleva la velocidad al cuadrado y después se divide entre el radio. Si se olvida el cuadrado sale 25 ÷ 20 = 1.25 (D).</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="D">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 4</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Un tren sale de Guadalajara hacia Sonora a 45 km/h, al mismo tiempo otro tren sale de Sonora a Guadalajara a 60 km/h. Sabiendo que la distancia entre Guadalajara y Sonora es de 360 km, ¿en qué tiempo se van a encontrar?</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>2 hrs.</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>2.5 hrs.</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>3 hrs.</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>3.4 hrs.</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>Los trenes van uno hacia el otro, así que cada hora se acercan <strong>45 + 60 = 105 km</strong>. <strong>t = 360 ÷ 105 ≈ 3.4 h.</strong></p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="D">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 5</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Las aguas de un río llevan una velocidad de 8 m/s y una lancha se mueve a 2 m/s en la misma dirección, ¿cuál es la velocidad resultante sobre la lancha?</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>8 m/s</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>2 m/s</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>6 m/s</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>10 m/s</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>El río y la lancha van en la <strong>misma dirección</strong>, así que las velocidades se suman: <strong>8 + 2 = 10 m/s.</strong> Si fueran en direcciones contrarias se restarían (8 − 2 = 6, opción C).</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="A">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 6</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Estimando la aceleración de la gravedad igual a 9.8 m/s<sup>2</sup> y despreciando la fricción del aire, calcula el tiempo requerido para que una piedra lanzada directamente hacia arriba con una velocidad inicial de 39.2 m/s alcance su punto más alto.</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>4.0 s</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>8.0 s</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>9.8 s</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>39.2 s</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>En el punto más alto la piedra se detiene (v<sub>f</sub> = 0). Cada segundo pierde 9.8 m/s, así que <strong>t = 39.2 ÷ 9.8 = 4.0 s.</strong> Los 8.0 s (B) son lo que tarda en subir y volver a bajar.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="D">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 7</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Un auto arranca acelerando constantemente 18 m/s<sup>2</sup>; la velocidad del auto dos segundos después de iniciar su movimiento es de</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>9 m/s</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>18 m/s</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>32 m/s</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>36 m/s</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>"Arranca" quiere decir que empieza en reposo (v<sub>i</sub> = 0). Cada segundo gana 18 m/s, así que <strong>v<sub>f</sub> = 0 + 18 · 2 = 36 m/s.</strong> Si se divide 18 ÷ 2 sale 9 (A), que no es la fórmula.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="A">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 8</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Despreciando la fricción del aire, si un cuerpo se deja caer libremente</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>Su velocidad irá aumentando a razón de 9.8 m/s cada segundo hasta chocar con el suelo.</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>Su velocidad aumentaría y después de un rato caería a velocidad constante.</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>Su velocidad sería constante e igual a 9.8 m/s hasta llegar al suelo.</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>Su velocidad desaparece al ir en contra del viento.</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>Sin aire, la gravedad acelera al cuerpo todo el tiempo: <strong>g = 9.8 m/s<sup>2</sup></strong> quiere decir que gana 9.8 m/s cada segundo. La velocidad constante (B) solo pasaría si hubiera fricción del aire, y 9.8 no es la velocidad sino lo que aumenta cada segundo (C).</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="D">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 9</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">¿Cómo es la aceleración de un cuerpo en caída libre y despreciando la resistencia del aire?</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>No existe aceleración.</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>Aumenta conforme desciende el cuerpo.</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>Disminuye conforme asciende el cuerpo.</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>Permanece constante y es igual a la gravedad.</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>La única fuerza que actúa es la gravedad, así que la aceleración siempre es <strong>g = 9.8 m/s<sup>2</sup></strong>, al subir y al bajar. Lo que aumenta al caer es la <strong>velocidad</strong>, no la aceleración (B).</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="D">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 10</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">¿Qué representa la siguiente gráfica?</p>
+
+        <div class="grafica-card">
+          <!-- Gráfica velocidad–tiempo sin números (igual que la original): la velocidad baja en línea recta hasta 0 -->
+          <svg viewBox="-75 -215 280 250" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif" style="max-width: 300px;">
+            <!-- Ejes -->
+            <line x1="0" y1="0" x2="170" y2="0" stroke="#2d1b4e" stroke-width="1.5"/>
+            <line x1="0" y1="0" x2="0" y2="-190" stroke="#2d1b4e" stroke-width="1.5"/>
+            <polygon points="170,-4 178,0 170,4" fill="#2d1b4e"/>
+            <polygon points="-4,-190 0,-198 4,-190" fill="#2d1b4e"/>
+            <text x="175" y="24" font-size="14" font-weight="700" fill="#f72585" text-anchor="end">t (s)</text>
+            <text x="-8" y="-180" font-size="14" font-weight="700" fill="#7b2ff7" text-anchor="end">v (m/s)</text>
+            <!-- Gráfica: recta que baja hasta tocar el eje t -->
+            <line x1="0" y1="-160" x2="110" y2="0" stroke="#7b2ff7" stroke-width="3"/>
+          </svg>
+        </div>
+
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>La caída libre de un cuerpo desde el reposo.</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>Un lanzamiento vertical hacia abajo.</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>Un movimiento con aceleración positiva.</span></button>
+          <!-- La opción D venía cortada en la captura; la redactó Claude a petición de la maestra -->
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>Un lanzamiento vertical hacia arriba hasta que el cuerpo se detiene.</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>La línea <strong>baja</strong>: el cuerpo empieza con velocidad y la va perdiendo hasta llegar a 0, así que su aceleración es <strong>negativa</strong> (no positiva, C). Eso pasa cuando algo se lanza hacia arriba y sube hasta su punto más alto. En la caída libre y en el lanzamiento hacia abajo (A y B) la velocidad aumenta, y la línea subiría.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="A">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 11</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Un proyectil se dispara con una velocidad de 80 m/s y forma un ángulo de 30° con la horizontal, ¿cuál es la altura máxima que alcanza? (considerando g = 10 m/s<sup>2</sup>)</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>80 m</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>320 m</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>800 m</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>3200 m</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>Para la altura solo cuenta la velocidad hacia arriba: <strong>80 · sen 30° = 80 · 0.5 = 40 m/s</strong>. Luego <strong>h = 40<sup>2</sup> ÷ (2 · 10) = 1600 ÷ 20 = 80 m.</strong> Si se usan los 80 m/s completos sale 320 m (B).</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="C">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 12</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Desde lo alto de una torre de 6.05 m se deja caer un objeto, ¿cuál es la velocidad con la que llega al suelo? (considera g = 10 m/s<sup>2</sup>)</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>121 m/s</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>60.5 m/s</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>11 m/s</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>6.05 m/s</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>"Se deja caer" quiere decir que empieza en reposo (v<sub>i</sub> = 0). <strong>v<sub>f</sub><sup>2</sup> = 2 · g · h = 2 · 10 · 6.05 = 121</strong>, así que <strong>v<sub>f</sub> = √121 = 11 m/s.</strong> Si se olvida sacar la raíz queda 121 (A).</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Página en construcción &middot; AntonyMathClass
+  </footer>
+
+  <script>
+    // Al elegir una opción: marca la correcta, marca la elegida si es incorrecta y muestra la explicación.
+    document.querySelectorAll('.pregunta-guia').forEach(function (pregunta) {
+      var correcta = pregunta.dataset.correcta;
+      var opciones = pregunta.querySelectorAll('.opcion');
+      var retro = pregunta.querySelector('.retro');
+      var veredicto = pregunta.querySelector('.veredicto');
+
+      opciones.forEach(function (opcion) {
+        opcion.addEventListener('click', function () {
+          var acerto = opcion.dataset.letra === correcta;
+          opciones.forEach(function (o) {
+            o.disabled = true;
+            if (o.dataset.letra === correcta) o.classList.add('correcta');
+          });
+          if (!acerto) opcion.classList.add('incorrecta');
+          veredicto.textContent = acerto ? '✓ ¡Correcto!' : '✗ Incorrecto. La respuesta correcta es la ' + correcta + '.';
+          veredicto.className = 'veredicto ' + (acerto ? 'bien' : 'mal');
+          retro.hidden = false;
+        });
+      });
+
+      pregunta.querySelector('.reintentar').addEventListener('click', function () {
+        opciones.forEach(function (o) {
+          o.disabled = false;
+          o.classList.remove('correcta', 'incorrecta');
+        });
+        retro.hidden = true;
+      });
+    });
+  </script>
+</body>
+</html>

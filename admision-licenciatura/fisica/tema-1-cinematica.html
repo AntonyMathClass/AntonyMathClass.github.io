@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema 1. Cinemática - Física - Guía de Admisión a Licenciatura - AntonyMathClass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../favicon.png">
+</head>
+<body>
+  <header>
+    <h1>Guía de Admisión a Licenciatura</h1>
+    <p>AntonyMathClass</p>
+  </header>
+
+  <nav class="migas">
+    <a href="../../index.html">Inicio</a> &rsaquo;
+    <a href="../index.html">Guía de Admisión</a> &rsaquo;
+    <a href="index.html">Física</a> &rsaquo;
+    Tema 1. Cinemática
+  </nav>
+
+  <main>
+    <h1 class="titulo-tema">Física · Tema 1. Cinemática</h1>
+    <p>Guíate con los ejemplos y luego resuelve los ejercicios de cada Producto.</p>
+
+    <section class="bloque">
+      <p class="titulo-regla-signos titulo-fuera">Ejemplo 1</p>
+      <div class="caja-ejemplo">
+        <p>Del movimiento de un coche se obtuvo la siguiente gráfica de distancia recorrida (d) en función del tiempo empleado (t). Indica las secciones donde el movimiento es uniforme, acelerado o en reposo.</p>
+
+        <div class="grafica-card">
+          <svg viewBox="-30 -185 300 220" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif" style="max-width: 360px;">
+            <!-- Ejes -->
+            <line x1="0" y1="0" x2="260" y2="0" stroke="#2d1b4e" stroke-width="1.5"/>
+            <line x1="0" y1="0" x2="0" y2="-175" stroke="#2d1b4e" stroke-width="1.5"/>
+            <polygon points="260,-4 268,0 260,4" fill="#2d1b4e"/>
+            <polygon points="-4,-175 0,-183 4,-175" fill="#2d1b4e"/>
+            <text x="262" y="20" font-size="16" font-weight="700" fill="#f72585">t</text>
+            <text x="-20" y="-165" font-size="16" font-weight="700" fill="#7b2ff7">d</text>
+            <text x="-14" y="16" font-size="13" fill="#2d1b4e">0</text>
+            <!-- Líneas punteadas que separan las secciones -->
+            <line x1="60" y1="0" x2="60" y2="-75" stroke="#2d1b4e" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="120" y1="0" x2="120" y2="-105" stroke="#2d1b4e" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="180" y1="0" x2="180" y2="-150" stroke="#2d1b4e" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="240" y1="0" x2="240" y2="-150" stroke="#2d1b4e" stroke-width="1" stroke-dasharray="4 4"/>
+            <!-- Nombres de las secciones -->
+            <text x="30" y="22" font-size="15" font-weight="700" text-anchor="middle" fill="#2d1b4e">I</text>
+            <text x="90" y="22" font-size="15" font-weight="700" text-anchor="middle" fill="#2d1b4e">II</text>
+            <text x="150" y="22" font-size="15" font-weight="700" text-anchor="middle" fill="#2d1b4e">III</text>
+            <text x="210" y="22" font-size="15" font-weight="700" text-anchor="middle" fill="#2d1b4e">IV</text>
+            <!-- Gráfica: I curva que se empina, II recta, III curva que se aplana, IV horizontal -->
+            <path d="M 0 -5 Q 45 -12 60 -75 L 120 -105 C 140 -135 160 -150 180 -150 L 240 -150" fill="none" stroke="#7b2ff7" stroke-width="3"/>
+          </svg>
+        </div>
+
+        <p><strong>Cómo se lee:</strong> la inclinación de la gráfica es la velocidad del coche.</p>
+        <ul>
+          <li><strong>Línea recta inclinada:</strong> la velocidad no cambia → movimiento <strong>uniforme</strong>.</li>
+          <li><strong>Curva:</strong> la velocidad cambia → movimiento <strong>acelerado</strong> (si se empina, va más rápido; si se aplana, va frenando).</li>
+          <li><strong>Línea horizontal:</strong> la distancia no aumenta → <strong>reposo</strong>.</li>
+        </ul>
+
+        <div class="tabla-deslizable">
+        <table class="tabla-reglas">
+          <tr><th>Sección</th><th>Forma</th><th>Movimiento</th></tr>
+          <tr><td>I</td><td>Curva que se empina</td><td>Acelerado</td></tr>
+          <tr><td>II</td><td>Recta inclinada</td><td>Uniforme</td></tr>
+          <tr><td>III</td><td>Curva que se aplana</td><td>Acelerado (frenando)</td></tr>
+          <tr><td>IV</td><td>Recta horizontal</td><td>Reposo</td></tr>
+        </table>
+        </div>
+
+        <p><strong>Respuesta:</strong> uniforme: II; acelerado: I y III; reposo: IV.</p>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <p class="titulo-regla-signos titulo-fuera">Ejemplo 2</p>
+      <div class="caja-ejemplo">
+        <p>Un patinador describe un desplazamiento d con respecto del tiempo t, como se muestra en la gráfica. ¿Cuál es la velocidad media del patinador en todo su recorrido?</p>
+
+        <div class="grafica-card">
+          <!-- Misma escala en los dos ejes: cada cuadrito = 1 s y 1 m (12 unidades del dibujo) -->
+          <svg viewBox="-45 -225 275 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif" style="max-width: 360px;">
+            <defs>
+              <pattern id="cuadPatinador" width="12" height="12" patternUnits="userSpaceOnUse">
+                <path d="M 12 0 L 0 0 0 12" fill="none" stroke="#e5cffb" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="0" y="-204" width="204" height="204" fill="url(#cuadPatinador)"/>
+            <!-- Ejes -->
+            <line x1="0" y1="0" x2="210" y2="0" stroke="#2d1b4e" stroke-width="1.5"/>
+            <line x1="0" y1="0" x2="0" y2="-210" stroke="#2d1b4e" stroke-width="1.5"/>
+            <polygon points="210,-4 218,0 210,4" fill="#2d1b4e"/>
+            <polygon points="-4,-210 0,-218 4,-210" fill="#2d1b4e"/>
+            <text x="200" y="22" font-size="13" font-weight="700" fill="#f72585">t (s)</text>
+            <text x="8" y="-212" font-size="13" font-weight="700" fill="#7b2ff7">d (m)</text>
+            <text x="-8" y="16" font-size="11" text-anchor="end" fill="#2d1b4e">0</text>
+            <!-- Números en el eje t -->
+            <line x1="60" y1="-3" x2="60" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="60" y="16" font-size="11" text-anchor="middle" fill="#2d1b4e">5</text>
+            <line x1="144" y1="-3" x2="144" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="144" y="16" font-size="11" text-anchor="middle" fill="#2d1b4e">12</text>
+            <line x1="180" y1="-3" x2="180" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="180" y="16" font-size="11" text-anchor="middle" fill="#2d1b4e">15</text>
+            <!-- Números en el eje d -->
+            <line x1="-3" y1="-96" x2="3" y2="-96" stroke="#2d1b4e" stroke-width="1.2"/><text x="-6" y="-92" font-size="11" text-anchor="end" fill="#2d1b4e">8</text>
+            <line x1="-3" y1="-192" x2="3" y2="-192" stroke="#2d1b4e" stroke-width="1.2"/><text x="-6" y="-188" font-size="11" text-anchor="end" fill="#2d1b4e">16</text>
+            <!-- Líneas punteadas -->
+            <line x1="60" y1="0" x2="60" y2="-96" stroke="#2d1b4e" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="144" y1="0" x2="144" y2="-96" stroke="#2d1b4e" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="180" y1="0" x2="180" y2="-192" stroke="#2d1b4e" stroke-width="1" stroke-dasharray="4 4"/>
+            <line x1="0" y1="-192" x2="180" y2="-192" stroke="#2d1b4e" stroke-width="1" stroke-dasharray="4 4"/>
+            <!-- Gráfica: (0, 0) → (5, 8) → (12, 8) → (15, 16) -->
+            <polyline points="0,0 60,-96 144,-96 180,-192" fill="none" stroke="#7b2ff7" stroke-width="3"/>
+          </svg>
+        </div>
+
+        <p><strong>Velocidad media = distancia total ÷ tiempo total</strong></p>
+        <ol>
+          <li>Distancia total: empieza en 0 m y termina en 16 m → <strong>16 m</strong>.</li>
+          <li>Tiempo total: empieza en 0 s y termina en 15 s → <strong>15 s</strong> (el tiempo en reposo también cuenta).</li>
+          <li>16 ÷ 15 = 1.066… ≈ <strong>1.07 m/s</strong></li>
+        </ol>
+
+        <div class="tabla-deslizable">
+        <table class="tabla-reglas">
+          <tr><th>Tramo</th><th>Qué pasa</th><th>Velocidad</th></tr>
+          <tr><td>0 a 5 s</td><td>Avanza de 0 a 8 m</td><td>8 ÷ 5 = 1.6 m/s</td></tr>
+          <tr><td>5 a 12 s</td><td>Se queda en 8 m (reposo)</td><td>0 m/s</td></tr>
+          <tr><td>12 a 15 s</td><td>Avanza de 8 a 16 m</td><td>8 ÷ 3 ≈ 2.67 m/s</td></tr>
+        </table>
+        </div>
+
+        <p><strong>Cuidado:</strong> la velocidad media <strong>no</strong> es el promedio de las tres velocidades, porque cada tramo dura un tiempo diferente.</p>
+
+        <p><strong>Respuesta:</strong> 1.07 m/s</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Página en construcción &middot; AntonyMathClass
+  </footer>
+</body>
+</html>

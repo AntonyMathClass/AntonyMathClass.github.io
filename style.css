@@ -176,6 +176,20 @@ ul.lista-temas a:hover {
   background: var(--color-acento-suave);
 }
 
+/* Tema del temario que todavía no tiene página */
+ul.lista-temas li.tema-pendiente {
+  border: 1px dashed var(--color-borde);
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  color: #8a7a9e;
+}
+
+ul.lista-temas li.tema-pendiente span {
+  font-size: 0.8rem;
+  margin-left: 0.4rem;
+  color: var(--color-acento);
+}
+
 footer {
   text-align: center;
   padding: 1.2rem 1rem;
@@ -1347,4 +1361,110 @@ svg.figura-barras, svg.recta-numerica {
   table.tabla-representaciones {
     min-width: 0;
   }
+}
+
+/* Guía práctica (opción múltiple): opciones A–D que se pueden elegir */
+.opciones {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-top: 0.8rem;
+}
+
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  width: 100%;
+  text-align: left;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  color: var(--color-texto);
+  background: white;
+  border: 2px solid var(--color-borde);
+  border-radius: 10px;
+  padding: 0.6rem 0.9rem;
+  cursor: pointer;
+}
+
+.opcion:hover:not(:disabled) {
+  border-color: var(--color-acento);
+  background: var(--color-fondo);
+}
+
+.opcion:disabled {
+  cursor: default;
+  opacity: 1;
+}
+
+.opcion .letra {
+  flex: none;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--color-acento);
+  background: var(--color-acento-suave);
+  border-radius: 8px;
+}
+
+.opcion.correcta {
+  border-color: var(--color-acento);
+  background: var(--color-acento-suave);
+}
+
+.opcion.correcta .letra {
+  color: white;
+  background: var(--color-acento);
+}
+
+.opcion.incorrecta {
+  border-color: var(--color-acento-2);
+  background: #fde8f1;
+}
+
+.opcion.incorrecta .letra {
+  color: white;
+  background: var(--color-acento-2);
+}
+
+.retro {
+  margin-top: 0.9rem;
+  border-top: 2px solid var(--color-acento-suave);
+  padding-top: 0.6rem;
+}
+
+.veredicto {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.veredicto.bien { color: var(--color-acento); }
+.veredicto.mal { color: var(--color-acento-2); }
+
+.pregunta-guia .grafica-card {
+  margin: 0.8rem auto;
+  max-width: 340px;
+}
+
+@media print {
+  .pregunta-guia { break-inside: avoid; }
+  .retro { display: none; }
+}
+
+/* Página principal: las dos tarjetas grandes (Matemáticas y Guía de Admisión) */
+.tarjetas-principales .tarjeta {
+  padding: 2rem 1.5rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tarjetas-principales .tarjeta h2 {
+  font-size: 2rem;
+  margin: 0;
 }

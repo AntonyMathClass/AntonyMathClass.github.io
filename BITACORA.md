@@ -668,3 +668,102 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   el ejemplo); d) fracción equivalente 10/4 , 5/__ , __/8 (faltan 2 y 20; mismo patrón del ejemplo). Respuestas actualizadas.
   Producto 2 se queda con datos variados. La maestra vio "un error" en la fracción equivalente del
   Producto 2 (9/6 , 3/__ , __/8): quería que siga el patrón del ejemplo (simplificar y luego ampliar al doble del denominador): ahora es 9/6 , 3/__ , __/12 (faltan 2 y 18).
+- Todo lo de hoy (Mat 2: Tema 1 y Tema 2) fue subido por la maestra con GitHub Desktop y revisado en línea.
+- Pendiente: decidir el número de "Rectas paralelas, perpendiculares y oblicuas" (sigue sin número a
+  propósito) y el siguiente tema de Matemáticas 2.
+- **⚠️ INSTRUCCIÓN IMPORTANTE DE LA MAESTRA (para todos los temas):** el **Producto 1** debe ser **muy
+  parecido al ejemplo** (mismo tipo de datos, en la misma posición y con el mismo patrón), para que el
+  cambio sea pequeño y los alumnos puedan resolverlo. En los Productos siguientes se van metiendo
+  cambios **poco a poco** (gradualmente), no todos de golpe.
+
+## 2026-10-18
+
+- Nueva sección **Admisión a Licenciatura** (carpeta `admision-licenciatura/`, pedido de la maestra), con su
+  `index.html` igual que las demás materias (aviso de "temario todavía no cargado" y lista de temas vacía).
+  Enlazada en la página principal como tarjeta "Próximamente", después de Problemas Interprepas.
+  Pendiente: que la maestra suba el temario o material de esta sección.
+- Admisión a Licenciatura: **Tema 1. Física** (`admision-licenciatura/tema-1-fisica.html`), pedido de la maestra.
+  Por ahora es una página vacía con aviso de "contenido todavía no cargado"; ya está enlazada en la lista de
+  temas de la sección (se quitó el aviso de "temario no cargado" del índice). Todo sigue solo en la computadora
+  (la maestra no quiere subirlo todavía). Pendiente: el material de Física (ejemplos, ejercicios).
+- La maestra eligió **Cinemática** como Tema 1 (de Física): el archivo se renombró a
+  `admision-licenciatura/tema-1-cinematica.html` (ya no existe `tema-1-fisica.html`); en la lista dice
+  "Física · Tema 1. Cinemática". Ejemplo: el problema de la gráfica distancia–tiempo del coche (foto de la
+  maestra), dibujado en SVG con secciones I–IV, explicación de cómo leer la inclinación y tabla de respuesta
+  (uniforme: II; acelerado: I y III; reposo: IV). No se copiaron las opciones A–D (la D venía cortada en la foto).
+  Pendiente: Productos (ejercicios). Sigue sin subirse.
+- Cinemática: el ejemplo del coche ahora es **Ejemplo 1**; se agregó **Ejemplo 2** (foto de la maestra):
+  velocidad media del patinador, gráfica d–t con puntos (0,0), (5,8), (12,8), (15,16), dibujada con cuadrícula
+  de misma escala (1 cuadrito = 1 s = 1 m). Pasos: 16 m ÷ 15 s ≈ 1.07 m/s; tabla de velocidades por tramo
+  (1.6, 0, 2.67) y aviso de que la velocidad media no es el promedio de esas velocidades. Sin opciones A–D.
+
+## 2026-10-18
+
+- **Admisión a Licenciatura: nueva página "Física · Guía práctica"** (`admision-licenciatura/guia-practica-fisica.html`),
+  enlazada en la lista de temas. Preguntas de opción múltiple que la maestra manda en capturas: el alumno da clic en
+  A–D, la correcta se pinta morada y la elegida incorrecta fucsia (colores de la paleta, no verde/rojo), aparece una
+  explicación corta y un botón "Intentar otra vez". Al imprimir no salen las explicaciones. Estilos nuevos al final de
+  style.css (`.opciones`, `.opcion`, `.retro`, `.veredicto`). Para agregar una pregunta se copia un `<section>` y se
+  cambia `data-correcta`.
+  Pregunta 1: rapidez media (respuesta D). Pregunta 2: gráfica x–t del ferrocarril (respuesta C, velocidad constante),
+  gráfica redibujada en SVG con cuadritos cuadrados (0.1 s × 5 m). Pendiente: la opción D de la pregunta 2 venía cortada.
+  Pregunta 3: aceleración centrípeta del auto de prueba (a = v<sup>2</sup>/r = 625/20 = 31.25 m/s², respuesta B).
+  Pregunta 4: encuentro de dos trenes (se acercan 45 + 60 = 105 km cada hora; 360 ÷ 105 ≈ 3.4 h, respuesta D).
+  Pregunta 5: lancha en el río, misma dirección (8 + 2 = 10 m/s, respuesta D).
+  Pregunta 6: piedra lanzada hacia arriba, tiempo hasta el punto más alto (39.2 ÷ 9.8 = 4.0 s, respuesta A).
+  Pregunta 7: auto que arranca con a = 18 m/s², velocidad a los 2 s (0 + 18 · 2 = 36 m/s, respuesta D).
+  Pregunta 8: caída libre sin fricción, la velocidad aumenta 9.8 m/s cada segundo (respuesta A).
+  Pregunta 9: aceleración en caída libre, constante e igual a g (respuesta D).
+  Pregunta 10: gráfica v–t (línea que baja hasta 0), redibujada en SVG. La opción D venía cortada; la maestra pidió que Claude la redactara: "Un lanzamiento vertical hacia arriba hasta que el cuerpo se detiene" (respuesta D).
+  Pregunta 11: altura máxima del proyectil (80 · sen 30° = 40 m/s; 40² ÷ 20 = 80 m, respuesta A). La captura no
+  traía la respuesta marcada; la calculó Claude.
+  Pregunta 12: objeto que se deja caer desde 6.05 m (v² = 2 · 10 · 6.05 = 121; v = 11 m/s, respuesta C). La captura
+  no traía la respuesta marcada; la calculó Claude y la maestra confirmó la C con otra captura.
+- **Página principal reorganizada en dos cajas** (pedido de la maestra): caja **"Matemáticas"** (Mat 1–5, Optativa y
+  Problemas Interprepas) y caja **"Guía de Admisión a Licenciatura"** con 8 materias: Matemáticas, Física, Biología,
+  Historia de México, Literatura, Química, Geografía e Historia Universal. Estilo nuevo `.grupo-materias` /
+  `.titulo-grupo` al final de style.css (caja lila suave con borde, tarjetas blancas dentro).
+- **Carpetas nuevas**: una subcarpeta por materia dentro de `admision-licenciatura/` (`matematicas`, `fisica`,
+  `biologia`, `historia-de-mexico`, `literatura`, `quimica`, `geografia`, `historia-universal`), cada una con su
+  `index.html`. Física (Tema 1. Cinemática y Guía práctica) se movió a `admision-licenciatura/fisica/`; las demás
+  muestran "ejercicios todavía no cargados". `admision-licenciatura/index.html` ahora muestra las 8 materias en
+  tarjetas. Sigue sin subirse.
+- **Cambio sobre lo anterior (pedido de la maestra): las materias quedan "ocultas"**. La página principal ya no
+  muestra las cajas con todas las materias, solo **dos tarjetas grandes**: "Matemáticas" (abre la página nueva
+  `matematicas.html`, con Mat 1–5, Optativa e Interprepas) y "Guía de Admisión a Licenciatura" (abre
+  `admision-licenciatura/index.html`, con las 8 materias). Se quitaron los estilos `.grupo-materias`/`.titulo-grupo`
+  y se agregó `.tarjetas-principales`. En el índice de cada materia de matemáticas el enlace de arriba ahora dice
+  "← Volver a Matemáticas" (antes "Volver al inicio"). Sigue sin subirse (la maestra todavía no quiere).
+- Las dos tarjetas de la página principal ya no llevan texto debajo: solo el título en letras grandes
+  ("Matemáticas" y "Guía de Admisión a Licenciatura"), pedido de la maestra.
+- Fin de la sesión del 2026-10-18. Pendientes: que la maestra confirme la respuesta de la Pregunta 11 de Física
+  (proyectil, se puso A = 80 m); subir los cambios cuando ella lo decida (todo lo de hoy sigue solo en la computadora);
+  agregar ejercicios de las demás materias de la Guía de Admisión.
+
+## 2026-10-19
+
+- **Mat 2, Tema 4. Razones, proporciones y porcentajes** (`matematicas-2/tema-4-razones-proporciones-y-porcentajes.html`),
+  hecho a partir de la foto del apunte de la maestra: 4 ejemplos en una caja (proporción con comprobación, proporción
+  directa con los discos, proporción inversa con los hombres y la barda "se invierten", descuento del 30% al televisor).
+  4 Productos de 4 ejercicios cada uno (el Producto 1 sigue el mismo patrón que los ejemplos) con respuestas ocultas.
+  Enlazado en `matematicas-2/index.html`. Falta que la maestra lo revise.
+- **Tema 3. Jerarquía de operaciones con racionales**: la maestra todavía no tiene los ejercicios; aún no se agrega a la
+  lista (pendiente preguntarle si lo pone ya con "ejercicios todavía no cargados").
+- **Temario de Matemáticas 2 (completo, dictado por la maestra)**: 1. Representación de racionales;
+  2. Operaciones básicas con racionales; 3. Jerarquía de operaciones con racionales; 4. Razones, proporciones y
+  porcentajes; 5. Semejanza de triángulos; 6. Teorema de Tales; 7. Teorema de Pitágoras; 8. Trigonometría; 9. Ley de senos y cosenos; 10. Distancia entre dos puntos; 11. Pendiente y ordenada al origen; 12. Rectas paralelas y perpendiculares; 13. Estadística; 14. Estadística y gráficas. "Rectas
+  paralelas, perpendiculares y oblicuas" = Tema 12.
+- "Rectas paralelas, perpendiculares y oblicuas" ahora es el **Tema 12** (confirmado por la maestra): número agregado en
+  la pestaña, el título, la ruta de arriba y la lista de Matemáticas 2. El nombre del archivo no cambió.
+- La lista de Matemáticas 2 ahora muestra los 14 temas del temario. Los que todavía no tienen página (3, 5–11, 13, 14)
+  aparecen como cajita punteada con "(Próximamente)" (estilo nuevo `li.tema-pendiente` en style.css); al hacer cada
+  página, cambiar ese `<li>` por un enlace normal. Pendiente: material (fotos) de cada tema.
+- **Temario de Matemáticas 3 (la maestra empezó a dictarlo)**: 1. Operaciones con polinomios; 2. Productos notables.
+  Ojo: ya existe `matematicas-3/tema-1-funciones-y-relaciones.html` ("Tema 1. Funciones y relaciones: la prueba de la
+  recta vertical"); falta que la maestra diga qué número le toca. Mat 1 ya tiene "Tema 9. Operaciones con polinomios".
+  La maestra confirmó que Operaciones con polinomios de Mat 3 lleva material propio, más avanzado (no copiar el de Mat 1).
+- **"Funciones y relaciones: la prueba de la recta vertical" se movió de Mat 3 a Mat 4** (pedido de la maestra), sin
+  número porque aún no sabe en qué posición queda: ahora es `matematicas-4/funciones-y-relaciones.html`, enlazada desde
+  `matematicas-4/index.html`. La lista de Mat 3 ahora muestra Tema 1. Operaciones con polinomios y Tema 2. Productos
+  notables como "(Próximamente)".
+- La maestra **confirmó la respuesta de la Pregunta 11 de Física** (proyectil, A = 80 m). Va a subir todos los cambios.
