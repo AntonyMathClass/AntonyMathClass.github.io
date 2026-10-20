@@ -767,3 +767,6 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   `matematicas-4/index.html`. La lista de Mat 3 ahora muestra Tema 1. Operaciones con polinomios y Tema 2. Productos
   notables como "(Próximamente)".
 - La maestra **confirmó la respuesta de la Pregunta 11 de Física** (proyectil, A = 80 m). Va a subir todos los cambios.
+- Mat 2, Tema 4: la maestra subió los cambios. Después pidió reordenar los Productos 3 y 4. **Producto 3**: porcentaje,
+  proporción, inversa, directa (el orden que ella dio). **Producto 4**: inversa, porcentaje, directa, proporción (orden
+  elegido por Claude para variar). Respuestas reordenadas igual. Falta subirlo.
