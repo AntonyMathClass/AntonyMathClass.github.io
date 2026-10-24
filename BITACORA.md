@@ -799,3 +799,13 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
 - La maestra pidió manejar los Productos extra del Tema 10 como **Producto 3 y Producto 4**, visibles (ya no ocultos),
   con sus respuestas en la misma pestaña "Respuestas" que los Productos 1 y 2. Le gustaron los Productos que hizo Claude.
 - La maestra confirmó que le gusta que la dificultad suba poco a poco de un Producto al siguiente (en el Tema 10: positivos → negativos → orden revuelto y resultados no exactos). Aplicarlo así en los temas nuevos.
+- La maestra subió el Tema 10 de Mat 2 a GitHub (2026-10-24). Comprobado en internet: la página, los 4 Productos, los estilos y el enlace en la lista de Mat 2 ya se ven. `.claude/launch.json` se quedó sin subir (es archivo de trabajo de Claude).
+- Mat 2, Tema 11 renombrado (pedido de la maestra) a "Ecuación general a partir de la gráfica" (antes "Pendiente y ordenada al origen") (sigue como Próximamente). Falta subirlo.
+- **Mat 2, Tema 11. Ecuación general a partir de la gráfica** (foto de la maestra): nueva página
+  `matematicas-2/tema-11-ecuacion-general-a-partir-de-la-grafica.html`, enlazada en la lista de Mat 2. Ejemplo en una
+  caja: gráfica a la izquierda (b = −3, escalones +4 y −3) y pasos a la derecha hasta 4x + 3y + 9 = 0. Ejercicios: cada
+  uno es una gráfica chiquita (3 por Producto, pedido de la maestra); Productos 1 y 2 visibles y 2 Productos extra
+  ocultos (también pedido por ella). Respuestas con m, b, y = mx + b y la ecuación general (con x positiva).
+  Estilos nuevos en style.css: `.una-columna`, `.graficas-ejercicio`, `.numero`, `.pasos-lado`. Falta subirlo.
+- Tema 11: en la explicación del ejemplo la maestra pidió "se avanza −3 (Δx)" en vez de "3 a la izquierda" (usar el signo, no la dirección).
+- Tema 11: la maestra notó que en las gráficas de los Productos los puntos no caían en cruces de la cuadrícula. Causa: la cuadrícula estaba recorrida medio cuadrito. Corregido en las 12 gráficas; ahora los puntos quedan en coordenadas enteras.

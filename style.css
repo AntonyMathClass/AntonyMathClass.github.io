@@ -1495,3 +1495,51 @@ svg.figura-barras, svg.recta-numerica {
   color: var(--color-acento);
   font-weight: 600;
 }
+
+/* --- Ejercicios con gráficas chiquitas, 3 por Producto (Mat 2, Tema 11) --- */
+
+.cajas-productos.una-columna {
+  grid-template-columns: 1fr;
+}
+
+.graficas-ejercicio {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.8rem;
+}
+
+@media (max-width: 620px) {
+  .graficas-ejercicio {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+}
+
+.graficas-ejercicio .grafica-card {
+  position: relative;
+  max-width: 260px;
+  width: 100%;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.graficas-ejercicio .numero {
+  position: absolute;
+  top: 0.4rem;
+  left: 0.4rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--color-acento-2);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Columna de pasos cuando la gráfica va a la izquierda (Mat 2, Tema 11) */
+.ejemplo-dos-columnas > .pasos-lado {
+  flex: 1 1 260px;
+}

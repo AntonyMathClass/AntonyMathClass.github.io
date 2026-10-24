@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tema 11. Ecuación general a partir de la gráfica - Matemáticas 2 - AntonyMathClass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="icon" href="../favicon.png" type="image/png">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../favicon.png">
+</head>
+<body>
+  <header>
+    <h1>Matemáticas 2</h1>
+    <p>AntonyMathClass</p>
+  </header>
+
+  <nav class="migas">
+    <a href="../index.html">Inicio</a> &rsaquo;
+    <a href="index.html">Matemáticas 2</a> &rsaquo;
+    Tema 11. Ecuación general a partir de la gráfica
+  </nav>
+
+  <main>
+    <h1 class="titulo-tema">Tema 11. Ecuación general a partir de la gráfica</h1>
+    <p>Guíate con el ejemplo y luego resuelve los ejercicios de cada Producto.</p>
+
+    <section class="bloque">
+      <p class="titulo-regla-signos titulo-fuera">Ejemplo</p>
+      <div class="caja-ejemplo">
+        <p>Encuentra la ecuación general de la recta a partir de su gráfica.</p>
+        <div class="ejemplo-dos-columnas">
+          <div class="grafica-card grafica-grande">
+            <svg viewBox="-170 -150 240 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif" style="max-width: 340px;">
+              <defs>
+                <pattern id="cuadEjemplo11" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/>
+                </pattern>
+              </defs>
+              <rect x="-170" y="-150" width="240" height="260" fill="url(#cuadEjemplo11)"/>
+              <!-- Ejes -->
+              <line x1="-170" y1="0" x2="70" y2="0" stroke="#2d1b4e" stroke-width="1.5"/>
+              <line x1="0" y1="-150" x2="0" y2="110" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="58" y="-6" font-size="16" font-weight="700" fill="#f72585">x</text>
+              <text x="6" y="-136" font-size="16" font-weight="700" fill="#7b2ff7">y</text>
+              <!-- Números en los ejes (uno por cada cuadrito) -->
+              <line x1="-160" y1="-3" x2="-160" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="-160" y="14" font-size="10" text-anchor="middle" fill="#2d1b4e">−8</text>
+              <line x1="-140" y1="-3" x2="-140" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="-140" y="14" font-size="10" text-anchor="middle" fill="#2d1b4e">−7</text>
+              <line x1="-120" y1="-3" x2="-120" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="-120" y="14" font-size="10" text-anchor="middle" fill="#2d1b4e">−6</text>
+              <line x1="-100" y1="-3" x2="-100" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="-100" y="14" font-size="10" text-anchor="middle" fill="#2d1b4e">−5</text>
+              <line x1="-80" y1="-3" x2="-80" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="-80" y="14" font-size="10" text-anchor="middle" fill="#2d1b4e">−4</text>
+              <line x1="-60" y1="-3" x2="-60" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="-60" y="14" font-size="10" text-anchor="middle" fill="#2d1b4e">−3</text>
+              <line x1="-40" y1="-3" x2="-40" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="-40" y="14" font-size="10" text-anchor="middle" fill="#2d1b4e">−2</text>
+              <line x1="-20" y1="-3" x2="-20" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="-20" y="14" font-size="10" text-anchor="middle" fill="#2d1b4e">−1</text>
+              <line x1="20" y1="-3" x2="20" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="20" y="14" font-size="10" text-anchor="middle" fill="#2d1b4e">1</text>
+              <line x1="40" y1="-3" x2="40" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="40" y="14" font-size="10" text-anchor="middle" fill="#2d1b4e">2</text>
+              <line x1="60" y1="-3" x2="60" y2="3" stroke="#2d1b4e" stroke-width="1.2"/><text x="60" y="14" font-size="10" text-anchor="middle" fill="#2d1b4e">3</text>
+              <line x1="-3" y1="100" x2="3" y2="100" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="103" font-size="10" text-anchor="end" fill="#2d1b4e">−5</text>
+              <line x1="-3" y1="80" x2="3" y2="80" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="83" font-size="10" text-anchor="end" fill="#2d1b4e">−4</text>
+              <line x1="-3" y1="60" x2="3" y2="60" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="63" font-size="10" text-anchor="end" fill="#2d1b4e">−3</text>
+              <line x1="-3" y1="40" x2="3" y2="40" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="43" font-size="10" text-anchor="end" fill="#2d1b4e">−2</text>
+              <line x1="-3" y1="20" x2="3" y2="20" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="23" font-size="10" text-anchor="end" fill="#2d1b4e">−1</text>
+              <line x1="-3" y1="-20" x2="3" y2="-20" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="-17" font-size="10" text-anchor="end" fill="#2d1b4e">1</text>
+              <line x1="-3" y1="-40" x2="3" y2="-40" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="-37" font-size="10" text-anchor="end" fill="#2d1b4e">2</text>
+              <line x1="-3" y1="-60" x2="3" y2="-60" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="-57" font-size="10" text-anchor="end" fill="#2d1b4e">3</text>
+              <line x1="-3" y1="-80" x2="3" y2="-80" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="-77" font-size="10" text-anchor="end" fill="#2d1b4e">4</text>
+              <line x1="-3" y1="-100" x2="3" y2="-100" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="-97" font-size="10" text-anchor="end" fill="#2d1b4e">5</text>
+              <line x1="-3" y1="-120" x2="3" y2="-120" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="-117" font-size="10" text-anchor="end" fill="#2d1b4e">6</text>
+              <line x1="-3" y1="-140" x2="3" y2="-140" stroke="#2d1b4e" stroke-width="1.2"/><text x="-5" y="-137" font-size="10" text-anchor="end" fill="#2d1b4e">7</text>
+              <!-- Recta y = −4/3 x − 3 -->
+              <line x1="-156" y1="-148" x2="36" y2="108" stroke="#7b2ff7" stroke-width="2.5"/>
+              <!-- Escalones desde b: 4 hacia arriba (Δy) y 3 a la izquierda (Δx) -->
+              <path d="M 0 60 V -20 H -60 V -100 H -120" fill="none" stroke="#f72585" stroke-width="1.8" stroke-dasharray="5 3"/>
+              <text x="6" y="26" font-size="11" font-weight="700" fill="#f72585">+4</text>
+              <text x="-30" y="-25" font-size="11" font-weight="700" text-anchor="middle" fill="#f72585">−3</text>
+              <text x="-54" y="-56" font-size="11" font-weight="700" fill="#f72585">+4</text>
+              <text x="-90" y="-105" font-size="11" font-weight="700" text-anchor="middle" fill="#f72585">−3</text>
+              <!-- Puntos -->
+              <circle cx="0" cy="60" r="4" fill="#f72585"/>
+              <circle cx="-60" cy="-20" r="4" fill="#f72585"/>
+              <circle cx="-120" cy="-100" r="4" fill="#f72585"/>
+              <text x="20" y="66" font-size="11" font-weight="700" fill="#2d1b4e">b = −3</text>
+            </svg>
+          </div>
+
+          <div class="pasos-lado">
+            <div class="contenido-item">y = mx + b</div>
+            <div class="paso-secundario">m = <span class="fraccion"><span class="num"><span class="paso-resaltado">+4</span></span><span class="den"><span class="paso-resaltado">−3</span></span></span> = <span class="fraccion"><span class="num">Δy</span><span class="den">Δx</span></span> &nbsp;&nbsp; b = −3</div>
+            <div class="paso-secundario">y = −<span class="fraccion"><span class="num">4</span><span class="den">3</span></span>x − 3</div>
+            <div class="paso-secundario"><span class="paso-resaltado">3</span>(y + 3) = (−<span class="fraccion"><span class="num">4</span><span class="den">3</span></span>x)<span class="paso-resaltado">3</span></div>
+            <div class="paso-secundario">3(y + 3) = −4x</div>
+            <div class="paso-secundario">3y + 9 = −4x</div>
+            <div class="paso-secundario"><span class="paso-resaltado">+4x</span> + 3y + 9 = 0</div>
+            <p class="conclusion-ejemplo">∴ <strong>4x + 3y + 9 = 0</strong> &nbsp;Ecuación general</p>
+            <p>b es donde la recta corta al eje y. Desde ahí, los escalones dan la pendiente: se sube <strong>4</strong> (Δy) y se avanza <strong>−3</strong> (Δx).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>Ejercicios</h2>
+      <p>Encuentra la ecuación general de cada recta a partir de su gráfica.</p>
+
+      <div class="cajas-productos una-columna">
+        <div class="caja-ejercicio compacta">
+          <h3>Producto 1</h3>
+          <div class="contenido-producto graficas-ejercicio">
+            <div class="grafica-card"><span class="numero">1</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad1a" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad1a)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-112.0" y1="-128.0" x2="58.7" y2="128.0" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="40" r="4" fill="#f72585"/>
+              <circle cx="-40" cy="-20" r="4" fill="#f72585"/>
+            </svg>
+            </div>
+            <div class="grafica-card"><span class="numero">2</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad1b" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad1b)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-128.0" y1="-31.2" x2="128.0" y2="71.2" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="20" r="4" fill="#f72585"/>
+              <circle cx="-100" cy="-20" r="4" fill="#f72585"/>
+            </svg>
+            </div>
+            <div class="grafica-card"><span class="numero">3</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad1c" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad1c)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-83.2" y1="-128.0" x2="19.2" y2="128.0" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="80" r="4" fill="#f72585"/>
+              <circle cx="-40" cy="-20" r="4" fill="#f72585"/>
+            </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="caja-ejercicio compacta">
+          <h3>Producto 2</h3>
+          <div class="contenido-producto graficas-ejercicio">
+            <div class="grafica-card"><span class="numero">1</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad2a" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad2a)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-128.0" y1="65.3" x2="128.0" y2="-105.3" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="-20" r="4" fill="#f72585"/>
+              <circle cx="60" cy="-60" r="4" fill="#f72585"/>
+            </svg>
+            </div>
+            <div class="grafica-card"><span class="numero">2</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad2b" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad2b)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-117.3" y1="-128.0" x2="128.0" y2="56.0" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="-40" r="4" fill="#f72585"/>
+              <circle cx="80" cy="20" r="4" fill="#f72585"/>
+            </svg>
+            </div>
+            <div class="grafica-card"><span class="numero">3</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad2c" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad2c)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-29.3" y1="128.0" x2="56.0" y2="-128.0" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="40" r="4" fill="#f72585"/>
+              <circle cx="20" cy="-20" r="4" fill="#f72585"/>
+            </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <details class="respuestas">
+        <summary>Respuestas</summary>
+        <div class="respuestas-grid">
+          <div>
+            <h4>Producto 1</h4>
+            <ol>
+              <li>m = −<span class="fraccion"><span class="num">3</span><span class="den">2</span></span>, b = −2<br>y = −<span class="fraccion"><span class="num">3</span><span class="den">2</span></span>x − 2<br><strong>3x + 2y + 4 = 0</strong></li>
+              <li>m = −<span class="fraccion"><span class="num">2</span><span class="den">5</span></span>, b = −1<br>y = −<span class="fraccion"><span class="num">2</span><span class="den">5</span></span>x − 1<br><strong>2x + 5y + 5 = 0</strong></li>
+              <li>m = −<span class="fraccion"><span class="num">5</span><span class="den">2</span></span>, b = −4<br>y = −<span class="fraccion"><span class="num">5</span><span class="den">2</span></span>x − 4<br><strong>5x + 2y + 8 = 0</strong></li>
+            </ol>
+          </div>
+          <div>
+            <h4>Producto 2</h4>
+            <ol>
+              <li>m = <span class="fraccion"><span class="num">2</span><span class="den">3</span></span>, b = 1<br>y = <span class="fraccion"><span class="num">2</span><span class="den">3</span></span>x + 1<br><strong>2x − 3y + 3 = 0</strong></li>
+              <li>m = −<span class="fraccion"><span class="num">3</span><span class="den">4</span></span>, b = 2<br>y = −<span class="fraccion"><span class="num">3</span><span class="den">4</span></span>x + 2<br><strong>3x + 4y − 8 = 0</strong></li>
+              <li>m = 3, b = −2<br>y = 3x − 2<br><strong>3x − y − 2 = 0</strong></li>
+            </ol>
+          </div>
+        </div>
+      </details>
+
+
+      <details class="respuestas productos-extra">
+        <summary>Productos extra</summary>
+        <p>¿Quieres practicar más? Resuelve los ejercicios.</p>
+        <div class="cajas-productos una-columna">
+          <div class="caja-ejercicio compacta">
+            <h3>Producto extra 1</h3>
+            <div class="contenido-producto graficas-ejercicio">
+              <div class="grafica-card"><span class="numero">1</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad3a" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad3a)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-34.0" y1="-128.0" x2="94.0" y2="128.0" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="-60" r="4" fill="#f72585"/>
+              <circle cx="20" cy="-20" r="4" fill="#f72585"/>
+            </svg>
+              </div>
+              <div class="grafica-card"><span class="numero">2</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad3b" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad3b)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-128.0" y1="124.0" x2="128.0" y2="-4.0" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="60" r="4" fill="#f72585"/>
+              <circle cx="40" cy="40" r="4" fill="#f72585"/>
+            </svg>
+              </div>
+              <div class="grafica-card"><span class="numero">3</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad3c" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad3c)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-28.8" y1="-128.0" x2="124.8" y2="128.0" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="-80" r="4" fill="#f72585"/>
+              <circle cx="60" cy="20" r="4" fill="#f72585"/>
+            </svg>
+              </div>
+            </div>
+          </div>
+
+          <div class="caja-ejercicio compacta">
+            <h3>Producto extra 2</h3>
+            <div class="contenido-producto graficas-ejercicio">
+              <div class="grafica-card"><span class="numero">1</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad4a" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad4a)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-128.0" y1="96.8" x2="128.0" y2="-56.8" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="20" r="4" fill="#f72585"/>
+              <circle cx="100" cy="-40" r="4" fill="#f72585"/>
+            </svg>
+              </div>
+              <div class="grafica-card"><span class="numero">2</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad4b" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad4b)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-128.0" y1="-48.0" x2="48.0" y2="128.0" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="80" r="4" fill="#f72585"/>
+              <circle cx="-80" cy="0" r="4" fill="#f72585"/>
+            </svg>
+              </div>
+              <div class="grafica-card"><span class="numero">3</span>
+            <svg viewBox="-130 -130 260 260" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif">
+              <defs><pattern id="cuad4c" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M 20 0 L 0 0 0 20" fill="none" stroke="#e5cffb" stroke-width="1"/></pattern></defs>
+              <rect x="-130" y="-130" width="260" height="260" fill="url(#cuad4c)"/>
+              <line x1="-130" y1="0" x2="130" y2="0" stroke="#2d1b4e" stroke-width="1.5"/><line x1="0" y1="-130" x2="0" y2="130" stroke="#2d1b4e" stroke-width="1.5"/>
+              <text x="120" y="-6" font-size="14" font-weight="700" fill="#f72585">x</text><text x="6" y="-118" font-size="14" font-weight="700" fill="#7b2ff7">y</text>
+              <g font-size="9" fill="#2d1b4e"><text x="-120" y="11" text-anchor="middle">−6</text><text x="-4" y="123" text-anchor="end">−6</text><text x="-100" y="11" text-anchor="middle">−5</text><text x="-4" y="103" text-anchor="end">−5</text><text x="-80" y="11" text-anchor="middle">−4</text><text x="-4" y="83" text-anchor="end">−4</text><text x="-60" y="11" text-anchor="middle">−3</text><text x="-4" y="63" text-anchor="end">−3</text><text x="-40" y="11" text-anchor="middle">−2</text><text x="-4" y="43" text-anchor="end">−2</text><text x="-20" y="11" text-anchor="middle">−1</text><text x="-4" y="23" text-anchor="end">−1</text><text x="20" y="11" text-anchor="middle">1</text><text x="-4" y="-17" text-anchor="end">1</text><text x="40" y="11" text-anchor="middle">2</text><text x="-4" y="-37" text-anchor="end">2</text><text x="60" y="11" text-anchor="middle">3</text><text x="-4" y="-57" text-anchor="end">3</text><text x="80" y="11" text-anchor="middle">4</text><text x="-4" y="-77" text-anchor="end">4</text><text x="100" y="11" text-anchor="middle">5</text><text x="-4" y="-97" text-anchor="end">5</text><text x="120" y="11" text-anchor="middle">6</text><text x="-4" y="-117" text-anchor="end">6</text></g>
+              <line x1="-126.0" y1="128.0" x2="66.0" y2="-128.0" stroke="#7b2ff7" stroke-width="2.5"/>
+              <circle cx="0" cy="-40" r="4" fill="#f72585"/>
+              <circle cx="-60" cy="40" r="4" fill="#f72585"/>
+            </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <details class="respuestas">
+          <summary>Respuestas de los Productos extra</summary>
+          <div class="respuestas-grid">
+            <div>
+              <h4>Producto extra 1</h4>
+              <ol>
+                <li>m = −2, b = 3<br>y = −2x + 3<br><strong>2x + y − 3 = 0</strong></li>
+                <li>m = <span class="fraccion"><span class="num">1</span><span class="den">2</span></span>, b = −3<br>y = <span class="fraccion"><span class="num">1</span><span class="den">2</span></span>x − 3<br><strong>x − 2y − 6 = 0</strong></li>
+                <li>m = −<span class="fraccion"><span class="num">5</span><span class="den">3</span></span>, b = 4<br>y = −<span class="fraccion"><span class="num">5</span><span class="den">3</span></span>x + 4<br><strong>5x + 3y − 12 = 0</strong></li>
+              </ol>
+            </div>
+            <div>
+              <h4>Producto extra 2</h4>
+              <ol>
+                <li>m = <span class="fraccion"><span class="num">3</span><span class="den">5</span></span>, b = −1<br>y = <span class="fraccion"><span class="num">3</span><span class="den">5</span></span>x − 1<br><strong>3x − 5y − 5 = 0</strong></li>
+                <li>m = −1, b = −4<br>y = −x − 4<br><strong>x + y + 4 = 0</strong></li>
+                <li>m = <span class="fraccion"><span class="num">4</span><span class="den">3</span></span>, b = 2<br>y = <span class="fraccion"><span class="num">4</span><span class="den">3</span></span>x + 2<br><strong>4x − 3y + 6 = 0</strong></li>
+              </ol>
+            </div>
+          </div>
+        </details>
+      </details>
+    </section>
+
+    <p class="link-repaso">¿Dudas con la pendiente y los escalones? Repasa
+      <a href="rectas-paralelas-perpendiculares-y-oblicuas.html">Rectas paralelas, perpendiculares y oblicuas &rarr;</a></p>
+  </main>
+
+  <footer>
+    Página en construcción &middot; AntonyMathClass
+  </footer>
+</body>
+</html>
