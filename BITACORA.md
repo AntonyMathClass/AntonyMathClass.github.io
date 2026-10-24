@@ -770,3 +770,32 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
 - Mat 2, Tema 4: la maestra subió los cambios. Después pidió reordenar los Productos 3 y 4. **Producto 3**: porcentaje,
   proporción, inversa, directa (el orden que ella dio). **Producto 4**: inversa, porcentaje, directa, proporción (orden
   elegido por Claude para variar). Respuestas reordenadas igual. Falta subirlo.
+- La maestra revisó en internet el nuevo orden del Tema 4 y ya se ve. **Regla nueva para todos los temas**: el
+  Producto 1 sigue el orden del ejemplo; en los Productos siguientes (3 y 4) los tipos de ejercicio van revueltos, en un
+  orden distinto en cada uno, para que el alumno analice y no conteste en automático.
+- **Audios de estudio para la maestra (no son parte del sitio, no se suben)**: con la voz "Paulina" de la Mac (`say`).
+  Historia de México en `~/Audios Historia de Mexico/` (01 La Nueva España, 02 La Independencia, 03 México
+  independiente) e Historia Universal en `~/Audios Historia Universal/` (01 La Historia, 02 Revoluciones burguesas,
+  03 Pensamiento y movimientos del siglo XIX, 04 Capitalismo y socialismo, 05 El mundo actual; la maestra dijo que son
+  todos los temas). Cada carpeta tiene `guiones/` con el texto, que puede servir de base para las guías de la página.
+  Pendiente: hacer la guía de Historia de México / Universal para subirla.
+- La maestra pasó los audios a su celular por WhatsApp.
+- Fin de la sesión del 2026-10-19. Pendientes: subir los cambios de Mat 3 (lista con Temas 1 y 2 "Próximamente"),
+  Mat 4 ("Funciones y relaciones" sin número) y esta bitácora; material (fotos) de los temas que faltan en Mat 2 y
+  Mat 3; número de "Funciones y relaciones" en Mat 4; guías de Historia para la Guía de Admisión.
+
+## 2026-10-24
+
+- **Mat 2, Tema 10. Distancia entre dos puntos** (foto de la maestra): nueva página
+  `matematicas-2/tema-10-distancia-entre-dos-puntos.html`, ya enlazada en la lista de Matemáticas 2 (dejó de ser
+  "Próximamente"). Lleva la caja de la Fórmula con su dibujo del triángulo, el Ejemplo 1 (P₁(1, 2), P₂(4, 6), d = 5)
+  con su gráfica en la misma caja, Productos 1 y 2 visibles y 2 Productos extra ocultos, con respuestas.
+  Producto 1 sigue el patrón del ejemplo (coordenadas positivas, resultado exacto); el Producto 2 agrega negativos;
+  los Productos extra revuelven el orden e incluyen dos resultados que no son exactos (√13 ≈ 3.61 y √29 ≈ 5.39) —
+  falta que la maestra confirme si los quiere así. Estilos nuevos en style.css: `.segmento` (rayita sobre P₁P₂),
+  `.formula-distancia` y `.dato-etiquetado` (x₁, y₁ arriba de cada número). Falta subirlo.
+- La vista previa local (`.claude/launch.json`) ahora usa `/usr/bin/ruby` en vez de python3, porque python3 abre la
+  ventana de instalar herramientas de Apple; ruby viene con la Mac y no la abre.
+- La maestra pidió manejar los Productos extra del Tema 10 como **Producto 3 y Producto 4**, visibles (ya no ocultos),
+  con sus respuestas en la misma pestaña "Respuestas" que los Productos 1 y 2. Le gustaron los Productos que hizo Claude.
+- La maestra confirmó que le gusta que la dificultad suba poco a poco de un Producto al siguiente (en el Tema 10: positivos → negativos → orden revuelto y resultados no exactos). Aplicarlo así en los temas nuevos.

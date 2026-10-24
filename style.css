@@ -1468,3 +1468,30 @@ svg.figura-barras, svg.recta-numerica {
   font-size: 2rem;
   margin: 0;
 }
+
+/* --- Distancia entre dos puntos (Mat 2, Tema 10): rayita sobre P₁P₂ y datos con su etiqueta arriba --- */
+
+.segmento {
+  text-decoration: overline;
+  margin-left: 0.1em;
+}
+
+.formula-distancia {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dato-etiquetado {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: bottom;
+  line-height: 1.1;
+}
+
+.dato-etiquetado small {
+  font-size: 0.7em;
+  color: var(--color-acento);
+  font-weight: 600;
+}
