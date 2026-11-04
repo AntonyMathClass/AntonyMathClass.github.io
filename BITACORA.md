@@ -809,3 +809,14 @@ Registro de avances, decisiones y pendientes del sitio web para los alumnos de b
   Estilos nuevos en style.css: `.una-columna`, `.graficas-ejercicio`, `.numero`, `.pasos-lado`. Falta subirlo.
 - Tema 11: en la explicación del ejemplo la maestra pidió "se avanza −3 (Δx)" en vez de "3 a la izquierda" (usar el signo, no la dirección).
 - Tema 11: la maestra notó que en las gráficas de los Productos los puntos no caían en cruces de la cuadrícula. Causa: la cuadrícula estaba recorrida medio cuadrito. Corregido en las 12 gráficas; ahora los puntos quedan en coordenadas enteras.
+- La maestra subió el Tema 11 y ya se ve en internet (tardó unos minutos en aparecer). Fin de la sesión del 2026-10-24. Pendientes: decidir si el Tema 12 usa signos en los escalones ("se avanza +3", "−2"); confirmar la forma de la ecuación general con pendiente positiva (x positiva); fotos de los temas que faltan (Mat 2: 3, 5–9, 13, 14; Mat 3). Esta entrada de la bitácora todavía no está subida.
+
+## 2026-11-03
+
+- **Apartado de exámenes con contraseña**: carpeta `cuadernos/`, sin enlaces desde el resto del sitio y con `noindex`. Las páginas van cifradas: sin la contraseña no se puede leer su contenido. Cada versión tiene una hoja para imprimir, en cajas por tema, y una hoja resuelta para calificar. Formato inspirado en el ejemplo de una amiga de la maestra.
+- La maestra mandó las cuatro versiones de un examen de Matemáticas 1. Las copias sin cifrar, el programa que arma las hojas y el que las cifra están en `~/Examenes-originales`, fuera de este repositorio. **Nunca copiar esos archivos aquí ni subirlos.** Después de cambiar un examen, hay que volver a cifrar con `/usr/bin/ruby ~/Examenes-originales/cifrar.rb`.
+- **No escribir en esta bitácora los ejercicios ni las respuestas de los exámenes**, porque este archivo es público. Las dudas de lectura de las fotos se le pasaron a la maestra en el chat; algunas siguen sin confirmar.
+- Es provisional: sirve para que la maestra califique e imprima. Cuando termine, se harán los exámenes definitivos de AntonyMathClass.
+- En la Mac de la maestra las páginas abiertas desde la carpeta no cargaban el diseño de archivos aparte (causa no confirmada), por eso el diseño va dentro de cada examen.
+- Exámenes: la maestra vio que al imprimir el examen salía muy grande y en dos hojas. Se compactó la letra y los espacios solo para impresión; en una prueba con Chrome cada versión ya sale en una hoja carta. Falta que ella lo confirme en su impresión y volver a cifrar.
+- Exámenes: la maestra confirmó que abierto en Chrome el examen se imprime en una sola hoja. Para imprimir, usar Chrome. Falta volver a cifrar y subirlo.
