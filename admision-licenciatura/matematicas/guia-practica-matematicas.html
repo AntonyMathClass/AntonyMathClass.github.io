@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guía práctica - Matemáticas - Guía de Admisión a Licenciatura - AntonyMathClass</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+  <link rel="icon" href="../../favicon.png" type="image/png">
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../../favicon.png">
+</head>
+<body>
+  <header>
+    <h1>Guía de Admisión a Licenciatura</h1>
+    <p>AntonyMathClass</p>
+  </header>
+
+  <nav class="migas">
+    <a href="../../index.html">Inicio</a> &rsaquo;
+    <a href="../index.html">Guía de Admisión</a> &rsaquo;
+    <a href="index.html">Matemáticas</a> &rsaquo;
+    Guía práctica
+  </nav>
+
+  <main>
+    <h1 class="titulo-tema">Matemáticas · Guía práctica</h1>
+    <p>Elige una opción en cada pregunta. Al elegir verás si acertaste.</p>
+
+    <!-- Para agregar una pregunta: copia un bloque <section> completo, cambia el texto
+         y pon en data-correcta la letra de la respuesta correcta.
+         Los exponentes se escriben con <sup>, por ejemplo x<sup>2</sup>. -->
+
+    <section class="bloque pregunta-guia" data-correcta="A">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 1</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">¿Cuál de las siguientes expresiones algebraicas representa una identidad?</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>(x − 6)<sup>2</sup> = x<sup>2</sup> − 12x + 36</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>(x − 6)<sup>2</sup> − 6x = x<sup>2</sup> − 12x + 6</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>(x − 6)<sup>2</sup> − 36 = x<sup>2</sup> − 6x + 6</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>(x − 6)<sup>2</sup> = x<sup>2</sup> − 6x + 36</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="D">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 2</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">¿Cuál de las siguientes expresiones es una ecuación?</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>sen<sup>2</sup> x + cos<sup>2</sup> x = 1</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span><span class="fraccion"><span class="num">4x<sup>2</sup></span><span class="den"><span class="radical"><span class="signo">√</span><span class="radicando">16x<sup>4</sup></span></span></span></span> = <span class="fraccion"><span class="num">1</span><span class="den">2</span></span></span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span><span class="fraccion"><span class="num">1</span><span class="den">x</span></span> = x<sup>−1</sup></span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span><span class="fraccion"><span class="num">9x</span><span class="den">5</span></span> = <span class="fraccion"><span class="num">27x</span><span class="den">5</span></span></span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="D">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 3</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Completa el binomio de Newton.</p>
+        <p>(a + b)<sup>6</sup> = a<sup>6</sup> + 6a<sup>5</sup>b + 15a<sup>4</sup>b<sup>2</sup> + ________ + 15a<sup>2</sup>b<sup>4</sup> + ________ + b<sup>6</sup></p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>60b<sup>3</sup>a<sup>3</sup>; 6ba<sup>5</sup></span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>60b<sup>3</sup>a<sup>3</sup>; 6b<sup>5</sup>a</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>20b<sup>3</sup>a<sup>3</sup>; 6ba<sup>5</sup></span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>20b<sup>3</sup>a<sup>3</sup>; 6b<sup>5</sup>a</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+
+          <!-- Triángulo de Pascal para repasar: aparece después de contestar -->
+          <div class="mapa-oracion">
+            <p class="mapa-titulo">Para repasar: triángulo de Pascal</p>
+            <div class="pascal">
+              <div class="pascal-fila"><span>1</span></div>
+              <div class="pascal-fila"><span>1</span><span>1</span></div>
+              <div class="pascal-fila"><span>1</span><span>2</span><span>1</span></div>
+              <div class="pascal-fila"><span>1</span><span>3</span><span>3</span><span>1</span></div>
+              <div class="pascal-fila"><span>1</span><span>4</span><span>6</span><span>4</span><span>1</span></div>
+              <div class="pascal-fila"><span>1</span><span>5</span><span>10</span><span>10</span><span>5</span><span>1</span></div>
+              <div class="pascal-fila resaltada"><span>1</span><span>6</span><span>15</span><span>20</span><span>15</span><span>6</span><span>1</span></div>
+            </div>
+          </div>
+
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="B">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 4</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Encuentra el rango de la función f(x) = x<sup>2</sup> − 4</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>Todos los números distintos de 2y − 2</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>Todos los números y ≥ −4</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>Todos los números y &gt; 4</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>Todos los números y &lt; 4</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="A">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 5</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">¿Cuál de las siguientes expresiones corresponde a una función implícita?</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>x<sup>2</sup> − 3xy − y<sup>2</sup> = 1</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>y = x<sup>2</sup> − x − 3</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>f(x) = x<sup>2</sup> − 3x − 1</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>x<sup>2</sup> − 3x = y</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="B">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 6</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">El dominio y el rango de la función f(x) = e<sup>x</sup> − 1 son</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>D: (−∞, ∞); R: (1, ∞)</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>D: (−∞, ∞); R: (−1, ∞)</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>D: (−∞, ∞); R: (−∞, 1)</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>D: (−∞, ∞); R: (−∞, ∞)</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Página en construcción &middot; AntonyMathClass
+  </footer>
+
+  <script>
+    // Al elegir una opción: marca la correcta, marca la elegida si es incorrecta y muestra si acertó.
+    document.querySelectorAll('.pregunta-guia').forEach(function (pregunta) {
+      var correcta = pregunta.dataset.correcta;
+      var opciones = pregunta.querySelectorAll('.opcion');
+      var retro = pregunta.querySelector('.retro');
+      var veredicto = pregunta.querySelector('.veredicto');
+
+      opciones.forEach(function (opcion) {
+        opcion.addEventListener('click', function () {
+          var acerto = opcion.dataset.letra === correcta;
+          opciones.forEach(function (o) {
+            o.disabled = true;
+            if (o.dataset.letra === correcta) o.classList.add('correcta');
+          });
+          if (!acerto) opcion.classList.add('incorrecta');
+          veredicto.textContent = acerto ? '✓ ¡Correcto!' : '✗ Incorrecto. La respuesta correcta es la ' + correcta + '.';
+          veredicto.className = 'veredicto ' + (acerto ? 'bien' : 'mal');
+          retro.hidden = false;
+        });
+      });
+
+      pregunta.querySelector('.reintentar').addEventListener('click', function () {
+        opciones.forEach(function (o) {
+          o.disabled = false;
+          o.classList.remove('correcta', 'incorrecta');
+        });
+        retro.hidden = true;
+      });
+    });
+  </script>
+</body>
+</html>

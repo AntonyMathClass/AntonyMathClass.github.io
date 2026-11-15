@@ -1450,6 +1450,147 @@ svg.figura-barras, svg.recta-numerica {
   max-width: 340px;
 }
 
+/* Mapa conceptual dentro de una pregunta de la guía (partes de la oración) */
+.mapa-oracion {
+  margin: 0.9rem 0;
+  padding: 1rem;
+  background: var(--color-fondo);
+  border: 2px solid var(--color-borde);
+  border-radius: 12px;
+}
+
+.mapa-oracion p { margin: 0; }
+
+.mapa-titulo {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: var(--color-acento);
+  margin-bottom: 0.8rem !important;
+}
+
+.mapa-raiz, .mapa-cabeza {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+}
+
+.mapa-raiz span, .mapa-cabeza span {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.mapa-raiz {
+  background: white;
+  border: 2px solid var(--color-borde);
+}
+
+.mapa-raiz span { font-style: italic; }
+
+.mapa-ramas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+  align-items: start;
+}
+
+.mapa-cabeza {
+  color: white;
+  background: var(--color-acento);
+}
+
+.mapa-rama.predicado .mapa-cabeza { background: var(--color-acento-2); }
+
+/* La línea de la izquierda une cada parte con su rama */
+.mapa-rama ul {
+  list-style: none;
+  margin: 0 0 0 1rem;
+  padding: 0.6rem 0 0 0.8rem;
+  border-left: 3px solid var(--color-acento);
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.mapa-rama.predicado ul { border-left-color: var(--color-acento-2); }
+
+.mapa-rama li {
+  background: var(--color-acento-suave);
+  border: 2px solid var(--color-borde);
+  border-radius: 10px;
+  padding: 0.45rem 0.7rem;
+}
+
+.mapa-rama.predicado li {
+  background: #fde8f1;
+  border-color: #f9c3d9;
+}
+
+.mapa-rama li strong { font-family: "Poppins", sans-serif; }
+
+/* Incisos que son gráficas: dos por renglón (uno por renglón en celular) */
+.opciones.opciones-graficas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.opciones-graficas .opcion {
+  align-items: flex-start;
+  padding: 0.6rem;
+}
+
+.opciones-graficas .opcion svg {
+  flex: 1;
+  min-width: 0;
+  max-width: 260px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 8px;
+}
+
+/* Triángulo de Pascal dentro de una pregunta de la guía: un renglón centrado por fila */
+.pascal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.pascal-fila {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.pascal-fila span {
+  width: 2.4rem;
+  height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background: white;
+  border: 2px solid var(--color-borde);
+  border-radius: 8px;
+}
+
+/* Renglón que se usa en la pregunta */
+.pascal-fila.resaltada span {
+  color: white;
+  background: var(--color-acento);
+  border-color: var(--color-acento);
+}
+
+@media (max-width: 620px) {
+  .mapa-ramas { grid-template-columns: 1fr; }
+  .opciones.opciones-graficas { grid-template-columns: 1fr; }
+  .pascal, .pascal-fila { gap: 0.25rem; }
+  .pascal-fila span { width: 2rem; height: 2rem; font-size: 0.9rem; }
+}
+
 @media print {
   .pregunta-guia { break-inside: avoid; }
   .retro { display: none; }
