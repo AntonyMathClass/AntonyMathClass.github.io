@@ -1684,3 +1684,20 @@ svg.figura-barras, svg.recta-numerica {
 .ejemplo-dos-columnas > .pasos-lado {
   flex: 1 1 260px;
 }
+
+/* Letra con flechita arriba para escribir vectores (Guía de Admisión, Física).
+   Uso: <span class="vec"><span class="flecha">→</span>a</span> */
+.vec {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.5em;
+}
+
+.vec .flecha {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.75em;
+  line-height: 1;
+}

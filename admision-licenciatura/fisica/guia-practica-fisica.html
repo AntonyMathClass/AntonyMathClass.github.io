@@ -508,6 +508,449 @@
         </div>
       </div>
     </section>
+
+    <section class="bloque pregunta-guia" data-correcta="A">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 20</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Un automóvil que viaja a 72 <span class="fraccion"><span class="num">km</span><span class="den">h</span></span> frena y se detiene en 4 s. ¿Cuál es la aceleración y la distancia recorrida hasta que se detiene totalmente?</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>a = −5 <span class="fraccion"><span class="num">m</span><span class="den">s<sup>2</sup></span></span> &nbsp;&nbsp; d = 40 m</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>a = −18 <span class="fraccion"><span class="num">m</span><span class="den">s<sup>2</sup></span></span> &nbsp;&nbsp; d = 64 m</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>a = −18 <span class="fraccion"><span class="num">m</span><span class="den">s<sup>2</sup></span></span> &nbsp;&nbsp; d = 144 m</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>a = −18 <span class="fraccion"><span class="num">m</span><span class="den">s<sup>2</sup></span></span> &nbsp;&nbsp; d = 120 m</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>Primero se pasa la velocidad a m/s: <strong>72 ÷ 3.6 = 20 m/s.</strong> Como se detiene, la velocidad final es 0: <strong>a = (0 − 20) ÷ 4 = −5 m/s<sup>2</sup></strong> (negativa porque frena). La distancia es la velocidad promedio por el tiempo: <strong>d = (20 + 0) ÷ 2 · 4 = 40 m.</strong> Si no se convierte y se divide 72 ÷ 4 sale el −18 de las otras opciones.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="A">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 21</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Con la información de la gráfica, contesta. ¿Qué aceleración experimenta la motocicleta a los 2 s?</p>
+        <div class="grafica-card">
+          <!-- Cuadritos cuadrados: cada uno = 2 s a lo ancho y 5 m/s a lo alto (40 unidades del dibujo).
+               El eje horizontal está dibujado a la altura de −5 m/s, igual que en el reactivo original. -->
+          <svg viewBox="-70 -312 385 357" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif" style="max-width: 360px;">
+            <defs>
+              <pattern id="cuadMoto" width="40" height="40" patternUnits="userSpaceOnUse">
+                <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#e5cffb" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="0" y="-280" width="280" height="280" fill="url(#cuadMoto)"/>
+            <line x1="280" y1="0" x2="280" y2="-280" stroke="#e5cffb" stroke-width="1"/>
+            <line x1="0" y1="-280" x2="280" y2="-280" stroke="#e5cffb" stroke-width="1"/>
+            <!-- Ejes -->
+            <line x1="0" y1="0" x2="295" y2="0" stroke="#2d1b4e" stroke-width="1.5"/>
+            <line x1="0" y1="0" x2="0" y2="-295" stroke="#2d1b4e" stroke-width="1.5"/>
+            <polygon points="295,-4 303,0 295,4" fill="#2d1b4e"/>
+            <polygon points="-4,-295 0,-303 4,-295" fill="#2d1b4e"/>
+            <!-- Números del eje del tiempo -->
+            <g font-size="13" text-anchor="middle" fill="#2d1b4e">
+              <text x="0" y="18">0</text>
+              <text x="40" y="18">2</text>
+              <text x="80" y="18">4</text>
+              <text x="120" y="18">6</text>
+              <text x="160" y="18">8</text>
+              <text x="200" y="18">10</text>
+              <text x="240" y="18">12</text>
+            </g>
+            <!-- Números del eje de la velocidad -->
+            <g font-size="13" text-anchor="end" fill="#2d1b4e">
+              <text x="-8" y="-36">0</text>
+              <text x="-8" y="-76">5</text>
+              <text x="-8" y="-116">10</text>
+              <text x="-8" y="-156">15</text>
+              <text x="-8" y="-196">20</text>
+              <text x="-8" y="-236">25</text>
+              <text x="-8" y="-276">30</text>
+            </g>
+            <g stroke="#2d1b4e" stroke-width="1.5">
+              <line x1="-4" y1="-40" x2="0" y2="-40"/><line x1="-4" y1="-80" x2="0" y2="-80"/>
+              <line x1="-4" y1="-120" x2="0" y2="-120"/><line x1="-4" y1="-160" x2="0" y2="-160"/>
+              <line x1="-4" y1="-200" x2="0" y2="-200"/><line x1="-4" y1="-240" x2="0" y2="-240"/>
+              <line x1="-4" y1="-280" x2="0" y2="-280"/>
+            </g>
+            <text x="140" y="40" font-size="14" font-weight="700" text-anchor="middle" fill="#f72585">tiempo (s)</text>
+            <text transform="translate(-48 -140) rotate(-90)" font-size="14" font-weight="700" text-anchor="middle" fill="#7b2ff7">velocidad (m/s)</text>
+            <!-- Recta y sus puntos: (2, 0), (4, 5), (6, 10), (8, 15), (10, 20), (12, 25), (14, 30) -->
+            <line x1="0" y1="0" x2="280" y2="-280" stroke="#7b2ff7" stroke-width="2.5"/>
+            <g fill="#2d1b4e">
+              <circle cx="40" cy="-40" r="3.5"/><circle cx="80" cy="-80" r="3.5"/>
+              <circle cx="120" cy="-120" r="3.5"/><circle cx="160" cy="-160" r="3.5"/>
+              <circle cx="200" cy="-200" r="3.5"/><circle cx="240" cy="-240" r="3.5"/>
+              <circle cx="280" cy="-280" r="3.5"/>
+            </g>
+          </svg>
+        </div>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>2.5 <span class="fraccion"><span class="num">m</span><span class="den">s<sup>2</sup></span></span></span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>12.0 <span class="fraccion"><span class="num">m</span><span class="den">s<sup>2</sup></span></span></span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>32.0 <span class="fraccion"><span class="num">m</span><span class="den">s<sup>2</sup></span></span></span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>45.0 <span class="fraccion"><span class="num">m</span><span class="den">s<sup>2</sup></span></span></span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>En una gráfica de velocidad contra tiempo, la aceleración es la <strong>pendiente</strong> de la recta. Como es una recta, la pendiente es la misma en cualquier momento, también a los 2 s. Con dos puntos, por ejemplo (2, 0) y (4, 5): <strong>a = (5 − 0) ÷ (4 − 2) = 5 ÷ 2 = 2.5 m/s<sup>2</sup>.</strong></p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="B">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 22</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Una canica que parte del reposo, resbala por una pendiente de 30°. Si no existe fricción, ¿cuál es la rapidez de la canica después de haber recorrido 3.6 m?</p>
+        <p><strong>Considera:</strong><br>
+           sen 90° = 1<br>
+           sen 30° = 0.50<br>
+           cos 30° = 0.87<br>
+           tan 30° = 0.58</p>
+        <p>g = 10 <span class="fraccion"><span class="num">m</span><span class="den">s<sup>2</sup></span></span></p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span><span class="radical"><span class="signo">√</span><span class="radicando">18</span></span> <span class="fraccion"><span class="num">m</span><span class="den">s</span></span></span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>6 <span class="fraccion"><span class="num">m</span><span class="den">s</span></span></span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>18 <span class="fraccion"><span class="num">m</span><span class="den">s</span></span></span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span><span class="radical"><span class="signo">√</span><span class="radicando">720</span></span> <span class="fraccion"><span class="num">m</span><span class="den">s</span></span></span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>En un plano inclinado sin fricción la aceleración es <strong>a = g · sen 30° = 10 · 0.50 = 5 m/s<sup>2</sup>.</strong> Como parte del reposo (v<sub>i</sub> = 0): <strong>v<sub>f</sub><sup>2</sup> = 2 · a · d = 2 · 5 · 3.6 = 36</strong>, así que <strong>v<sub>f</sub> = √36 = 6 m/s.</strong> Los demás datos (sen 90°, cos 30°, tan 30°) no se usan.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="B">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 23</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">La gráfica anexa se refiere al movimiento de un cuerpo en trayectoria rectilínea.</p>
+        <div class="grafica-card">
+          <!-- Cuadritos cuadrados: cada uno = 1 s a lo ancho y 10 m/s a lo alto (30 unidades del dibujo) -->
+          <svg viewBox="-45 -168 350 320" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif" style="max-width: 360px;">
+            <defs>
+              <pattern id="cuadCuerpo" y="-120" width="30" height="30" patternUnits="userSpaceOnUse">
+                <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#e5cffb" stroke-width="1"/>
+              </pattern>
+            </defs>
+            <rect x="0" y="-120" width="240" height="240" fill="url(#cuadCuerpo)"/>
+            <line x1="240" y1="-120" x2="240" y2="120" stroke="#e5cffb" stroke-width="1"/>
+            <line x1="0" y1="120" x2="240" y2="120" stroke="#e5cffb" stroke-width="1"/>
+            <!-- Líneas punteadas hacia el último punto (8, −40) -->
+            <line x1="240" y1="0" x2="240" y2="120" stroke="#2d1b4e" stroke-width="1.2" stroke-dasharray="5 4"/>
+            <line x1="0" y1="120" x2="240" y2="120" stroke="#2d1b4e" stroke-width="1.2" stroke-dasharray="5 4"/>
+            <!-- Ejes -->
+            <line x1="0" y1="0" x2="262" y2="0" stroke="#2d1b4e" stroke-width="1.5"/>
+            <line x1="0" y1="-138" x2="0" y2="138" stroke="#2d1b4e" stroke-width="1.5"/>
+            <polygon points="262,-4 270,0 262,4" fill="#2d1b4e"/>
+            <polygon points="-4,-138 0,-146 4,-138" fill="#2d1b4e"/>
+            <polygon points="-4,138 0,146 4,138" fill="#2d1b4e"/>
+            <text x="276" y="5" font-size="14" font-weight="700" fill="#f72585">t (s)</text>
+            <text x="0" y="-153" font-size="14" font-weight="700" text-anchor="middle" fill="#7b2ff7">v (m/s)</text>
+            <!-- Números del eje del tiempo -->
+            <g font-size="13" fill="#2d1b4e">
+              <text x="60" y="-7" text-anchor="middle">2</text>
+              <text x="127" y="-7">4</text>
+              <text x="180" y="-7" text-anchor="middle">6</text>
+              <text x="240" y="-7" text-anchor="middle">8</text>
+            </g>
+            <!-- Números del eje de la velocidad -->
+            <g font-size="13" text-anchor="end" fill="#2d1b4e">
+              <text x="-8" y="-116">40</text>
+              <text x="-8" y="-56">20</text>
+              <text x="-8" y="4">0</text>
+              <text x="-8" y="64">−20</text>
+              <text x="-8" y="124">−40</text>
+            </g>
+            <!-- Recta: de (0, 40) a (8, −40), pasa por (4, 0) -->
+            <line x1="0" y1="-120" x2="235" y2="115" stroke="#7b2ff7" stroke-width="2.5"/>
+            <polygon points="240,120 237.2,110.8 230.8,117.2" fill="#7b2ff7"/>
+          </svg>
+        </div>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>al tiempo t = 4 s el cuerpo está en el punto de partida.</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>en los primeros 4 s el cuerpo recorre 80 m.</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>el cuerpo se mueve con velocidad constante de 40 <span class="fraccion"><span class="num">m</span><span class="den">s</span></span>, todo el tiempo.</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>el cuerpo se mueve con aceleración constante de 40 <span class="fraccion"><span class="num">m</span><span class="den">s<sup>2</sup></span></span>, todo el tiempo.</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>De 0 a 4 s la velocidad baja de 40 a 0 m/s, así que la velocidad promedio es 20 m/s y recorre <strong>20 · 4 = 80 m</strong> (es el área del triángulo bajo la recta). A los 4 s el cuerpo solo se detiene un instante, en su punto más lejano; regresa al punto de partida hasta los 8 s (A). La velocidad sí cambia (C), y la aceleración es la pendiente: (0 − 40) ÷ 4 = −10 m/s<sup>2</sup>, no 40 (D).</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="B">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 24</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Un pájaro que vuela con una velocidad de 2 <span class="fraccion"><span class="num">m</span><span class="den">s</span></span>, empieza a aumentar su velocidad 1 m cada segundo. El promedio de velocidad del ave 10 s después de empezar el aumento de su velocidad es de</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>6 <span class="fraccion"><span class="num">m</span><span class="den">s</span></span></span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>7 <span class="fraccion"><span class="num">m</span><span class="den">s</span></span></span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>10 <span class="fraccion"><span class="num">m</span><span class="den">s</span></span></span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>12 <span class="fraccion"><span class="num">m</span><span class="den">s</span></span></span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>Primero la velocidad final: gana 1 m/s cada segundo durante 10 s, así que <strong>v<sub>f</sub> = 2 + 1 · 10 = 12 m/s.</strong> Pero piden el <strong>promedio</strong>, que es el punto medio entre la inicial y la final: <strong>(2 + 12) ÷ 2 = 7 m/s.</strong> El 12 (D) es la velocidad final, no el promedio.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="B">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 25</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">En dinámica, un objeto cambia su estado de movimiento solamente si</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>la acción del objeto es igual a la reacción de otro objeto.</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>actúa una fuerza diferente de cero sobre el objeto y esta fuerza es generada por otro cuerpo.</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>la reacción del objeto es igual a la acción de otro objeto.</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>actúa una fuerza sobre el objeto y esta fuerza es generada por sí mismo.</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>Es la primera ley de Newton: un objeto sigue en reposo o con la misma velocidad mientras no actúe sobre él una <strong>fuerza distinta de cero que venga de otro cuerpo.</strong> Un objeto no puede cambiar su propio movimiento empujándose a sí mismo (D). Las opciones A y C hablan de la tercera ley (acción y reacción), que siempre se cumple y no es lo que hace cambiar el movimiento.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="D">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 26</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Se aplica una fuerza paralela a la dirección de movimiento a un carrito que viaja a velocidad constante sobre una pista horizontal. ¿Qué provoca la fuerza?</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>El aumento de su presión.</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>Un cambio en su estado de agregación.</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>El aumento en su peso.</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>Un cambio en su estado de movimiento.</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>El carrito iba a velocidad constante, o sea sin aceleración. Al aplicarle una fuerza en la dirección en que se mueve, su velocidad cambia (se acelera): eso es <strong>un cambio en su estado de movimiento.</strong> La fuerza no cambia su peso (C), que depende de su masa y de la gravedad; la presión (A) y el estado de agregación (B: sólido, líquido o gas) no tienen que ver con el movimiento.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="B">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 27</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Se lanza una piedra hacia arriba, cuando alcanza su máxima altura se detiene momentáneamente, ya que su velocidad es cero. Si se desprecia la fricción del aire, ¿cuántas y cuáles son las fuerzas que se ejercen sobre la piedra?</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>Ninguna, porque la piedra está en reposo.</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>Una, la gravitatoria.</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>Dos, la gravitatoria y la del impulso inicial y están en equilibrio.</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>Dos, la gravitatoria y la del impulso inicial y van disminuyendo.</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>Una vez que la piedra sale de la mano, ya nada la empuja hacia arriba: el "impulso inicial" no es una fuerza que viaje con ella. Sin fricción del aire, lo único que actúa sobre la piedra es <strong>su peso (la fuerza gravitatoria)</strong>, y actúa igual al subir, en el punto más alto y al bajar. Que la velocidad sea cero un instante no significa que no haya fuerza: justo por la gravedad la piedra se detiene y empieza a caer.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="A">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 28</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Un bloque se desliza hacia abajo con velocidad constante, como se muestra en la imagen. ¿Cuál de las siguientes oraciones explica la relación que existe entre el bloque y la fuerza?</p>
+        <div class="grafica-card">
+          <!-- Plano inclinado con un bloque y una flecha que indica hacia dónde se desliza -->
+          <svg viewBox="-15 -15 240 230" xmlns="http://www.w3.org/2000/svg" style="max-width: 260px;">
+            <polygon points="0,0 0,200 200,200" fill="#f0e5fe" stroke="#2d1b4e" stroke-width="2" stroke-linejoin="round"/>
+            <g transform="translate(105 105) rotate(45)">
+              <rect x="0" y="-45" width="75" height="45" fill="#ffffff" stroke="#7b2ff7" stroke-width="2.5" stroke-linejoin="round"/>
+              <line x1="-58" y1="-22" x2="-16" y2="-22" stroke="#f72585" stroke-width="2.5"/>
+              <polygon points="-6,-22 -17,-27.5 -17,-16.5" fill="#f72585"/>
+            </g>
+          </svg>
+        </div>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>La fuerza neta sobre el bloque es cero.</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>El peso del bloque es la única fuerza que actúa sobre el bloque.</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>La fricción es la única fuerza que actúa sobre el bloque.</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>El peso y la fuerza normal son iguales.</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>La clave es <strong>"velocidad constante"</strong>: si la velocidad no cambia, la aceleración es cero, y entonces <strong>la fuerza neta es cero</strong> (primera ley de Newton). Sobre el bloque actúan tres fuerzas: el peso, la normal y la fricción, y entre las tres se cancelan. Por eso no hay una sola fuerza (B y C). En un plano inclinado la normal es menor que el peso, no igual (D).</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="B">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 29</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Si las flechas mostradas en la figura representan fuerzas, entonces</p>
+        <div class="grafica-card">
+          <!-- Triángulo de fuerzas: a sube por el lado izquierdo, c va de la punta de a hacia la derecha,
+               b va del inicio de a hacia la derecha. Las flechas c y b terminan en el mismo punto. -->
+          <svg viewBox="-55 -22 265 245" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif" style="max-width: 280px;">
+            <!-- Fuerza a: de abajo hacia arriba -->
+            <line x1="0" y1="200" x2="0" y2="12" stroke="#2d1b4e" stroke-width="2.5"/>
+            <polygon points="0,0 -6,14 6,14" fill="#2d1b4e"/>
+            <!-- Fuerza c: de la punta de a hacia la derecha -->
+            <line x1="0" y1="0" x2="164.6" y2="94" stroke="#7b2ff7" stroke-width="2.5"/>
+            <polygon points="175,100 159.9,98.3 165.8,87.9" fill="#7b2ff7"/>
+            <!-- Fuerza b: del inicio de a hacia la derecha -->
+            <line x1="0" y1="200" x2="164.6" y2="106" stroke="#f72585" stroke-width="2.5"/>
+            <polygon points="175,100 165.8,112.1 159.9,101.7" fill="#f72585"/>
+            <!-- Nombres de las fuerzas, con su flechita de vector -->
+            <g font-size="17" font-weight="700" text-anchor="middle">
+              <text x="-28" y="110" fill="#2d1b4e">a</text>
+              <text x="100" y="36" fill="#7b2ff7">c</text>
+              <text x="100" y="186" fill="#f72585">b</text>
+            </g>
+            <g stroke-width="1.8" fill="none">
+              <path d="M -38 92 L -19 92 M -24 88 L -19 92 L -24 96" stroke="#2d1b4e"/>
+              <path d="M 90 18 L 109 18 M 104 14 L 109 18 L 104 22" stroke="#7b2ff7"/>
+              <path d="M 90 166 L 109 166 M 104 162 L 109 166 L 104 170" stroke="#f72585"/>
+            </g>
+          </svg>
+        </div>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span><span class="vec"><span class="flecha">→</span>a</span> + <span class="vec"><span class="flecha">→</span>b</span> = <span class="vec"><span class="flecha">→</span>c</span></span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span><span class="vec"><span class="flecha">→</span>a</span> + <span class="vec"><span class="flecha">→</span>c</span> = <span class="vec"><span class="flecha">→</span>b</span></span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span><span class="vec"><span class="flecha">→</span>a</span> − <span class="vec"><span class="flecha">→</span>b</span> = <span class="vec"><span class="flecha">→</span>c</span></span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span><span class="vec"><span class="flecha">→</span>a</span> − <span class="vec"><span class="flecha">→</span>c</span> = <span class="vec"><span class="flecha">→</span>b</span></span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>Los vectores se suman poniendo uno después del otro: donde termina el primero empieza el segundo. En la figura, <strong>c empieza justo donde termina a</strong>, así que van seguidos. La suma es la flecha que va del inicio del primero al final del último, y esa es <strong>b</strong>: sale del inicio de a y llega a la punta de c. Por eso <strong>a + c = b.</strong></p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="A">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 30</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Selecciona el esquema que representa la o las fuerzas que actúan sobre una pelota después de ser lanzada verticalmente. No tomes en cuenta la fricción que se genera con el aire.</p>
+        <!-- Cada inciso es un esquema: la pelota (círculo) y las flechas de las fuerzas -->
+        <div class="opciones opciones-graficas">
+          <button class="opcion" data-letra="A"><span class="letra">A</span>
+            <svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" style="max-width: 110px;" role="img" aria-label="Pelota con una sola flecha hacia abajo">
+              <circle cx="50" cy="75" r="14" fill="#ffffff" stroke="#2d1b4e" stroke-width="2"/>
+              <line x1="50" y1="89" x2="50" y2="130" stroke="#7b2ff7" stroke-width="2.5"/>
+              <polygon points="50,140 44,128 56,128" fill="#7b2ff7"/>
+            </svg>
+          </button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span>
+            <svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" style="max-width: 110px;" role="img" aria-label="Pelota con una flecha larga hacia arriba y una flecha corta hacia abajo">
+              <circle cx="50" cy="75" r="14" fill="#ffffff" stroke="#2d1b4e" stroke-width="2"/>
+              <line x1="50" y1="61" x2="50" y2="20" stroke="#7b2ff7" stroke-width="2.5"/>
+              <polygon points="50,10 44,22 56,22" fill="#7b2ff7"/>
+              <line x1="50" y1="89" x2="50" y2="104" stroke="#7b2ff7" stroke-width="2.5"/>
+              <polygon points="50,114 44,102 56,102" fill="#7b2ff7"/>
+            </svg>
+          </button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span>
+            <svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" style="max-width: 110px;" role="img" aria-label="Pelota con una flecha corta hacia arriba y una flecha larga hacia abajo">
+              <circle cx="50" cy="75" r="14" fill="#ffffff" stroke="#2d1b4e" stroke-width="2"/>
+              <line x1="50" y1="61" x2="50" y2="46" stroke="#7b2ff7" stroke-width="2.5"/>
+              <polygon points="50,36 44,48 56,48" fill="#7b2ff7"/>
+              <line x1="50" y1="89" x2="50" y2="130" stroke="#7b2ff7" stroke-width="2.5"/>
+              <polygon points="50,140 44,128 56,128" fill="#7b2ff7"/>
+            </svg>
+          </button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span>
+            <svg viewBox="0 0 100 150" xmlns="http://www.w3.org/2000/svg" style="max-width: 110px;" role="img" aria-label="Pelota con una sola flecha hacia arriba">
+              <circle cx="50" cy="75" r="14" fill="#ffffff" stroke="#2d1b4e" stroke-width="2"/>
+              <line x1="50" y1="61" x2="50" y2="20" stroke="#7b2ff7" stroke-width="2.5"/>
+              <polygon points="50,10 44,22 56,22" fill="#7b2ff7"/>
+            </svg>
+          </button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>Después de que la pelota sale de la mano, ya nada la empuja hacia arriba. Sin fricción del aire, la única fuerza que actúa sobre ella es <strong>su peso, que apunta hacia abajo</strong>: una sola flecha hacia abajo. Las flechas hacia arriba (B, C y D) representarían una fuerza del lanzamiento que ya no existe; la pelota sube solo por inercia.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="C">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 31</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Las cuerdas CA y CB, que son perpendiculares entre sí, sostienen un objeto de 5 kg. Si la fuerza de tensión en la cuerda CB es de 30 N. ¿Cuál es la fuerza de tensión en la cuerda CA?</p>
+        <p><strong>Considera</strong><br>
+           g = 10 <span class="fraccion"><span class="num">m</span><span class="den">s<sup>2</sup></span></span></p>
+        <div class="grafica-card">
+          <!-- Objeto de 5 kg colgado del punto C; las cuerdas CA (T1) y CB (T2) van al techo y forman 90° -->
+          <svg viewBox="-228 -138 396 256" xmlns="http://www.w3.org/2000/svg" font-family="Quicksand, sans-serif" style="max-width: 400px;">
+            <defs>
+              <pattern id="rayasTecho" x="-205" y="-110" width="12" height="10" patternUnits="userSpaceOnUse">
+                <path d="M 1 10 L 9 0" stroke="#2d1b4e" stroke-width="1.2"/>
+              </pattern>
+            </defs>
+            <!-- Techo -->
+            <rect x="-205" y="-110" width="360" height="10" fill="url(#rayasTecho)"/>
+            <line x1="-205" y1="-100" x2="155" y2="-100" stroke="#2d1b4e" stroke-width="2"/>
+            <!-- Línea horizontal que pasa por C -->
+            <line x1="-38" y1="0" x2="155" y2="0" stroke="#2d1b4e" stroke-width="1.2"/>
+            <!-- Cuerdas -->
+            <line x1="-200" y1="-100" x2="0" y2="0" stroke="#7b2ff7" stroke-width="2.5"/>
+            <line x1="50" y1="-100" x2="0" y2="0" stroke="#f72585" stroke-width="2.5"/>
+            <line x1="0" y1="0" x2="0" y2="52" stroke="#2d1b4e" stroke-width="2"/>
+            <!-- Marca del ángulo recto -->
+            <path d="M -8.9 -4.5 L -4.5 -13.4 L 4.5 -8.9" fill="none" stroke="#2d1b4e" stroke-width="1.2"/>
+            <!-- Objeto -->
+            <path d="M -24 56 L -24 98 A 24 6 0 0 0 24 98 L 24 56" fill="#f0e5fe" stroke="#2d1b4e" stroke-width="2"/>
+            <ellipse cx="0" cy="56" rx="24" ry="6" fill="#ffffff" stroke="#2d1b4e" stroke-width="2"/>
+            <text x="0" y="86" font-size="14" font-weight="700" text-anchor="middle" fill="#2d1b4e">5 kg</text>
+            <!-- Letras -->
+            <g font-size="15" font-weight="700" fill="#2d1b4e" text-anchor="middle">
+              <text x="-200" y="-118">A</text>
+              <text x="50" y="-118">B</text>
+              <text x="12" y="18">C</text>
+              <text x="-17" y="-25" font-size="13">90°</text>
+            </g>
+            <text x="-72" y="-12" font-size="15" font-weight="700" text-anchor="middle" fill="#7b2ff7">T<tspan font-size="10" dy="4">1</tspan></text>
+            <text x="46" y="-46" font-size="15" font-weight="700" text-anchor="middle" fill="#f72585">T<tspan font-size="10" dy="4">2</tspan></text>
+          </svg>
+        </div>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>20 N</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>30 N</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>40 N</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>50 N</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>El peso del objeto es <strong>5 · 10 = 50 N.</strong> Las dos cuerdas juntas lo sostienen, y como son perpendiculares, sus tensiones son los catetos de un triángulo rectángulo y el peso es la hipotenusa: <strong>T<sub>1</sub><sup>2</sup> + 30<sup>2</sup> = 50<sup>2</sup></strong>, así que <strong>T<sub>1</sub> = √(2500 − 900) = √1600 = 40 N.</strong> Es el triángulo 30, 40, 50. Ojo: las tensiones no se restan directo (50 − 30 = 20, opción A) porque no apuntan en la misma dirección.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="bloque pregunta-guia" data-correcta="C">
+      <p class="titulo-regla-signos titulo-fuera">Pregunta 32</p>
+      <div class="caja-ejemplo">
+        <p class="enunciado">Si dos personas jalan una caja sobre una superficie sin que se genere fricción, y cada una ejerce una fuerza de 600 N, cuya línea de acción sobre la caja forma un ángulo de 45° con la dirección del movimiento de la caja. La fuerza total ejercida sobre la caja es</p>
+        <p><strong>Considera:</strong><br>
+           sen 45° = 0.707,<br>
+           cos 45° = 0.707,<br>
+           tan 45° = 1</p>
+        <div class="opciones">
+          <button class="opcion" data-letra="A"><span class="letra">A</span><span>424.2 N</span></button>
+          <button class="opcion" data-letra="B"><span class="letra">B</span><span>600.0 N</span></button>
+          <button class="opcion" data-letra="C"><span class="letra">C</span><span>848.6 N</span></button>
+          <button class="opcion" data-letra="D"><span class="letra">D</span><span>1200.0 N</span></button>
+        </div>
+        <div class="retro" hidden>
+          <p class="veredicto"></p>
+          <p>Cada persona jala inclinada 45°, una hacia cada lado, así que solo una parte de su fuerza va en la dirección del movimiento: <strong>600 · cos 45° = 600 · 0.707 = 424.2 N.</strong> Las partes hacia los lados son iguales y contrarias, y se cancelan. Entre las dos: <strong>424.2 + 424.2 = 848.4 N</strong>, que es la opción C (848.6; la pequeña diferencia es por el redondeo). No se suman 600 + 600 = 1200 (D) porque las fuerzas no apuntan en la misma dirección.</p>
+          <button class="boton reintentar">Intentar otra vez</button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
